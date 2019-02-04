@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+    <!-- This is a wide open CSP declaration. To lock this down for production, see below. -->
+    <meta http-equiv="Content-Security-Policy" content="default-src *; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline' 'unsafe-eval' http://cdnjs.cloudflare.com ">
+
+
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon-16x16.png">
+    <meta name="theme-color" content="#0099e1">
+    <!-- Add to home screen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="white">
+    <meta name="apple-mobile-web-app-title" content="Stockpile">
+    <link rel="apple-touch-icon" href="./img/logoavf.png">
+    <!-- Add to home screen for Windows -->
+    <meta name="msapplication-TileImage" content="./img/logoavf.png">
+    <meta name="msapplication-TileColor" content="#000000">
+
+
+    <!-- FONTAWESOMES -->
+    <link rel="stylesheet" href="./assets/fontawesome-free-5.3.1-web/css/all.css" >
+    <!-- Importação Bootstrap 4.0 -->
+    <link rel="stylesheet"  href="./assets/plugins/bootstrap-4.1.3-dist/css/bootstrap.min.css" >
+    <!-- Importação ANIMATE -->
+    <link rel="stylesheet"  href="./assets/css/animate.css " >
+
+    <!-- PNotify -->
+    <link href="./assets/plugins/pnotify/pnotify.custom.min.css" rel="stylesheet" type="text/css" />
+
+
+    <link rel="stylesheet" type="text/css" href="./assets/plugins/jquery.mobile-1.4.5/jquery.mobile-1.4.5.min.css" />
+    <link rel="stylesheet" type="text/css" href="./assets/css/index.css" />
+    <link rel="stylesheet" type="text/css" href="./assets/css/navbar.css" />
+
+    <title>Inaweb Digital - Meus dados</title>
+    <style>
+        .card-body{text-align: left; box-shadow: 0 0 16px -3px #000000;}
+        .boxSenha{position: relative}
+        .boxSenha input{padding-right: 48px}
+        .verSenha{position: absolute;  right: 0;  cursor: pointer; background: #2f81bf;  padding: 8px 10px;  font-size: 25px;  top: 19px;  color: #fff;}
+        .verSenha:active{ background: #0372bf; }
+
+        .boximgUser{position: relative }
+        .imgUser{width: 100%; height: 100%;  max-height: 144px; }
+
+        .boximgUser .novaImagem {left: 3px; position: absolute; cursor: pointer; background: #2f81bf; padding: 9px 10px 10px; font-size: 25px; top: -15px; color: #fff; border-radius: 42px; text-align: center;}
+
+        .ui-input-text input{
+            border: 1px solid #afabab;
+            min-height: 2.5rem;
+        }
+
+    </style>
+    <script src="assets/js/menu.js"></script>
+
+</head>
+
+<body>
+<div class="app">
+    <div id="deviceready" data-role="page"  style="display: none">
+        <section data-role="header" class="fixedTop header-avf">
+            <h1><img class="logo" src="./img/logoWhite.png" style="max-height: 30px;max-width: 150px;"></h1>
+            <i class="fas fa-align-justify toogle-menu open-menu"></i>
+        </section><!-- /header -->
+
+        <section class="col-md-12 col-sm-12 col-xs-12 box-menu" display="overlay" >
+            <div class="header-menu row" data-role="header">
+                <img src="./img/avatar.png" class="imgUserMenu">
+                <div id="infoUsuario" class="box-info-user"></div>
+                <i class="fas fa-arrow-left toogle-menu close-menu"></i>
+            </div>
+            <div class="menubox" data-include="includes/menu.html"></div>
+
+            <div class="footer-menu flex-row">
+                <a href="#" class="avf-btn-default btn-default flex-col btn-logout"><b>Logout</b> <i class="fas fa-sign-out-alt icon-logout"></i></a>
+            </div>
+        </section>
+
+        <section role="main" class="ui-content container conteudoBody" data-role="home" >
+            <div class="card">
+                <div id="conteudoBXf" class="card-body" ></div>
+            </div>
+
+        </section>
+
+        <section class="footer" data-role="footer" ><h6>Desenvolvido por Inaweb Digital</h6></section><!-- /footer -->
+    </div>
+</div>
+
+<script type="text/javascript" src="cordova.js"></script>
+<script type="text/javascript" src="./assets/js/index.js"></script>
+
+<script src="./assets/js/jquery-1.11.2.js"></script>
+<script src="./assets/plugins/jquery.mobile-1.4.5/jquery.mobile-1.4.5.js"></script>
+<script type="text/javascript" src="./db/usuariosActions.js"></script>
+<script type="text/javascript" src="./db/meusdadosDB.js"></script>
+
+<!-- Importação popper obrigatoria antes do bootstrap  -->
+<script src="./assets/js/popper.min.js" ></script>
+<!-- Importação Bootstrap 4.0 -->
+<script src="./assets/plugins/bootstrap-4.1.3-dist/js/bootstrap.min.js" ></script>
+<script type="text/javascript" src="./assets/js/menu.js"></script>
+
+<!-- PNotify -->
+<script src="./assets/plugins/pnotify/pnotify.custom.min.js"></script>
+<script src="./assets/js/Pnotify-Function.js"></script>
+
+
+
+<!-- mask -->
+<script type="text/javascript" src="./assets/js/jquery.mask.js"></script>
+
+<script type="text/javascript">
+    this.MEUSDADOS_DB.initPage();
+
+
+
+    var behavior=function(val){
+        return val.replace(/\D/g, '').length === 11 ? '(00) 00000-0000' : '(00) 0000-00009';
+    },
+
+    options={
+        onKeyPress: function(val, e, field, options){
+            field.mask(behavior.apply({}, arguments), options);
+        }
+    };
+
+    $('[type="tel"]').mask(behavior, options);
+
+
+
+    $('body').on('tap', '.salvar', function(e){
+        e.preventDefault();
+        $('.loader').remove();
+        $(".app").prepend('<img class="loader" src="./img/loader.gif">');
+
+        var usuario = JSON.parse(window.localStorage.getItem('usuario'));
+        var passWID = app.appKey();
+
+        var Data = $('.updateMeusDados').serialize() +'&idUsuario='+usuario.idUsuario +'&passID='+passWID;
+
+
+        USUARIOS_ACTIONS.atualizarUsuarioMicroService(Data).done(function (MicroServiceResponse){
+            if (MicroServiceResponse.type==="success"){
+                var result = [];
+                var formArray = $('.updateMeusDados').serializeArray();
+                for (var i = 0; i < formArray.length; i++){
+                    result[formArray[i]['name']] = formArray[i]['value'];
+                }
+
+                USUARIOS_ACTIONS.updateUsuarioLocal(result);
+
+                $('.loader').fadeOut(500 , function () {  $(this).remove(); });
+                notify('Atualizado.', 'Dados atualizados com sucesso.', 'success', true);
+            }else{
+                $('.loader').fadeOut(500 , function () {  $(this).remove(); });
+                notify('OPS!', 'Falha ao atualizar, Tente novamente mais tarde.', 'error', true);
+            }
+        });
+    });
+
+
+    $('body').on('tap', '.verSenha', function (){
+       $(this).toggleClass('fa-eye-slash').toggleClass('fa-eye');
+        var passwordFieldType = $('[name="senha"]').attr('type');
+        if(passwordFieldType == 'password') {
+            $('[name="senha"]').attr('type', 'text');
+        } else {
+            $('[name="senha"]').attr('type', 'password');
+        }
+    });
+
+
+
+    // abrir camera
+    $(document).on('click', '.novaImagem', function(){
+        navigator.notification.confirm('Nova foto para o perfil.', appCamera,'FOTO DE PERFIL', 'ABRIR CAMERA, ABRIR GALERIA');
+    });
+
+
+    function appCamera(actionPhoto) {
+
+        //abrir camera
+        if(actionPhoto===1){
+            try {
+                navigator.camera.getPicture(
+                    function successFoto(fotoURI_C){
+
+
+                        var usuario = JSON.parse(window.localStorage.getItem('usuario'));
+                        var passWID = app.appKey();
+
+                        $.ajax({
+                            type:'POST',
+                            url: urlWebservices+'/Usuariosservice/updateImagemPerfil',
+                            data:{imagem: imagemURI, idUsuario: usuario.idUsuario, appID: passWID},
+                            cache:false,
+                            contentType: false,
+                            processData: false,
+                            success:function(data){
+                                navigator.notification.alert('Foto de perfil atualizada com sucesso ', '','NOVA FOTO', 'OK');
+                                var smallImage = document.getElementById('imgemPerfilMeusDados');
+                                smallImage.src = fotoURI_C;
+                                window.localStorage.setItem('imgPerfil', fotoURI_C);
+
+                            },
+                            error: function(data){
+                                navigator.notification.alert('Error ao atualizar foto', '','NOVA FOTO', 'FECHAR');
+                            }
+                        });
+
+                    },
+                    function errorFoto(error){},
+
+                    {
+                        quality: 70,
+                        sourceType: Camera.PictureSourceType.CAMERA,
+                        destinationType: Camera.DestinationType.FILE_URI,
+                        mediaType: Camera.MediaType.PICTURE,
+                        allowEdit: true,
+                        encodingType: Camera.EncodingType.JPEG,
+                        saveToPhotoAlbum: true,
+                        targetWidth: 800,
+                        targetHeight: 800
+                    }
+                );
+            }catch(error){
+                alert('HOUVER UM ERROR AO ABRIR CAMERA: ' + error);
+            }
+        }
+
+        //abrir galeria
+        if(actionPhoto===2){
+            try {
+                navigator.camera.getPicture(
+                    function successGaleria(fotoURI_G) {
+
+                        var usuario = JSON.parse(window.localStorage.getItem('usuario'));
+                        var passWID = app.appKey();
+
+                        $.ajax({
+                            type:'POST',
+                            url: urlWebservices+'/Usuariosservice/updateImagemPerfil',
+                            data:{imagem: imagemURI, idUsuario: usuario.idUsuario, appID: passWID},
+                            cache:false,
+                            contentType: false,
+                            processData: false,
+                            success:function(data){
+                                navigator.notification.alert('Foto de perfil atualizada com sucesso ', '','NOVA FOTO', 'OK');
+                                var smallImage = document.getElementById('imgemPerfilMeusDados');
+                                smallImage.src = fotoURI_G;
+                                window.localStorage.setItem('imgPerfil', fotoURI_G);
+                            },
+                            error: function(data){
+                                navigator.notification.alert('Error ao atualizar foto', '','NOVA FOTO', 'FECHAR');
+                            }
+                        });
+
+
+                    },
+                    function errorGaleria(error){},
+                    {
+                        quality: 70,
+                        sourceType: Camera.PictureSourceType.PHOTOLIBRARY,
+                        destinationType: Camera.DestinationType.FILE_URI,
+                        mediaType: Camera.MediaType.PICTURE,
+                        targetWidth: 800,
+                        targetHeight: 800
+                    }
+                );
+            }catch(error){
+                alert('HOUVER UM ERROR AO ABRIR GALERIA: ' + error);
+            }
+        }
+
+
+    }
+
+
+
+
+    $('.btn-logout').on('tap click', function(){
+        app.logout();
+    });
+</script>
+
+</body>
+</html>

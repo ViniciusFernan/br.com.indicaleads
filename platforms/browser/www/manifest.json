@@ -1,0 +1,12 @@
+{
+  "background_color": "#FFF",
+  "display": "standalone",
+  "name": "indica",
+  "short_name": "indica",
+  "version": "br.com.avfapp",
+  "description": "App extenção do sistema de leads www.indica.inaweb.com.br",
+  "author": "Inaweb Digital",
+  "icons": [],
+  "start_url": "index.html",
+  "theme_color": "#0099e1"
+}
