@@ -210,7 +210,7 @@
                                     navigator.notification.alert('Foto de perfil atualizada com sucesso ', '','NOVA FOTO', 'OK');
                                     window.localStorage.setItem('imgPerfil', resp.data);
                                     var smallImage = document.getElementById('imgemPerfilMeusDados');
-                                    smallImage.src = urlUploads+"/"+usuario.idUsuario+"/"+resp.data;
+                                    smallImage.src = urlUploads+"/"+usuario.idUsuario+"/perfil/"+resp.data;
                                     //smallImage.src = fotoURI_C;
 
                                 }else{
@@ -264,7 +264,7 @@
                                     window.localStorage.setItem('imgPerfil', resp.data);
 
                                     var smallImage = document.getElementById('imgemPerfilMeusDados');
-                                    smallImage.src = urlUploads+"/"+usuario.idUsuario+"/"+resp.data;
+                                    smallImage.src = urlUploads+"/"+usuario.idUsuario+"/perfil/"+resp.data;
                                     //smallImage.src = fotoURI_C;
 
                                 }else{
