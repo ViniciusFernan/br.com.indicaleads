@@ -71,7 +71,7 @@
 
         <section class="col-md-12 col-sm-12 col-xs-12 box-menu" display="overlay" >
             <div class="header-menu row" data-role="header">
-                <img src="./img/avatar.png" class="imgUserMenu">
+                <img src="./img/avatar.png" class="imgUserMenu" id="imgemPerfilMeusDadosMenu">
                 <div id="infoUsuario" class="box-info-user"></div>
                 <i class="fas fa-arrow-left toogle-menu close-menu"></i>
             </div>
@@ -196,41 +196,34 @@
         if(actionPhoto===1){
             try {
                 navigator.camera.getPicture(
-                    function successFoto(fotoURI_C){
-
+                    function successGaleria(fotoURI_C) {
                         var usuario = JSON.parse(window.localStorage.getItem('usuario'));
                         var passWID = app.appKey();
-
-
-                        var options = { chunkedMode:false, fileKey:"file", fileName:'imgPerfil', mimeType:"image/jpeg" ,
-                            params: {idUsuario:usuario.idUsuario,appID:passWID }
-                        }
 
                         var ft = new FileTransfer();
                         ft.upload(
                             fotoURI_C,
                             urlWebservices+'/Usuariosservice/updateImagemPerfil',
                             function (x) {
-
-                                var resp = x.response;
+                                var resp = JSON.parse(x.response);
                                 if(resp.type=="success" ){
-                                    navigator.notification.alert(resp, '','TESTE', 'FECHAR');
                                     navigator.notification.alert('Foto de perfil atualizada com sucesso ', '','NOVA FOTO', 'OK');
+                                    window.localStorage.setItem('imgPerfil', resp.data);
                                     var smallImage = document.getElementById('imgemPerfilMeusDados');
-                                    smallImage.src = fotoURI_G;
-                                    window.localStorage.setItem('imgPerfil', fotoURI_C);
+                                    smallImage.src = urlUploads+"/"+usuario.idUsuario+"/"+resp.data;
+                                    //smallImage.src = fotoURI_C;
 
                                 }else{
-                                    navigator.notification.alert(resp, '','TESTE', 'FECHAR');
                                     navigator.notification.alert('Error ao atualizar foto', '','NOVA FOTO', 'FECHAR');
                                 }
                             },
                             function (error) {
                                 navigator.notification.alert('Error ao atualizar foto, Tente novamente mais tarde', '','NOVA FOTO', 'FECHAR');
                             },
-                            options
+                            { chunkedMode:false, fileKey:"file", fileName:'imgPerfil', mimeType:"image/jpeg" ,
+                                params: {idUsuario:usuario.idUsuario,appID:passWID }
+                            }
                         );
-
 
                     },
                     function errorFoto(error){},
@@ -260,34 +253,30 @@
                         var usuario = JSON.parse(window.localStorage.getItem('usuario'));
                         var passWID = app.appKey();
 
-
-                        var options = { chunkedMode:false, fileKey:"file", fileName:'imgPerfil', mimeType:"image/jpeg" ,
-                                        params: {idUsuario:usuario.idUsuario,appID:passWID }
-                                      }
-
                         var ft = new FileTransfer();
                         ft.upload(
                             fotoURI_G,
                             urlWebservices+'/Usuariosservice/updateImagemPerfil',
                             function (x) {
-
-                                var resp = x.response;
+                                var resp = JSON.parse(x.response);
                                 if(resp.type=="success" ){
-                                    navigator.notification.alert(resp, '','TESTE', 'FECHAR');
                                     navigator.notification.alert('Foto de perfil atualizada com sucesso ', '','NOVA FOTO', 'OK');
+                                    window.localStorage.setItem('imgPerfil', resp.data);
+
                                     var smallImage = document.getElementById('imgemPerfilMeusDados');
-                                    smallImage.src = fotoURI_G;
-                                    window.localStorage.setItem('imgPerfil', fotoURI_G);
+                                    smallImage.src = urlUploads+"/"+usuario.idUsuario+"/"+resp.data;
+                                    //smallImage.src = fotoURI_C;
 
                                 }else{
-                                    navigator.notification.alert(resp, '','TESTE', 'FECHAR');
                                     navigator.notification.alert('Error ao atualizar foto', '','NOVA FOTO', 'FECHAR');
                                 }
                             },
                             function (error) {
                                 navigator.notification.alert('Error ao atualizar foto, Tente novamente mais tarde', '','NOVA FOTO', 'FECHAR');
                             },
-                            options
+                            { chunkedMode:false, fileKey:"file", fileName:'imgPerfil', mimeType:"image/jpeg" ,
+                                params: {idUsuario:usuario.idUsuario,appID:passWID }
+                            }
                         );
 
                     },

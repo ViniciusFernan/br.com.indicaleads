@@ -17,7 +17,7 @@
  * under the License.
  */
 var urlWebservices="http://backend.com.br/WSAPP";
-
+var urlUploads="http://backend.com.br/_uploads";
 var app = {
     // Application Constructor
     initialize: function() {
@@ -56,7 +56,9 @@ var app = {
         var serial = ((devicePlatform === 'browser') ? '123456-AVF' : device.serial);
         localStorage.setItem('serial', serial);
 
-
+        var imgPerfil = (window.localStorage.getItem('imgPerfil') ?  urlUploads +"/"+ usuario.idUsuario +"/"+ window.localStorage.getItem('imgPerfil') : './img/avatar.png');
+        ((document.getElementById('imgemPerfilMeusDados')) ? document.getElementById('imgemPerfilMeusDados').src = imgPerfil : '' );
+        ((document.getElementById('imgemPerfilMeusDadosMenu')) ? document.getElementById('imgemPerfilMeusDadosMenu').src = imgPerfil : '' );
     },
 
 

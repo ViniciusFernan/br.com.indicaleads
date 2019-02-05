@@ -7,6 +7,7 @@ var USUARIOS_ACTIONS = {
     setUsuario: function(usuario){
         //var senha = usuario.senha;
         window.localStorage.setItem('usuario', JSON.stringify(usuario));
+        window.localStorage.setItem('imgPerfil', usuario.imgPerfil);
     },
 
     getUsuarioMicroService: function (email, senha){
@@ -59,6 +60,7 @@ var USUARIOS_ACTIONS = {
         }
 
         window.localStorage.setItem('usuario', JSON.stringify(usuario));
+        window.localStorage.setItem('imgPerfil', usuario.imgPerfil);
         return true;
     },
 
