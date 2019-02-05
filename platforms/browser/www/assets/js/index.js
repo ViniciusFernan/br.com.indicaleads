@@ -59,10 +59,6 @@ var app = {
 
     },
 
-    logout: function () {
-        window.localStorage.clear();
-        window.location="index.html";
-    },
 
     isOnline: function(){
         var rede =  navigator.connection.type;
@@ -72,6 +68,16 @@ var app = {
     appKey: function(){
         return ( window.localStorage.getItem('serial') ? window.localStorage.getItem('serial') : null );
     },
+
+    logout: function () {
+        window.localStorage.clear();
+        window.location="index.html";
+    },
+
+
+    exitApp: function(){
+        navigator.app.exitApp();
+    }
 
 
 
