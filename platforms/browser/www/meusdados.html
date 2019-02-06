@@ -209,8 +209,8 @@
                                 if(resp.type=="success" ){
                                     navigator.notification.alert('Foto de perfil atualizada com sucesso ', '','NOVA FOTO', 'OK');
                                     window.localStorage.setItem('imgPerfil', resp.data);
-                                    var smallImage = document.getElementById('imgemPerfilMeusDados');
-                                    smallImage.src = urlUploads+"/"+usuario.idUsuario+"/perfil/"+resp.data;
+                                    ((document.getElementById('imgemPerfilMeusDados')) ? document.getElementById('imgemPerfilMeusDados').src = resp.data : './img/avatar.png' );
+                                    ((document.getElementById('imgemPerfilMeusDadosMenu')) ? document.getElementById('imgemPerfilMeusDadosMenu').src = resp.data : './img/avatar.png' );
                                     //smallImage.src = fotoURI_C;
 
                                 }else{
@@ -229,7 +229,7 @@
                     function errorFoto(error){},
 
                     {
-                        quality: 70,
+                        quality: 90,
                         sourceType: Camera.PictureSourceType.CAMERA,
                         destinationType: Camera.DestinationType.FILE_URI,
                         mediaType: Camera.MediaType.PICTURE,
@@ -263,8 +263,8 @@
                                     navigator.notification.alert('Foto de perfil atualizada com sucesso ', '','NOVA FOTO', 'OK');
                                     window.localStorage.setItem('imgPerfil', resp.data);
 
-                                    var smallImage = document.getElementById('imgemPerfilMeusDados');
-                                    smallImage.src = urlUploads+"/"+usuario.idUsuario+"/perfil/"+resp.data;
+                                    ((document.getElementById('imgemPerfilMeusDados')) ? document.getElementById('imgemPerfilMeusDados').src = resp.data : './img/avatar.png' );
+                                    ((document.getElementById('imgemPerfilMeusDadosMenu')) ? document.getElementById('imgemPerfilMeusDadosMenu').src = resp.data : './img/avatar.png' );
                                     //smallImage.src = fotoURI_C;
 
                                 }else{
@@ -282,7 +282,7 @@
                     },
                     function errorGaleria(error){},
                     {
-                        quality: 70,
+                        quality: 90,
                         sourceType: Camera.PictureSourceType.PHOTOLIBRARY,
                         destinationType: Camera.DestinationType.FILE_URI,
                         mediaType: Camera.MediaType.PICTURE,
