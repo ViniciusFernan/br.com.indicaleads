@@ -209,8 +209,8 @@
                                 if(resp.type=="success" ){
                                     navigator.notification.alert('Foto de perfil atualizada com sucesso ', '','NOVA FOTO', 'OK');
                                     window.localStorage.setItem('imgPerfil', resp.data);
-                                    ((document.getElementById('imgemPerfilMeusDados')) ? document.getElementById('imgemPerfilMeusDados').src = resp.data : './img/avatar.png' );
-                                    ((document.getElementById('imgemPerfilMeusDadosMenu')) ? document.getElementById('imgemPerfilMeusDadosMenu').src = resp.data : './img/avatar.png' );
+                                    document.getElementById('imgemPerfilMeusDados').src = ((resp.data) ? resp.data : './img/avatar.png' );
+                                    document.getElementById('imgemPerfilMeusDadosMenu').src = ((resp.data) ? resp.data : './img/avatar.png' );
                                     //smallImage.src = fotoURI_C;
 
                                 }else{
@@ -263,8 +263,8 @@
                                     navigator.notification.alert('Foto de perfil atualizada com sucesso ', '','NOVA FOTO', 'OK');
                                     window.localStorage.setItem('imgPerfil', resp.data);
 
-                                    ((document.getElementById('imgemPerfilMeusDados')) ? document.getElementById('imgemPerfilMeusDados').src = resp.data : './img/avatar.png' );
-                                    ((document.getElementById('imgemPerfilMeusDadosMenu')) ? document.getElementById('imgemPerfilMeusDadosMenu').src = resp.data : './img/avatar.png' );
+                                    document.getElementById('imgemPerfilMeusDados').src = ((resp.data) ? resp.data : './img/avatar.png' );
+                                    document.getElementById('imgemPerfilMeusDadosMenu').src = ((resp.data) ? resp.data : './img/avatar.png' );
                                     //smallImage.src = fotoURI_C;
 
                                 }else{
