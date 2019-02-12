@@ -73,14 +73,14 @@ var MEUSLEADS_DB = {
                 if(resp.type=='success'){
                     lead=resp.data;
 
-                    body +='<h5 class="title" ><i class="fas '+((lead.idTipo==3) ? 'fa-user-tie empresarial' : ((lead.idTipo==2 ) ? 'fa-users familiar' : 'fa-user individual') )+'  "></i>'+ lead.nome +'</h5>';
-                    body +='<p class="" ><i class="far fa-envelope icon-lead"></i>'+ lead.email +'</p>';
-                    body +='<p class="" ><i class="far fa-envelope icon-lead"></i>('+lead.dddTel +') - '+lead.tel+'</p>';
+                    body +='<h5><i class="fas '+((lead.idTipo==3) ? 'fa-user-tie empresarial' : ((lead.idTipo==2 ) ? 'fa-users familiar' : 'fa-user individual') )+'  "></i>'+ lead.nome +'</h5>';
+                    body +='<p ><i class="far fa-envelope icon-lead"></i>'+ lead.email +'</p>';
+                    body +='<p ><i class="far fa-envelope icon-lead"></i>('+lead.dddTel +') - '+lead.tel+'</p>';
 
                 }else{
                     body="<h4>OPS!</h4>";
                 }
-                $('[data-idLead="'+lead.idLead+'"]').find('card-body').html(body);
+                $('[data-idLead="'+lead.idLead+'"]').find('.card-body').html(body);
                 $('[data-idLead="'+lead.idLead+'"]').addClass('flayCard').removeClass('cardClose');
 
             }
