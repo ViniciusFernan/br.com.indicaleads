@@ -22,7 +22,7 @@ var MEUSLEADS_DB = {
     },
 
 
-    getListaLeadsMicroService: function (idUsuario, email){
+    getListaLeadsMicroService: function(idUsuario, email){
         var serial = window.localStorage.getItem('serial');
         $.ajax({
             url: urlWebservices+'/Leadservice/getListaLeadFromUsuario',
@@ -35,7 +35,7 @@ var MEUSLEADS_DB = {
                 var table="";
                 if(resp.type=='success'){
                     $.each(resp.data ,function(x, lead){
-                        table +='<div class="box-lead card mb-2 lead-close" data-idLead="'+lead.idLead+'">';
+                        table +='<div class="box-lead card mb-2 cardClose" data-idLead="'+lead.idLead+'">';
                             table +='<div class="row card-header">';
                                 table +='<div class="col-6 col-md-6 p-0 "><h5 class="title ellipsis" ><i class="far fa-envelope icon-lead"></i>'+ lead.nome +'</h5></div>';
                                 table +='<div class="col-3 col-md-3 p-0 border-left border-right "><small class="small bold">DDD: '+ lead.dddTel +' </small></div>';
@@ -43,12 +43,6 @@ var MEUSLEADS_DB = {
                                 table +='<div class="col-1 col-md-1 p-0 border-left actionOpenLeadBox "><i class="fas fa-angle-double-down"></i></div>';
                             table +='</div>';
                             table +='<div class="row card-body" ></div>';
-
-                            table +='<div class="row rating-desc card-footer">';
-                                table +='<div class="col-md-12">';
-                                    table +='<a href="">Ver todas as informações</a>';
-                                table +='</div>';
-                            table +='</div>';
                         table +='</div>';
                     });
                 }else{
@@ -64,40 +58,30 @@ var MEUSLEADS_DB = {
 
 
 
-    getLeadsPorIdMicroService: function (idUsuario, idLead){
+    getLeadsPorIdMicroService: function (idLead){
         var serial = window.localStorage.getItem('serial');
+        var usuarioL = JSON.parse( window.localStorage.getItem('usuario'));
         $.ajax({
-            url: urlWebservices+'/Leadservice/getListaLeadFromUsuario',
+            url: urlWebservices+'/Leadservice/getLeadPorId',
             type: 'POST',
             dataType: 'json',
-            data:{ 'idUsuario': idUsuario, 'idLead': idLead, 'registroDeDispositivo': serial },
+            data:{ 'idUsuario': usuarioL.idUsuario, 'idLead': idLead, 'registroDeDispositivo': serial },
             beforeSend: function(){ },
             complete: function(){ },
             success: function(resp){
-                var table="";
+                var body="";
                 if(resp.type=='success'){
-                    $.each(resp.data ,function(x, lead){
-                        table +='<div class="box-lead card mb-2 lead-close" data-idLead="'+lead.idLead+'">';
-                        table +='<div class="row card-header">';
-                        table +='<div class="col-6 col-md-6 p-0 "><h5 class="title ellipsis" ><i class="far fa-envelope icon-lead"></i>'+ lead.nome +'</h5></div>';
-                        table +='<div class="col-3 col-md-3 p-0 border-left border-right "><small class="small bold">DDD: '+ lead.dddTel +' </small></div>';
-                        table +='<div class="col-2 col-md-2 p-0 "><i class="fas '+((lead.idTipo==3) ? 'fa-user-tie empresarial' : ((lead.idTipo==2 ) ? 'fa-users familiar' : 'fa-user individual') )+'  "></i></div>';
-                        table +='<div class="col-1 col-md-1 p-0 border-left actionOpenLeadBox "><i class="fas fa-angle-double-down"></i></div>';
-                        table +='</div>';
-                        table +='<div class="row card-body" ></div>';
+                    lead=resp.data;
 
-                        table +='<div class="row rating-desc card-footer">';
-                        table +='<div class="col-md-12">';
-                        table +='<a href="">Ver todas as informações</a>';
-                        table +='</div>';
-                        table +='</div>';
-                        table +='</div>';
-                    });
+                    body +='<h5 class="title" ><i class="fas '+((lead.idTipo==3) ? 'fa-user-tie empresarial' : ((lead.idTipo==2 ) ? 'fa-users familiar' : 'fa-user individual') )+'  "></i>'+ lead.nome +'</h5>';
+                    body +='<p class="" ><i class="far fa-envelope icon-lead"></i>'+ lead.email +'</p>';
+                    body +='<p class="" ><i class="far fa-envelope icon-lead"></i>('+lead.dddTel +') - '+lead.tel+'</p>';
+
                 }else{
-                    table="<h4>Nenhum lead encontrado</h4>";
+                    body="<h4>OPS!</h4>";
                 }
-
-                $('#litagemDeLeads').append(table);
+                $('[data-idLead="'+lead.idLead+'"]').find('card-body').html(body);
+                $('[data-idLead="'+lead.idLead+'"]').addClass('flayCard').removeClass('cardClose');
 
             }
         });

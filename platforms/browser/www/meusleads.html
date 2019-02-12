@@ -57,7 +57,7 @@
 
         .actionOpenLeadBox{position: relative}
         .actionOpenLeadBox i{position: absolute; top:3px; right: 0px }
-        .lead-close .card-body,  .lead-close .card-footer{display: none}
+        .cardClose .card-body,  .cardClose .card-footer{display: none}
     </style>
 
 </head>
@@ -145,6 +145,14 @@
 
 <script type="text/javascript">
     this.MEUSLEADS_DB.initPage();
+
+
+    document.addEventListener('deviceready', function() {
+        $('body').on('tap','.box-lead',  function(){
+           idLead = $(this).attr('data-idLead');
+           MEUSLEADS_DB.getLeadsPorIdMicroService(idLead);
+        });
+    });
 
 
 
