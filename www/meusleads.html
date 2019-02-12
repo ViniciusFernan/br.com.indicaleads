@@ -9,7 +9,6 @@
     <meta http-equiv="Content-Security-Policy" content="default-src *; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline' 'unsafe-eval' http://cdnjs.cloudflare.com ">
 
 
-
     <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon-16x16.png">
     <meta name="theme-color" content="#0099e1">
@@ -38,13 +37,27 @@
     <link rel="stylesheet" type="text/css" href="./assets/css/index.css" />
     <link rel="stylesheet" type="text/css" href="./assets/css/navbar.css" />
 
+    <!--pulltorefresh-->
+    <link rel="stylesheet" type="text/css" href="./assets/plugins/pulltorefresh/pulltorefresh.css" />
+
     <title>Inaweb Digital - Meus dados</title>
     <style>
+
+        #deviceready {  padding-bottom: 50px;  }
         .card-body{text-align: left;}
 
-        .box-lead{width: 100%; padding: 15px; margin-bottom: 15px; box-shadow: 0px 0px 23px -8px #787878; }
-        .icon-lead{font-size: 20px; margin-right: 15px }
-        .box-lead .title{    font-weight: bold;  border-bottom: 1px solid rgba(0,0,0,.1);    padding-bottom: 5px; text-align: left}
+        .box-lead{width: 100%; padding: 0px 15px; margin-bottom: 15px; box-shadow: 0px 0px 23px -8px #787878; }
+        .icon-lead{font-size: 20px; margin-right: 5px }
+        .box-lead .title{    font-weight: bold;  border-bottom: 0px solid rgba(0,0,0,.1);    padding: 0px; text-align: left;     margin: 0; font-size: 18px}
+        .bold{font-weight: bold}
+
+        .empresarial{color: #046a13 }
+        .familiar{ color: #ff6d00  }
+        .individual{color: #0bb7a9}
+
+        .actionOpenLeadBox{position: relative}
+        .actionOpenLeadBox i{position: absolute; top:3px; right: 0px }
+        .lead-close .card-body,  .lead-close .card-footer{display: none}
     </style>
 
 </head>
@@ -76,123 +89,44 @@
             </div>
         </section>
 
-        <section role="main" class="ui-content container conteudoBody" data-role="home" >
+        <section id="litagemDeLeads" role="main" class="ui-content container conteudoBody " data-role="home" >
 
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="box-lead card mb-2">
-                        <div class="row">
-                            <div class="col-12 col-md-12 section-box">
-                                <h5 class="title"><i class="far fa-envelope icon-lead"></i> Patrícia Maria Anacreto </h5>
-                                <p>Gostaria de um plano que possa incluir uma cirurgia ortodôntica daqui ha um ano.</p>
-                                <hr />
-                                <div class="row rating-desc">
-                                    <div class="col-md-12">
-                                        <a href="">Ver todas as informações</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+                    <!--<div class="box-lead card mb-2">-->
+                        <!--<div class="row card-header">-->
+                            <!--<div class="col-7 col-md-7 p-0 "><h5 class="title ellipsis" ><i class="far fa-envelope icon-lead"></i>Patrícia Maria Anacreto </h5></div>-->
+                            <!--<div class="col-3 col-md-3 p-0 border-left border-right "><small class="small bold">DDD: 11</small></div>-->
+                            <!--<div class="col-2 col-md-2 p-0 "><i class="fas fa-users"></i> &lt;!&ndash;<i class="fas fa-user"></i>   <i class="fas fa-user-tie"></i>&ndash;&gt; </div>-->
+                        <!--</div>-->
+                        <!--<div class="row card-body">-->
+                            <!--<p>Gostaria de um plano que possa incluir uma cirurgia ortodôntica daqui ha um ano.</p>-->
+                        <!--</div>-->
 
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="box-lead card mb-2">
-                        <div class="row">
-                            <div class="col-12 col-md-12 section-box">
-                                <h5 class="title" ><i class="far fa-envelope icon-lead"></i> Francielle Oliveira de Morais </h5>
-                                <p>Gostaria de saber qual o valor plano individual idade 32.</p>
-                                <hr />
-                                <div class="row rating-desc">
-                                    <div class="col-md-12">
-                                        <a href="">Ver todas as informações</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+                        <!--<div class="row rating-desc card-footer">-->
+                            <!--<div class="col-md-12">-->
+                                <!--<a href="">Ver todas as informações</a>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                    <!--</div>-->
 
-
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="box-lead card mb-2">
-                        <div class="row">
-                            <div class="col-12 col-md-12 section-box">
-                                <h5 class="title" ><i class="far fa-envelope icon-lead"></i> Jorge Alberto girotto </h5>
-                                <p>Gostaria de saber como faço pra me cadastrar no plano de saúde  Bradesco  saúde quais valores e benefícios.</p>
-                                <hr />
-                                <div class="row rating-desc">
-                                    <div class="col-md-12">
-                                        <a href="">Ver todas as informações</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
-
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="box-lead card mb-2">
-                        <div class="row">
-                            <div class="col-12 col-md-12 section-box">
-                                <h5 class="title" ><i class="far fa-envelope icon-lead"></i> Mariana Rodrigues de Araújo </h5>
-                                <p>Bom dia queria verificar um plano para minha sobrinha. A idade e 18 anos</p>
-                                <hr />
-                                <div class="row rating-desc">
-                                    <div class="col-md-12">
-                                        <a href="">Ver todas as informações</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
-
-
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="box-lead card mb-2">
-                        <div class="row">
-                            <div class="col-12 col-md-12 section-box">
-                                <h5 class="title" ><i class="far fa-envelope icon-lead"></i> LOURDES GODINHO </h5>
-                                <p>idade 83.</p>
-                                <hr />
-                                <div class="row rating-desc">
-                                    <div class="col-md-12">
-                                        <a href="">Ver todas as informações</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
 
 
         </section>
+        <div class="text-center footer-btn-more-lead">
+            <btn class="maisLeads btn btn-primary">Ver Mais</btn>
+        </div>
 
         <section class="footer" data-role="footer" ><h6>Desenvolvido por Inaweb Digital</h6></section><!-- /footer -->
     </div>
 </div>
 
 <script type="text/javascript" src="cordova.js"></script>
+
+<script src="./assets/js/jquery-2.2.4.js"></script>
+<script src="./assets/plugins/jquery.mobile-1.4.5/jquery.mobile-1.4.5.js"></script>
+
 <script type="text/javascript" src="./assets/js/index.js"></script>
 
-<script src="./assets/js/jquery-1.11.2.js"></script>
-<script src="./assets/plugins/jquery.mobile-1.4.5/jquery.mobile-1.4.5.js"></script>
-<script type="text/javascript" src="./db/usuariosActions.js"></script>
-<script type="text/javascript" src="./db/meusdadosDB.js"></script>
+<script type="text/javascript" src="./db/meusleadsDB.js"></script>
 
 <!-- Importação popper obrigatoria antes do bootstrap  -->
 <script src="./assets/js/popper.min.js" ></script>
@@ -204,9 +138,14 @@
 
 <script type="text/javascript" src="./assets/js/menu.js"></script>
 
+<!--pulltorefresh-->
+<script src="./assets/plugins/pulltorefresh/pulltorefreshAnimate.js"></script>
+<script src="./assets/plugins/pulltorefresh/pulltorefresh.js"></script>
+
 
 <script type="text/javascript">
-    this.MEUSDADOS_DB.initPage();
+    this.MEUSLEADS_DB.initPage();
+
 
 
 </script>

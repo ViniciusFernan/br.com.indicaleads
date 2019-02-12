@@ -38,6 +38,9 @@
     <link rel="stylesheet" type="text/css" href="./assets/css/index.css" />
     <link rel="stylesheet" type="text/css" href="./assets/css/navbar.css" />
 
+    <!--pulltorefresh-->
+    <link rel="stylesheet" type="text/css" href="./assets/plugins/pulltorefresh/pulltorefresh.css" />
+
     <title>Inaweb Digital - Meus dados</title>
     <style>
         .card-body{text-align: left; box-shadow: 0 0 16px -3px #000000;}
@@ -100,9 +103,12 @@
 </div>
 
 <script type="text/javascript" src="cordova.js"></script>
+<script src="./assets/js/jquery-2.2.4.js"></script>
+
+
 <script type="text/javascript" src="./assets/js/index.js"></script>
 
-<script src="./assets/js/jquery-1.11.2.js"></script>
+
 <script src="./assets/plugins/jquery.mobile-1.4.5/jquery.mobile-1.4.5.js"></script>
 <script type="text/javascript" src="./db/usuariosActions.js"></script>
 <script type="text/javascript" src="./db/meusdadosDB.js"></script>
@@ -117,28 +123,28 @@
 <script src="./assets/plugins/pnotify/pnotify.custom.min.js"></script>
 <script src="./assets/js/Pnotify-Function.js"></script>
 
-
-
 <!-- mask -->
 <script type="text/javascript" src="./assets/js/jquery.mask.js"></script>
+
+<!--pulltorefresh-->
+<script src="./assets/plugins/pulltorefresh/pulltorefreshAnimate.js"></script>
+<script src="./assets/plugins/pulltorefresh/pulltorefresh.js"></script>
+
 
 <script type="text/javascript">
     this.MEUSDADOS_DB.initPage();
 
-
-
     var behavior=function(val){
-        return val.replace(/\D/g, '').length === 11 ? '(00) 00000-0000' : '(00) 0000-00009';
-    },
+            return val.replace(/\D/g, '').length === 11 ? '(00) 00000-0000' : '(00) 0000-00009';
+        },
 
-    options={
-        onKeyPress: function(val, e, field, options){
-            field.mask(behavior.apply({}, arguments), options);
-        }
-    };
+        options={
+            onKeyPress: function(val, e, field, options){
+                field.mask(behavior.apply({}, arguments), options);
+            }
+        };
 
     $('[type="tel"]').mask(behavior, options);
-
 
 
     $('body').on('tap', '.salvar', function(e){
@@ -173,7 +179,7 @@
 
 
     $('body').on('tap', '.verSenha', function (){
-       $(this).toggleClass('fa-eye-slash').toggleClass('fa-eye');
+        $(this).toggleClass('fa-eye-slash').toggleClass('fa-eye');
         var passwordFieldType = $('[name="senha"]').attr('type');
         if(passwordFieldType == 'password') {
             $('[name="senha"]').attr('type', 'text');
@@ -288,4 +294,16 @@
                         mediaType: Camera.MediaType.PICTURE,
                         targetWidth: 800,
                         targetHeight: 800
-     
+                    }
+                );
+            }catch(error){
+                alert('HOUVER UM ERROR AO ABRIR GALERIA: ' + error);
+            }
+        }
+    }
+
+
+</script>
+
+</body>
+</html>

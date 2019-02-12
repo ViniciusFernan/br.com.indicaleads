@@ -94,7 +94,7 @@ body *{text-shadow:none !important;}
 
 
 
-
+.ellipsis{ overflow: hidden; width:100%; border:1px; white-space:nowrap; text-overflow: ellipsis; }
 
 
 @media screen and (min-width: 900px){
