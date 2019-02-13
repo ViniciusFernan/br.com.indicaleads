@@ -7,8 +7,8 @@ var MEUSDADOS_DB = {
             window.location="index.html";
         };
 
+        $("#deviceready").append('<img class="loader" src="./img/loader.gif">');
         if(usuario){
-
 
             var item = usuario;
             var table="";
@@ -27,6 +27,8 @@ var MEUSDADOS_DB = {
             table +='<p class="card-text form-group"><strong>Status da conta: </strong> <b class="input-fake"> '+((item.status==1)? 'Ativo' :'Desativado')+' </b></p>';
             table +='<p class="card-text form-group text-right "> <button type="button" class="btn btn-primary salvar">Atualizar</button> </p>';
             table +='</form>';
+
+            $('.loader').fadeOut().remove();
             $('#conteudoBXf').append(table);
         };
 

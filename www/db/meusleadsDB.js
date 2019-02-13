@@ -37,7 +37,8 @@ var MEUSLEADS_DB = {
                 var table="";
                 if(resp.type=='success'){
                     $.each(resp.data ,function(x, lead){
-                        table +='<div class="box-lead card mb-2 cardClose" data-idLead="'+lead.idLead+'">';
+
+                        table +='<div class="box-lead card mb-2 cardClose '+((lead.dataVisualizado != null && lead.idLeadStatus == null) ? 'noFeedback' : '')+'" data-idLead="'+lead.idLead+'">';
                             table +='<div class="row card-header">';
                                 table +='<div class="col-6 col-md-6 p-0 "><h5 class="title ellipsis" ><i class="far fa-envelope icon-lead"></i>'+ lead.nome +'</h5></div>';
                                 table +='<div class="col-3 col-md-3 p-0 border-left border-right "><small class="small bold">DDD: '+ lead.dddTel +' </small></div>';
@@ -47,6 +48,7 @@ var MEUSLEADS_DB = {
                                 table +='<div class="col-1 col-md-1 p-0 border-left actionOpenLeadBox "><i class="fas fa-angle-double-down"></i></div>';
                             table +='</div>';
                             table +='<div class="row card-body" style="overflow-y: auto"></div>';
+                            table +='<div class="row card-footer" ></div>';
                         table +='</div>';
                     });
                 }else{
@@ -114,10 +116,24 @@ var MEUSLEADS_DB = {
 
                     body+='</ul></div>';
 
+
+
+                    var footer='';
+
+                    footer+='<label class="btn btn-sm btn-primary status-l   " data-idLeadStatus="1" data-idLead-btn="'+lead.idLead+'" >Aguardando Atendimento </label>';
+                    footer+='<label class="btn btn-sm btn-warning status-l  " data-idLeadStatus="2" data-idLead-btn="'+lead.idLead+'" >Em Negociação </label>';
+                    footer+='<label class="btn btn-sm btn-danger status-l  " data-idLeadStatus="3" data-idLead-btn="'+lead.idLead+'" >Lead Inválido </label>';
+                    footer+='<label class="btn btn-sm btn-info status-l  " data-idLeadStatus="4" data-idLead-btn="'+lead.idLead+'" >Cliente não Interessado </label>';
+                    footer+='<label class="btn btn-sm btn-success status-l  " data-idLeadStatus="5" data-idLead-btn="'+lead.idLead+'" >Lead Fechado </label>';
+                    footer+='<label class="btn btn-sm btn-default status-l  " data-idLeadStatus="6" data-idLead-btn="'+lead.idLead+'" >Outros </label>';
+
+
+
                 }else{
                     body="<h4>OPS!</h4>";
                 }
                 $('[data-idLead="'+lead.idLead+'"]').find('.card-body').html(body);
+                $('[data-idLead="'+lead.idLead+'"]').find('.card-footer').html(footer);
                 $('.loader').fadeOut().remove();
 
                 $('[data-idLead="'+lead.idLead+'"]').find('.card-header .actionOpenLeadBox .fas').removeClass('fa-angle-double-down').addClass('fa-times fecharLead');
