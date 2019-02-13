@@ -44,20 +44,105 @@
     <style>
 
         #deviceready {  padding-bottom: 50px;  }
+
+        .conteudoBody{position: relative}
         .card-body{text-align: left;}
+
 
         .box-lead{width: 100%; padding: 0px 15px; margin-bottom: 15px; box-shadow: 0px 0px 23px -8px #787878; }
         .icon-lead{font-size: 20px; margin-right: 5px }
         .box-lead .title{    font-weight: bold;  border-bottom: 0px solid rgba(0,0,0,.1);    padding: 0px; text-align: left;     margin: 0; font-size: 18px}
         .bold{font-weight: bold}
 
-        .empresarial{color: #046a13 }
-        .familiar{ color: #ff6d00  }
-        .individual{color: #0bb7a9}
+        .empresarial, .EMP{color: #d85755 ;    }
+        .familiar, .FAM{ color: #ff6d00 ;  }
+        .individual, .IND{color: #60b75e ;     }
 
         .actionOpenLeadBox{position: relative}
         .actionOpenLeadBox i{position: absolute; top:3px; right: 0px }
         .cardClose .card-body,  .cardClose .card-footer{display: none}
+
+        .flayCard{position: fixed;  width: 95%;  top: 57px;  right: 10px;  height: 81vh;  z-index: 50;  box-shadow: 0px 8px 50px -3px #000;
+            -webkit-animation:1s linear 1 bounceIn;
+            -moz-animation:1s linear 1 bounceIn;
+            -o-animation:1s linear 1 bounceIn;
+            animation:1s linear 1 bounceIn;}
+
+
+        .linha-info-lead{position: relative; }
+        .icon-lead{margin-right: 10px}
+
+        .tipoitemsmall{ position: absolute;  bottom: -8px;  left: 0px;  font-weight: bold;  font-size: 8px;  width: 100%;  text-align: center; }
+
+
+
+        @-webkit-keyframes bounceIn {
+            0% {  opacity: 0;  -webkit-transform: scale(.3);  }
+            50% {  opacity: 1;  -webkit-transform: scale(1.05);  }
+            70% {opacity: 1;  -webkit-transform: scale(.9);  }
+            100% {opacity: 1;  -webkit-transform: scale(1);  }
+        }
+
+        @-moz-keyframes bounceIn {
+            0% {  opacity: 0;  -moz-transform: scale(.3);  }
+            50% {  opacity: 1;  -moz-transform: scale(1.05);  }
+            70% {opacity: 1;  -moz-transform: scale(.9);  }
+            100% {opacity: 1;  -moz-transform: scale(1);  }
+        }
+
+        @-o-keyframes bounceIn {
+            0% {  opacity: 0;  -o-transform: scale(.3);  }
+            50% {  opacity: 1;  -o-transform: scale(1.05);  }
+            70% {opacity: 1;  -o-transform: scale(.9);  }
+            100% {opacity: 1;  -o-transform: scale(1);  }
+        }
+
+        @keyframes bounceIn {
+            0% {  opacity: 0;  transform: scale(.3);  }
+            50% {  opacity: 1;  transform: scale(1.05);  }
+            70% {opacity: 1;  transform: scale(.9);  }
+            100% {opacity: 1;  transform: scale(1);  }
+        }
+
+
+
+
+
+        .bounceOut {
+            -webkit-animation:1s linear 1 bounceOut;
+            -moz-animation:1s linear 1 bounceOut;
+            -o-animation:1s linear 1 bounceOut;
+            animation:1s linear 1 bounceOut;
+        }
+
+        @-webkit-keyframes bounceOut {
+            0% {  -webkit-transform: scale(1);  }
+            25% {  -webkit-transform: scale(.95);  }
+            50% {  opacity: 1;  -webkit-transform: scale(1.1);  }
+            100% {  opacity: 0;  -webkit-transform: scale(.3);  }
+        }
+
+        @-moz-keyframes bounceOut {
+            0% {  -moz-transform: scale(1);  }
+            25% {  -moz-transform: scale(.95);  }
+            50% {  opacity: 1;  -moz-transform: scale(1.1);  }
+            100% {  opacity: 0;  -moz-transform: scale(.3);  }
+        }
+
+        @-o-keyframes bounceOut {
+            0% {  -o-transform: scale(1);  }
+            25% {  -o-transform: scale(.95);  }
+            50% {  opacity: 1;  -o-transform: scale(1.1);  }
+            100% {  opacity: 0;  -o-transform: scale(.3);  }
+        }
+
+        @keyframes bounceOut {
+            0% {  transform: scale(1);  }
+            25% {  transform: scale(.95);  }
+            50% {  opacity: 1;  transform: scale(1.1);  }
+            100% {  opacity: 0;  transform: scale(.3);  }
+        }
+
     </style>
 
 </head>
@@ -148,10 +233,22 @@
 
 
     document.addEventListener('deviceready', function() {
-        $('body').on('tap','.box-lead',  function(){
-           idLead = $(this).attr('data-idLead');
-           MEUSLEADS_DB.getLeadsPorIdMicroService(idLead);
+        $('body').on('tap','.cardClose',  function(avf){
+            avf.preventDefault();
+            idLead = $(this).attr('data-idLead');
+            MEUSLEADS_DB.getLeadsPorIdMicroService(idLead);
         });
+
+
+        $('body').on('tap', '.fecharLead', function (avf) {
+            avf.preventDefault();
+            $(this).removeClass('fa-times fecharLead').addClass('fa-angle-double-down');
+            $(this).closest('.box-lead').addClass('bounceOut');
+
+            setTimeout(function() {
+                $('.box-lead.flayCard').removeClass('flayCard bounceOut').addClass('cardClose');
+            }, 800);
+        })
     });
 
 
