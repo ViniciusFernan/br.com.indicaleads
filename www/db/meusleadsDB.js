@@ -123,8 +123,8 @@ var MEUSLEADS_DB = {
                     footer+='<label class="btn btn-sm btn-primary status-l   " data-idLeadStatus="1" data-idLead-btn="'+lead.idLead+'" >Aguardando Atendimento </label>';
                     footer+='<label class="btn btn-sm btn-warning status-l  " data-idLeadStatus="2" data-idLead-btn="'+lead.idLead+'" >Em Negociação </label>';
                     footer+='<label class="btn btn-sm btn-danger status-l  " data-idLeadStatus="3" data-idLead-btn="'+lead.idLead+'" >Lead Inválido </label>';
-                    footer+='<label class="btn btn-sm btn-info status-l  " data-idLeadStatus="4" data-idLead-btn="'+lead.idLead+'" >Cliente não Interessado </label>';
-                    footer+='<label class="btn btn-sm btn-success status-l  " data-idLeadStatus="5" data-idLead-btn="'+lead.idLead+'" >Lead Fechado </label>';
+                    footer+='<label class="btn btn-sm btn-info status-l  " data-idLeadStatus="4" data-idLead-btn="'+lead.idLead+'" >Sem Interesse </label>';
+                    footer+='<label class="btn btn-sm btn-success status-l  " data-idLeadStatus="5" data-idLead-btn="'+lead.idLead+'" >Finalizado </label>';
                     footer+='<label class="btn btn-sm btn-default status-l  " data-idLeadStatus="6" data-idLead-btn="'+lead.idLead+'" >Outros </label>';
 
 
