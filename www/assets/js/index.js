@@ -62,6 +62,31 @@ var app = {
     },
 
 
+
+    avisos: function(title, text, icon){
+       var html = '';
+       var iconL = icon ? icon : 'fa-bullhorn';
+        html +='<div id="cardAvisos" class="card mb-3 shadow animated bounceInDown" style="position: relative; " >';
+        html +='    <i class="fas fa-times removeCard" style="position: absolute; top: 2px; right: 8px; font-size: 24px; color: #ccc; z-index: 20"></i>';
+        html +='    <div class="row no-gutters">';
+        html +='        <div class="col-4" style="background-color: #0b5a9e; position: relative">';
+        html +='            <i class="fas '+iconL+'" style="color: #fff; vertical-align: middle; font-size: 60px; position: absolute; top: 50%; transform: translate(-50%, -50%)"></i>';
+        html +='        </div>';
+        html +='        <div class="col-8">';
+        html +='            <div class="card-body">';
+        html +='                <h5 class="card-title">'+title+'</h5>';
+        html +='                <hr>';
+        html +='                <p class="card-text">'+text+'</p>';
+        html +='            </div>';
+        html +='        </div>';
+        html +='    </div>';
+        html +='</div>';
+
+        $('.conteudoBody').prepend(html);
+
+    },
+
+
     isOnline: function(){
         var rede =  navigator.connection.type;
         return rede === "none" || rede === null ||  rede === "unknown" ? false : true;
