@@ -45,9 +45,15 @@
         .conteudoBody .col-6:nth-child(even){padding-left: 8px  }
         .conteudoBody .col-6:nth-child(odd){padding-right: 8px  }
 
-        .box-lead{width: 100%; padding: 15px; margin-bottom: 15px; box-shadow: 0px 0px 23px -8px #787878; }
-        .icon-lead{font-size: 20px; margin-right: 5px }
-        .box-lead .title{    font-weight: bold;  border-bottom: 1px solid rgba(0,0,0,.1);    padding-bottom: 5px; }
+        .cart-left-box{background-color: #1864a7;}
+        .data-box {font-size: 22px; text-transform: uppercase; text-align: center; color: #fff; font-weight: bold; padding: 5px; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%)}
+
+        .card-plantao .card-body{ padding: .8rem 1rem .8rem 1.25rem }
+        .card-plantao .card-body .title{margin-bottom: 2px}
+        .card-plantao .card-body hr{ margin-top: .5rem; margin-bottom: .5rem; }
+        .currentPlantao{box-shadow: 0 9px 23px -10px #000000;}
+
+        .currentPlantao .cart-left-box{background-color: #08c37e;}
     </style>
 
 </head>
@@ -79,111 +85,7 @@
             </div>
         </section>
 
-        <section role="main" class="ui-content container conteudoBody" data-role="home" >
-
-            <div class="row ">
-                <div class="col-6">
-                    <div class="box-lead card mb-2 ">
-                        <div class="row">
-                            <div class="col-12 col-md-12 section-box">
-                                <h5 class="title"><i class="far fa-calendar-alt icon-lead"></i> Plantão <br /> 11/02/2019  </h5>
-                                <p>Escalado das: <br /> 09:00 as 12:00</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-6">
-                    <div class="box-lead card mb-2">
-                        <div class="row">
-                            <div class="col-12 col-md-12 section-box">
-                                <h5 class="title"><i class="far fa-calendar-alt icon-lead"></i> Plantão <br /> 12/02/2019  </h5>
-                                <p>Escalado das: <br /> 12:00 as 15:00</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-6">
-                    <div class="box-lead card mb-2">
-                        <div class="row">
-                            <div class="col-12 col-md-12 section-box">
-                                <h5 class="title"><i class="far fa-calendar-alt icon-lead"></i> Plantão <br /> 15/02/2019  </h5>
-                                <p>Escalado das: <br /> 15:00 as 18:00</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-6">
-                    <div class="box-lead card mb-2">
-                        <div class="row">
-                            <div class="col-12 col-md-12 section-box">
-                                <h5 class="title"><i class="far fa-calendar-alt icon-lead"></i> Plantão <br /> 18/02/2019  </h5>
-                                <p>Escalado das: <br /> 09:00 as 18:00</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-
-
-                <div class="col-6">
-                    <div class="box-lead card mb-2">
-                        <div class="row">
-                            <div class="col-12 col-md-12 section-box">
-                                <h5 class="title"><i class="far fa-calendar-alt icon-lead"></i> Plantão <br /> 11/03/2019  </h5>
-                                <p>Escalado das: <br /> 09:00 as 12:00</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-6">
-                    <div class="box-lead card mb-2">
-                        <div class="row">
-                            <div class="col-12 col-md-12 section-box">
-                                <h5 class="title"><i class="far fa-calendar-alt icon-lead"></i> Plantão <br /> 12/03/2019  </h5>
-                                <p>Escalado das: <br /> 12:00 as 15:00</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-6">
-                    <div class="box-lead card mb-2">
-                        <div class="row">
-                            <div class="col-12 col-md-12 section-box">
-                                <h5 class="title"><i class="far fa-calendar-alt icon-lead"></i> Plantão <br /> 15/03/2019  </h5>
-                                <p>Escalado das: <br /> 15:00 as 18:00</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-6">
-                    <div class="box-lead card mb-2">
-                        <div class="row">
-                            <div class="col-12 col-md-12 section-box">
-                                <h5 class="title"><i class="far fa-calendar-alt icon-lead"></i> Plantão <br /> 18/03/2019  </h5>
-                                <p>Escalado das: <br /> 09:00 as 18:00</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-
-
-
-            </div>
-
-
-
-
-
-
-
-        </section>
+        <section id="litagemDePlantao" role="main" class="ui-content container conteudoBody" data-placeholder="Não há Plantões no momento" data-role="plantoes" ></section>
 
         <section class="footer" data-role="footer" ><h6>Desenvolvido por Inaweb Digital</h6></section><!-- /footer -->
     </div>
@@ -194,8 +96,7 @@
 
 <script src="./assets/js/jquery-1.11.2.js"></script>
 <script src="./assets/plugins/jquery.mobile-1.4.5/jquery.mobile-1.4.5.js"></script>
-<script type="text/javascript" src="./db/usuariosActions.js"></script>
-<script type="text/javascript" src="./db/meusdadosDB.js"></script>
+<script type="text/javascript" src="./db/plantoesDB.js"></script>
 
 <!-- Importação popper obrigatoria antes do bootstrap  -->
 <script src="./assets/js/popper.min.js" ></script>
@@ -209,7 +110,7 @@
 
 
 <script type="text/javascript">
-    this.MEUSDADOS_DB.initPage();
+    this.PLANTOES_DB.initPage();
 </script>
 
 </body>
