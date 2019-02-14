@@ -84,6 +84,8 @@ body *{text-shadow:none !important;}
 }
 
 
+.conteudoBody:empty:not([data-placeholder=""]):before{ content:attr(data-placeholder);  font-weight: bold;  font-size: 1.8em;  text-align: center; color: #bbbbbb;    display: block;    }
+
 ::-webkit-input-placeholder { color:#dedede; }
 :-moz-placeholder { color:#dedede;  opacity:1; }
 ::-moz-placeholder { color:#dedede;  opacity:1; }

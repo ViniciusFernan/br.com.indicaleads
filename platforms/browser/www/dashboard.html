@@ -68,7 +68,7 @@
             </div>
         </section>
 
-        <section role="main" class="ui-content container conteudoBody" data-role="home" >  </section>
+        <section role="main" class="ui-content container conteudoBody" data-placeholder="Não há avisos no momento" data-role="home" ></section>
 
         <section class="footer" data-role="footer" ><h6>Desenvolvido por Inaweb Digital</h6></section><!-- /footer -->
     </div>
@@ -116,8 +116,8 @@
 
     setTimeout(function(){
         var titulo = 'NOVO LEAD ';
-        var texto = 'Você recebeu um novo lead, corre lá para não perde-lo!';
-        app.avisos(titulo, texto, 'fa-id-card' );
+        var texto = '<a href="./meusleads.html" rel="external"  > Você recebeu um novo lead, corre lá para não perde-lo! </a>';
+        app.avisos(titulo, texto, 'fa-envelope' );
 
         this.NOTIFICATIONS_INDICA.constructor();
     }, 5000);
