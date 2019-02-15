@@ -38,7 +38,7 @@ var PLANTOES_DB = {
                         table+='<div class="card mb-3 card-plantao '+( PLANTOES_DB.checkDateCurrenteDate(plantao.dataPlantao) ? 'currentPlantao' : '' )+' " >';
                         table+='    <div class="row no-gutters">';
                         table+='        <div class="col-4 cart-left-box">';
-                        table+='            <div class="data-box">'+plantao.diaFormat+'<br/>'+PLANTOES_DB.formateMes(plantao.mesFormat)+'</div>';
+                        table+='            <div class="data-box"><span class="diaSize">'+plantao.diaFormat+'</span><br/>'+PLANTOES_DB.formateMes(plantao.mesFormat)+'</div>';
                         table+='        </div>';
                         table+='        <div class="col-8">';
                         table+='            <div class="card-body section-box">';
