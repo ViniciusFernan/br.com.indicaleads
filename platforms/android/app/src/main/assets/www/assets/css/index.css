@@ -99,6 +99,15 @@ body *{text-shadow:none !important;}
 .ellipsis{ overflow: hidden; width:100%; border:1px; white-space:nowrap; text-overflow: ellipsis; }
 
 
+/*AVISOS BOX*/
+#cardAvisos{position: relative}
+#cardAvisos .removeCard{position: absolute; top: 2px; right: 8px; font-size: 24px; color: #ccc; z-index: 15}
+#cardAvisos  .box-icon {background-color: #0b5a9e; position: relative}
+#cardAvisos  .box-icon .icon-item{color: #fff; vertical-align: middle; font-size: 60px; position: absolute; top: 50%; transform: translate(-50%, -50%)}
+/*AVISOS BOX*/
+
+
+
 @media screen and (min-width: 900px){
     body{display: none}
 }

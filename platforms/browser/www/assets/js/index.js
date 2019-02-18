@@ -66,11 +66,11 @@ var app = {
     avisos: function(title, text, icon){
        var html = '';
        var iconL = icon ? icon : 'fa-bullhorn';
-        html +='<div id="cardAvisos" class="card mb-3 shadow animated bounceInDown" style="position: relative; " >';
-        html +='    <i class="fas fa-times removeCard" style="position: absolute; top: 2px; right: 8px; font-size: 24px; color: #ccc; z-index: 20"></i>';
+        html +='<div id="cardAvisos" class="card mb-3 shadow animated bounceInDown">';
+        html +='    <i class="fas fa-times removeCard" ></i>';
         html +='    <div class="row no-gutters">';
-        html +='        <div class="col-4" style="background-color: #0b5a9e; position: relative">';
-        html +='            <i class="fas '+iconL+'" style="color: #fff; vertical-align: middle; font-size: 60px; position: absolute; top: 50%; transform: translate(-50%, -50%)"></i>';
+        html +='        <div class="col-4 box-icon " >';
+        html +='            <i class="fas '+iconL+' icon-item" ></i>';
         html +='        </div>';
         html +='        <div class="col-8">';
         html +='            <div class="card-body">';
