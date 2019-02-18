@@ -125,9 +125,7 @@ var MEUSLEADS_DB = {
                     footer+='<label class="btn btn-sm btn-danger status-l  " data-idLeadStatus="3" data-idLead-btn="'+lead.idLead+'" >Lead Inválido </label>';
                     footer+='<label class="btn btn-sm btn-info status-l  " data-idLeadStatus="4" data-idLead-btn="'+lead.idLead+'" >Sem Interesse </label>';
                     footer+='<label class="btn btn-sm btn-success status-l  " data-idLeadStatus="5" data-idLead-btn="'+lead.idLead+'" >Finalizado </label>';
-                    footer+='<label class="btn btn-sm btn-default status-l  " data-idLeadStatus="6" data-idLead-btn="'+lead.idLead+'" >Outros </label>';
-
-
+                    footer+='<label class="btn btn-sm btn-default btn-default-br status-l  " data-idLeadStatus="6" data-idLead-btn="'+lead.idLead+'" >Outros </label>';
 
                 }else{
                     body="<h4>OPS!</h4>";

@@ -79,6 +79,10 @@
         .status-l{padding: 3px 2px;  font-size: 11px !important;  margin: 0 5px 5px 0 !important;}
         .status-l i{display: none}
 
+        .yesStatus{color: #ffffff; background-color: #2ecc71; border-color: #2ecc71;}
+        .yesStatus:active, .yesStatus:hover, .yesStatus:focus{color: #ffffff; background-color: #2ecc71; border-color: #2ecc71;}
+        .noStatus{  background-color: #e4e4e4 !important;  border-color: #e4e4e4 !important;  color: #6f6f6f !important;  }
+
 
 
         @-webkit-keyframes bounceIn {
@@ -253,7 +257,14 @@
             setTimeout(function() {
                 $('.box-lead.flayCard').removeClass('flayCard bounceOut').addClass('cardClose');
             }, 800);
-        })
+        });
+
+        $('body').on('tap', '.status-l', function(){
+            $('.status-l').each(function(){
+                $(this).removeClass('yesStatus').addClass('noStatus');
+            });
+            $(this).addClass('yesStatus').removeClass('noStatus');
+        });
     });
 
 

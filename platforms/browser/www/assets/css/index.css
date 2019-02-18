@@ -108,6 +108,10 @@ body *{text-shadow:none !important;}
 
 
 
+.btn-default-br{border: 1px solid #c0c0c0}
+
+
+
 @media screen and (min-width: 900px){
     body{display: none}
 }
