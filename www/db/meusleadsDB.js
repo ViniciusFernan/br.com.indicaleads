@@ -80,7 +80,8 @@ var MEUSLEADS_DB = {
             success: function(resp){
                 var body='';
                 if(resp.type=='success'){
-                    var body='<div class="col-12 p-0" style="overflow-y: auto"><ul class="list-group">';
+                    body='<div class="col-12 p-0" style="overflow-y: auto">';
+                    body='<ul class="list-group" style="width: 100%">';
                     lead=resp.data;
 
                     var corTipo = (lead.idTipo == 3 ? "#d9534f" : (lead.idTipo == 2 ? "#f0ad4e" : "#5cb85c"));
@@ -110,11 +111,83 @@ var MEUSLEADS_DB = {
                     if (lead.qtdVidas)
                         body += '<li class="list-group-item d-flex linha-info-lead ">Quantidade de vidas: '+ lead.qtdVidas + '</li>';
 
+                    if (lead.detalhes)
+                        body += '<li class="list-group-item d-flex linha-info-lead "> <i class="fas fa-comments icon-lead"></i>'+ (lead.detalhes ? lead.detalhes.replace(/\n/g, "<br>") : "") + '</li>';
 
-                    body += '<li class="list-group-item d-flex linha-info-lead "> <i class="fas fa-comments icon-lead"></i>'+ (lead.detalhes ? lead.detalhes.replace(/\n/g, "<br>") : "") + '</li>';
+
+                    body+='</ul>';
 
 
-                    body+='</ul></div>';
+                    if(lead.duplicado){
+
+                        // LEAD REPETIDO
+                        body += '<div class="panel-group view-repetidos" id="accordion">';
+                        $.each(lead.duplicado, function (index, obj){
+
+                            body += '<div class="panel panel-default">';
+                            body += '<div class="panel-heading">';
+                            body += '<h6 class="panel-title"><a data-toggle="collapse" data-parent="#accordion" href="#collapse-'+(index)+'"><i style="font-weight: bold; color: #f0ad4e;"   class="fas fa-window-restore" data-original-title="Lead Duplicado" title="Lead Duplicado"></i> Repetido '+(obj.dataCadastro)+' </a></h6>';
+                            body += '</div>';
+                            body += '<div id="collapse-'+(index)+'" class="panel-collapse collapse">';
+                            body += '<div class="panel-body">';
+                            body += '<ul class="to_do view_lead" style="border: 1px solid #d6d6d6; -webkit-border-radius: 5px;-moz-border-radius: 5px;border-radius: 5px; ">';
+                            if (obj.track)
+                                body += "<li><strong>Track: </strong>" + obj.track + "</li>";
+                            if (obj.origem)
+                                body += "<li><strong>Origem: </strong>" + obj.origem + "</li>";
+
+                            body += "<li><strong>Data: </strong>" + obj.dataCadastro + "</li>";
+                            body += "<li><strong>Nome: </strong>" + obj.nome + "</li>";
+                            body += "<li><strong>Email: </strong>" + obj.email + "</li>";
+                            if (obj.dddTel && obj.tel)
+                                body += "<li><strong>Telefone: </strong>(" + obj.dddTel + ")" + obj.tel + "</li>";
+                            if (obj.dddCel && obj.Cel)
+                                body += "<li><strong>Telefone Alt.: </strong>(" + obj.dddCel + ")" + obj.Cel + "</li>";
+                            if (obj.qtdVidas)
+                                body += "<li><strong>Vidas: </strong>" + obj.qtdVidas + "</li>";
+                            if (obj.empresa)
+                                body += "<li><strong>Empresa: </strong>" + obj.empresa + "</li>";
+                            if (obj.cidade)
+                                body += "<li><strong>Cidade: </strong>" + obj.cidade + "</li>";
+                            body += "<li><strong>Detalhes: </strong>";
+                            if (obj.De_0_a_18_anos)
+                                body += "<p><strong>De 0 a 18 Anos: </strong>" + obj.De_0_a_18_anos + "</p>";
+                            if (obj.De_19_a_23_anos)
+                                body += "<p><strong>De 19 a 23 Anos: </strong>" + obj.De_19_a_23_anos + "</p>";
+                            if (obj.De_24_a_28_anos)
+                                body += "<p><strong>De 24 a 28 Anos: </strong>" + obj.De_24_a_28_anos + "</p>";
+                            if (obj.De_29_a_33_anos)
+                                body += "<p><strong>De 29 a 33 Anos: </strong>" + obj.De_29_a_33_anos + "</p>";
+                            if (obj.De_34_a_38_anos)
+                                body += "<p><strong>De 34 a 38 Anos: </strong>" + obj.De_34_a_38_anos + "</p>";
+                            if (obj.De_39_a_43_anos)
+                                body += "<p><strong>De 39 a 43 Anos: </strong>" + obj.De_39_a_43_anos + "</p>";
+                            if (obj.De_44_a_48_anos)
+                                body += "<p><strong>De 44 a 48 Anos: </strong>" + obj.De_44_a_48_anos + "</p>";
+                            if (obj.De_49_a_53_anos)
+                                body += "<p><strong>De 49 a 53 Anos: </strong>" + obj.De_49_a_53_anos + "</p>";
+                            if (obj.De_54_a_58_anos)
+                                body += "<p><strong>De 54 a 58 Anos: </strong>" + obj.De_54_a_58_anos + "</p>";
+                            if (obj.De_59_anos_ou_mais)
+                                body += "<p><strong>Acima de 59 Anos: </strong>" + obj.De_59_anos_ou_mais + "</p>";
+
+                            body += (obj.detalhes ? obj.detalhes.replace(/\n/g, "<br>") : "");
+                            body+= '</li>';
+
+                            if (obj.urlCadastro)
+                                body += "<li><strong>Origem: </strong>" + obj.urlCadastro + "</li>";
+                            body += '</ul>';
+                            body += '</div>';
+                            body += '</div>';
+                            body += '</div>';
+                        });
+                        body += '</div>';
+                        // END LEAD REPETIDO
+                    }
+
+
+
+                    body+='</div>';
 
 
 

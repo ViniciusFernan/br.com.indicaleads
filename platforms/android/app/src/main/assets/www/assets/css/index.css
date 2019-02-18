@@ -24,7 +24,7 @@ body *{text-shadow:none !important;}
 
 .footer{font-size: 12px}
 
-.loader{  position: absolute;  width: 35%; left:50%;  top: 50%;  transform: translate(-50%, -50%);  z-index: 1000}
+.loader{  position: fixed;  width: 35%; left:50%;  top: 50%;  transform: translate(-50%, -50%);  z-index: 1000}
 
 
 .avf-btn-default{text-decoration: none}
