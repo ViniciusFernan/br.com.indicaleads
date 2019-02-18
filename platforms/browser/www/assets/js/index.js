@@ -72,9 +72,7 @@ var app = {
         html +='<div id="cardAvisos" class="card mb-3 shadow animated bounceInDown">';
         html +='    <i class="fas fa-times removeCard" ></i>';
         html +='    <div class="row no-gutters">';
-        html +='        <div class="col-4 box-icon " >';
-        html +='            <i class="fas '+iconL+' icon-item" ></i>';
-        html +='        </div>';
+        html +='        <div class="col-4 box-icon" ><i class="fas '+iconL+' icon-item" ></i></div>';
         html +='        <div class="col-8">';
         html +='            <div class="card-body">';
         html +='                <h5 class="card-title">'+title+'</h5>';
