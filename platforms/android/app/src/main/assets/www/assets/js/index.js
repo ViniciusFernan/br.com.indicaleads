@@ -59,6 +59,9 @@ var app = {
         var imgPerfil = (window.localStorage.getItem('imgPerfil') ?  urlUploads +"/"+ usuario.idUsuario +"/perfil/"+ window.localStorage.getItem('imgPerfil') : './img/avatar.png');
         ((document.getElementById('imgemPerfilMeusDados')) ? document.getElementById('imgemPerfilMeusDados').src = imgPerfil : '' );
         ((document.getElementById('imgemPerfilMeusDadosMenu')) ? document.getElementById('imgemPerfilMeusDadosMenu').src = imgPerfil : '' );
+
+
+        document.addEventListener("backbutton", this.exitApp, false);
     },
 
 
