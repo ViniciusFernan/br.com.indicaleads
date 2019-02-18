@@ -39,7 +39,7 @@ var MEUSLEADS_DB = {
                     $.each(resp.data ,function(x, lead){
 
                         table +='<div class="box-lead card mb-2 cardClose '+((lead.dataVisualizado != null && lead.idLeadStatus == null) ? 'noFeedback' : '')+'" data-idLead="'+lead.idLead+'">';
-                            table +='<div class="row card-header">';
+                            table +='<div class="row card-header" style="min-height: 46px;">';
                                 table +='<div class="col-6 col-md-6 p-0 "><h5 class="title ellipsis" ><i class="far fa-envelope icon-lead"></i>'+ lead.nome +'</h5></div>';
                                 table +='<div class="col-3 col-md-3 p-0 border-left border-right "><small class="small bold">DDD: '+ lead.dddTel +' </small></div>';
                                 var tipo = ((lead.idTipo==3) ? 'EMP' : ((lead.idTipo==2 ) ? 'FAM' : 'IND') );
@@ -48,7 +48,7 @@ var MEUSLEADS_DB = {
                                 table +='<div class="col-1 col-md-1 p-0 border-left actionOpenLeadBox "><i class="fas fa-angle-double-down"></i></div>';
                             table +='</div>';
                             table +='<div class="row card-body" style="overflow-y: auto"></div>';
-                            table +='<div class="row card-footer" ></div>';
+                            table +='<div class="row card-footer" style="min-height: 78px;" ></div>';
                         table +='</div>';
                     });
                 }else{
