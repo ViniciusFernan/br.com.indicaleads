@@ -7,14 +7,17 @@ var MEUSLEADS_DB = {
             window.location="index.html";
         };
 
-        this.getListaLeadsMicroService(usuario.idUsuario, usuario.email, null);
-
-
+        if(app.isOnline()===true){
+            this.getListaLeadsMicroService(usuario.idUsuario, usuario.email, null);
+        }else{
+            navigator.notification.alert('Você não esta conectado à internet. \n Este recurso necessita de conexão com a internet. ', '','Desconectado', 'OK');
+        }
     },
 
 
     getListaLeadsMicroService: function(idUsuario, email, idUltimoLead){
-        if(app.isOnline()==true){
+        if(app.isOnline()===true){
+            alert(app.isOnline());
             var serial = window.localStorage.getItem('serial');
             $.ajax({
                 url: urlWebservices+'/Leadservice/getListaLeadFromUsuario',
@@ -68,7 +71,7 @@ var MEUSLEADS_DB = {
 
     getLeadsPorIdMicroService: function (idLead){
 
-        if(app.isOnline()==true){
+        if(app.isOnline()===true){
             var serial = window.localStorage.getItem('serial');
             var usuarioL = JSON.parse( window.localStorage.getItem('usuario'));
             $.ajax({

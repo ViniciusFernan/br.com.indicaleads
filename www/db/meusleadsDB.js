@@ -17,6 +17,7 @@ var MEUSLEADS_DB = {
 
     getListaLeadsMicroService: function(idUsuario, email, idUltimoLead){
         if(app.isOnline()===true){
+            alert(app.isOnline());
             var serial = window.localStorage.getItem('serial');
             $.ajax({
                 url: urlWebservices+'/Leadservice/getListaLeadFromUsuario',
