@@ -8,16 +8,18 @@ var MEUSLEADS_DB = {
         };
 
         alert(app.isOnline());
-        if(app.isOnline()==true){
-            this.getListaLeadsMicroService(usuario.idUsuario, usuario.email, null);
-        }else{
+        if(app.isOnline()==false){
             navigator.notification.alert('Você não esta conectado à internet. \n Este recurso necessita de conexão com a internet. ', '','Desconectado', 'OK');
+        }else{
+            this.getListaLeadsMicroService(usuario.idUsuario, usuario.email, null);
         }
     },
 
 
     getListaLeadsMicroService: function(idUsuario, email, idUltimoLead){
-        if(app.isOnline()==true){
+        if(app.isOnline()==false){
+            navigator.notification.alert('Você não esta conectado à internet. \n Este recurso necessita de conexão com a internet. ', '','Desconectado', 'OK');
+        }else{
             var serial = window.localStorage.getItem('serial');
             $.ajax({
                 url: urlWebservices+'/Leadservice/getListaLeadFromUsuario',
@@ -60,9 +62,6 @@ var MEUSLEADS_DB = {
 
                 }
             });
-
-        }else{
-            navigator.notification.alert('Você não esta conectado à internet. \n Este recurso necessita de conexão com a internet. ', '','Desconectado', 'OK');
         }
     },
 
@@ -71,7 +70,9 @@ var MEUSLEADS_DB = {
 
     getLeadsPorIdMicroService: function (idLead){
 
-        if(app.isOnline()==true){
+        if(app.isOnline()==false){
+            navigator.notification.alert('Você não esta conectado à internet. \n Este recurso necessita de conexão com a internet. ', '','Desconectado', 'OK');
+        }else{
             var serial = window.localStorage.getItem('serial');
             var usuarioL = JSON.parse( window.localStorage.getItem('usuario'));
             $.ajax({
@@ -226,9 +227,7 @@ var MEUSLEADS_DB = {
 
                 }
             });
-        }else{
-            navigator.notification.alert('Você não esta conectado à internet. \n Este recurso necessita de conexão com a internet. ', '','Desconectado', 'OK');
-        }
+       }
     },
 
 
