@@ -7,8 +7,7 @@ var MEUSLEADS_DB = {
             window.location="index.html";
         };
 
-        alert(app.isOnline());
-        if(app.isOnline()==false){
+        if(app.isOnline()===false){
             navigator.notification.alert('Você não esta conectado à internet. \n Este recurso necessita de conexão com a internet. ', '','Desconectado', 'OK');
         }else{
             this.getListaLeadsMicroService(usuario.idUsuario, usuario.email, null);
@@ -17,7 +16,7 @@ var MEUSLEADS_DB = {
 
 
     getListaLeadsMicroService: function(idUsuario, email, idUltimoLead){
-        if(app.isOnline()==false){
+        if(app.isOnline()===false){
             navigator.notification.alert('Você não esta conectado à internet. \n Este recurso necessita de conexão com a internet. ', '','Desconectado', 'OK');
         }else{
             var serial = window.localStorage.getItem('serial');
@@ -70,7 +69,7 @@ var MEUSLEADS_DB = {
 
     getLeadsPorIdMicroService: function (idLead){
 
-        if(app.isOnline()==false){
+        if(app.isOnline()===false){
             navigator.notification.alert('Você não esta conectado à internet. \n Este recurso necessita de conexão com a internet. ', '','Desconectado', 'OK');
         }else{
             var serial = window.localStorage.getItem('serial');
