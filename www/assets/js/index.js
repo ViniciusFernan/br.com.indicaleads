@@ -95,6 +95,7 @@ var app = {
 
     isOnline: function(){
         var rede =  navigator.connection.type;
+        alert(rede);
         return rede === "none" || rede === null ||  rede === "unknown" ? false : true;
     },
 
