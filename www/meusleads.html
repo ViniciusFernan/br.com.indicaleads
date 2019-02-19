@@ -246,15 +246,12 @@
 
 
 <script type="text/javascript">
-    if(app.isOnline()===false){
-        navigator.notification.alert('Você não esta conectado à internet. \n Este recurso necessita de conexão com a internet. ', '','Desconectado', 'OK');
-    }else{
-        this.MEUSLEADS_DB.initPage();
-    }
-
-
-
+    this.MEUSLEADS_DB.initPage();
     document.addEventListener('deviceready', function() {
+        if(app.isOnline()===false){
+            navigator.notification.alert('Você não esta conectado à internet. \n Este recurso necessita de conexão com a internet. ', '','Desconectado', 'OK');
+        }
+
         $('body').on('tap','.cardClose',  function(avf){
             avf.preventDefault();
             idLead = $(this).attr('data-idLead');
