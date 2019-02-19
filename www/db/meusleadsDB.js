@@ -7,9 +7,11 @@ var MEUSLEADS_DB = {
             window.location="index.html";
         };
 
-        this.getListaLeadsMicroService(usuario.idUsuario, usuario.email, null);
-
-
+        if(app.isOnline()==true){
+            this.getListaLeadsMicroService(usuario.idUsuario, usuario.email, null);
+        }else{
+            navigator.notification.alert('Você não esta conectado à internet. \n Este recurso necessita de conexão com a internet. ', '','Desconectado', 'OK');
+        }
     },
 
 
