@@ -99,9 +99,13 @@
 
     //window.setInterval(this.NOTIFICATIONS_INDICA.constructor, 10000);
 
-    var usuario = JSON.parse(window.localStorage.getItem('usuario'));
-    var texto = 'Essa é a nova ferramenta de vendas integrada ao portal de indicações. \n Agora você será avisado em tempo real das leads que você recebe. ';
-    app.avisos('Bem vindo '+usuario.nome, texto);
+    setTimeout(function(){
+        var usuario = JSON.parse(window.localStorage.getItem('usuario'));
+        var texto = 'Essa é a nova ferramenta de vendas integrada ao portal de indicações. \n Agora você será avisado em tempo real das leads que você recebe. ';
+        app.avisos('Bem vindo '+usuario.nome, texto);
+
+    }, 3500);
+
 
 
     /// função desnecessaria apenas para apresentação do app
