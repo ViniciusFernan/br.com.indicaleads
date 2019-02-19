@@ -1,5 +1,8 @@
 var MEUSLEADS_DB = {
     initPage: function () {
+        if(app.isOnline()===false){
+            navigator.notification.alert('Você não esta conectado à internet. \n Este recurso necessita de conexão com a internet. ', '','Desconectado', 'OK');
+        }
         var usuario = JSON.parse( window.localStorage.getItem('usuario'));
 
         if( usuario==null ){
@@ -7,19 +10,13 @@ var MEUSLEADS_DB = {
             window.location="index.html";
         };
 
-        alert(app.isOnline());
-        if(app.isOnline()==false){
-            navigator.notification.alert('Você não esta conectado à internet. \n Este recurso necessita de conexão com a internet. ', '','Desconectado', 'OK');
-        }else{
-            this.getListaLeadsMicroService(usuario.idUsuario, usuario.email, null);
-        }
+        this.getListaLeadsMicroService(usuario.idUsuario, usuario.email, null);
+
     },
 
 
     getListaLeadsMicroService: function(idUsuario, email, idUltimoLead){
-        if(app.isOnline()==false){
-            navigator.notification.alert('Você não esta conectado à internet. \n Este recurso necessita de conexão com a internet. ', '','Desconectado', 'OK');
-        }else{
+        if(app.isOnline()==true){
             var serial = window.localStorage.getItem('serial');
             $.ajax({
                 url: urlWebservices+'/Leadservice/getListaLeadFromUsuario',
@@ -62,6 +59,9 @@ var MEUSLEADS_DB = {
 
                 }
             });
+
+        }else{
+            navigator.notification.alert('Você não esta conectado à internet. \n Este recurso necessita de conexão com a internet. ', '','Desconectado', 'OK');
         }
     },
 
@@ -70,9 +70,7 @@ var MEUSLEADS_DB = {
 
     getLeadsPorIdMicroService: function (idLead){
 
-        if(app.isOnline()==false){
-            navigator.notification.alert('Você não esta conectado à internet. \n Este recurso necessita de conexão com a internet. ', '','Desconectado', 'OK');
-        }else{
+        if(app.isOnline()==true){
             var serial = window.localStorage.getItem('serial');
             var usuarioL = JSON.parse( window.localStorage.getItem('usuario'));
             $.ajax({
@@ -227,7 +225,9 @@ var MEUSLEADS_DB = {
 
                 }
             });
-       }
+        }else{
+            navigator.notification.alert('Você não esta conectado à internet. \n Este recurso necessita de conexão com a internet. ', '','Desconectado', 'OK');
+        }
     },
 
 

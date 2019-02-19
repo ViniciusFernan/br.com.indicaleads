@@ -1,10 +1,8 @@
 var MEUSLEADS_DB = {
     initPage: function () {
-
         if(app.isOnline()===false){
             navigator.notification.alert('Você não esta conectado à internet. \n Este recurso necessita de conexão com a internet. ', '','Desconectado', 'OK');
         }
-
         var usuario = JSON.parse( window.localStorage.getItem('usuario'));
 
         if( usuario==null ){
@@ -12,7 +10,7 @@ var MEUSLEADS_DB = {
             window.location="index.html";
         };
 
-        navigator.notification.alert('Você não esta conectado à internet. \n Este recurso necessita de conexão com a internet. ', '','Desconectado', 'OK');
+        this.getListaLeadsMicroService(usuario.idUsuario, usuario.email, null);
 
     },
 
