@@ -19,8 +19,8 @@
       <file leaf-file-name="meusleads.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/www/meusleads.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
-              <caret line="252" column="0" lean-forward="false" selection-start-line="252" selection-start-column="0" selection-end-line="252" selection-end-column="0" />
+            <state relative-caret-position="127">
+              <caret line="251" column="5" lean-forward="true" selection-start-line="251" selection-start-column="5" selection-end-line="251" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -324,14 +324,7 @@
       <workItem from="1549907306393" duration="46053000" />
       <workItem from="1550142176871" duration="28462000" />
       <workItem from="1550494143236" duration="5446000" />
-      <workItem from="1550500179357" duration="37280000" />
-    </task>
-    <task id="LOCAL-00119" summary="teste">
-      <created>1550155408657</created>
-      <option name="number" value="00119" />
-      <option name="presentableId" value="LOCAL-00119" />
-      <option name="project" value="LOCAL" />
-      <updated>1550155408657</updated>
+      <workItem from="1550500179357" duration="37765000" />
     </task>
     <task id="LOCAL-00120" summary="teste">
       <created>1550172071546</created>
@@ -669,11 +662,18 @@
       <option name="project" value="LOCAL" />
       <updated>1550601814279</updated>
     </task>
-    <option name="localTasksCounter" value="168" />
+    <task id="LOCAL-00168" summary="teste">
+      <created>1550602172466</created>
+      <option name="number" value="00168" />
+      <option name="presentableId" value="LOCAL-00168" />
+      <option name="project" value="LOCAL" />
+      <updated>1550602172466</updated>
+    </task>
+    <option name="localTasksCounter" value="169" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="427118000" />
+    <option name="totallyTimeSpent" value="427603000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1081,14 +1081,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/assets/js/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="354">
-          <caret line="96" column="46" lean-forward="true" selection-start-line="96" selection-start-column="46" selection-end-line="96" selection-end-column="46" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/www/db/meusleadsDB.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
@@ -1106,10 +1098,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/www/assets/js/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="354">
+          <caret line="96" column="46" lean-forward="true" selection-start-line="96" selection-start-column="46" selection-end-line="96" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/www/meusleads.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="252" column="0" lean-forward="false" selection-start-line="252" selection-start-column="0" selection-end-line="252" selection-end-column="0" />
+        <state relative-caret-position="127">
+          <caret line="251" column="5" lean-forward="true" selection-start-line="251" selection-start-column="5" selection-end-line="251" selection-end-column="5" />
           <folding />
         </state>
       </provider>
