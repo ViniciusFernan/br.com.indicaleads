@@ -7,7 +7,7 @@ var MEUSLEADS_DB = {
             window.location="index.html";
         };
 
-        if(app.isOnline()===true){
+        if(app.isOnline()){
             this.getListaLeadsMicroService(usuario.idUsuario, usuario.email, null);
         }else{
             navigator.notification.alert('Você não esta conectado à internet. \n Este recurso necessita de conexão com a internet. ', '','Desconectado', 'OK');

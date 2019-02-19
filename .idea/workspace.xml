@@ -3,12 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="2daa2abc-aafd-4db8-8d1d-40163fe820bf" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/db/meusleadsDB.js" afterPath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/db/meusleadsDB.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/meusleads.html" afterPath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/meusleads.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/browser/www/db/meusleadsDB.js" afterPath="$PROJECT_DIR$/platforms/browser/www/db/meusleadsDB.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/browser/www/meusleads.html" afterPath="$PROJECT_DIR$/platforms/browser/www/meusleads.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/db/meusleadsDB.js" afterPath="$PROJECT_DIR$/www/db/meusleadsDB.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/meusleads.html" afterPath="$PROJECT_DIR$/www/meusleads.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -32,17 +27,17 @@
       <file leaf-file-name="meusleadsDB.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/www/db/meusleadsDB.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="19" column="34" lean-forward="false" selection-start-line="19" selection-start-column="34" selection-end-line="19" selection-end-column="34" />
+            <state relative-caret-position="102">
+              <caret line="9" column="25" lean-forward="false" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="25" />
               <folding>
-                <marker date="1550598036695" expanded="true" signature="1705:1722" ph="..." />
-                <marker date="1550598036695" expanded="true" signature="2752:2768" ph="..." />
-                <marker date="1550598036695" expanded="true" signature="2856:2873" ph="..." />
-                <marker date="1550598036695" expanded="true" signature="4446:4462" ph="..." />
-                <marker date="1550598036695" expanded="true" signature="4527:4538" ph="..." />
-                <marker date="1550598036695" expanded="true" signature="4949:4956" ph="..." />
-                <marker date="1550598036695" expanded="true" signature="7526:7560" ph="..." />
-                <marker date="1550598036695" expanded="true" signature="8004:8102" ph="..." />
+                <marker date="1550598380686" expanded="true" signature="1698:1715" ph="..." />
+                <marker date="1550598380686" expanded="true" signature="2745:2761" ph="..." />
+                <marker date="1550598380686" expanded="true" signature="2849:2866" ph="..." />
+                <marker date="1550598380686" expanded="true" signature="4439:4455" ph="..." />
+                <marker date="1550598380686" expanded="true" signature="4520:4531" ph="..." />
+                <marker date="1550598380686" expanded="true" signature="4942:4949" ph="..." />
+                <marker date="1550598380686" expanded="true" signature="7519:7553" ph="..." />
+                <marker date="1550598380686" expanded="true" signature="7997:8095" ph="..." />
               </folding>
             </state>
           </provider>
@@ -327,14 +322,7 @@
       <workItem from="1549907306393" duration="46053000" />
       <workItem from="1550142176871" duration="28462000" />
       <workItem from="1550494143236" duration="5446000" />
-      <workItem from="1550500179357" duration="33163000" />
-    </task>
-    <task id="LOCAL-00107" summary="cmmt3">
-      <created>1549395706542</created>
-      <option name="number" value="00107" />
-      <option name="presentableId" value="LOCAL-00107" />
-      <option name="project" value="LOCAL" />
-      <updated>1549395706542</updated>
+      <workItem from="1550500179357" duration="33508000" />
     </task>
     <task id="LOCAL-00108" summary="cmmt3">
       <created>1549395735785</created>
@@ -672,11 +660,18 @@
       <option name="project" value="LOCAL" />
       <updated>1550597685391</updated>
     </task>
-    <option name="localTasksCounter" value="156" />
+    <task id="LOCAL-00156" summary="teste">
+      <created>1550598049367</created>
+      <option name="number" value="00156" />
+      <option name="presentableId" value="LOCAL-00156" />
+      <option name="project" value="LOCAL" />
+      <updated>1550598049367</updated>
+    </task>
+    <option name="localTasksCounter" value="157" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="423001000" />
+    <option name="totallyTimeSpent" value="423346000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1102,17 +1097,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/www/db/meusleadsDB.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="19" column="34" lean-forward="false" selection-start-line="19" selection-start-column="34" selection-end-line="19" selection-end-column="34" />
+        <state relative-caret-position="102">
+          <caret line="9" column="25" lean-forward="false" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="25" />
           <folding>
-            <marker date="1550598036695" expanded="true" signature="1705:1722" ph="..." />
-            <marker date="1550598036695" expanded="true" signature="2752:2768" ph="..." />
-            <marker date="1550598036695" expanded="true" signature="2856:2873" ph="..." />
-            <marker date="1550598036695" expanded="true" signature="4446:4462" ph="..." />
-            <marker date="1550598036695" expanded="true" signature="4527:4538" ph="..." />
-            <marker date="1550598036695" expanded="true" signature="4949:4956" ph="..." />
-            <marker date="1550598036695" expanded="true" signature="7526:7560" ph="..." />
-            <marker date="1550598036695" expanded="true" signature="8004:8102" ph="..." />
+            <marker date="1550598380686" expanded="true" signature="1698:1715" ph="..." />
+            <marker date="1550598380686" expanded="true" signature="2745:2761" ph="..." />
+            <marker date="1550598380686" expanded="true" signature="2849:2866" ph="..." />
+            <marker date="1550598380686" expanded="true" signature="4439:4455" ph="..." />
+            <marker date="1550598380686" expanded="true" signature="4520:4531" ph="..." />
+            <marker date="1550598380686" expanded="true" signature="4942:4949" ph="..." />
+            <marker date="1550598380686" expanded="true" signature="7519:7553" ph="..." />
+            <marker date="1550598380686" expanded="true" signature="7997:8095" ph="..." />
           </folding>
         </state>
       </provider>
