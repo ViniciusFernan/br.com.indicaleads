@@ -162,11 +162,11 @@
 
 
 
-*::-webkit-input-placeholder { color:#fff !important; }
-*::-moz-placeholder { color:#fff !important; }
-*:-ms-input-placeholder { color:#fff !important; }
-*:-moz-placeholder { color:#fff !important; }
-*::placeholder{ color: #fff !important; }
+*::-webkit-input-placeholder { color: #909090 !important; }
+*::-moz-placeholder { color:#909090 !important; }
+*:-ms-input-placeholder { color:#909090 !important; }
+*:-moz-placeholder { color:#909090 !important; }
+*::placeholder{ color: #909090 !important; }
 
 input:active::-webkit-input-placeholder, input:focus::-webkit-input-placeholder { color:#000 !important; }
 input:active::-moz-placeholder, input:focus::-moz-placeholder { color:#000 !important; }
