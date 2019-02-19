@@ -8,6 +8,7 @@ var MEUSLEADS_DB = {
         };
 
         if(app.isOnline()){
+            alert(app.isOnline());
             this.getListaLeadsMicroService(usuario.idUsuario, usuario.email, null);
         }else{
             navigator.notification.alert('Você não esta conectado à internet. \n Este recurso necessita de conexão com a internet. ', '','Desconectado', 'OK');
@@ -17,7 +18,6 @@ var MEUSLEADS_DB = {
 
     getListaLeadsMicroService: function(idUsuario, email, idUltimoLead){
         if(app.isOnline()===true){
-            alert(app.isOnline());
             var serial = window.localStorage.getItem('serial');
             $.ajax({
                 url: urlWebservices+'/Leadservice/getListaLeadFromUsuario',
