@@ -12,33 +12,12 @@ var USUARIOS_ACTIONS = {
 
     getUsuarioMicroService: function (email, senha){
         var serial = window.localStorage.getItem('serial');
-        return $.ajax({
-            type: 'POST',
-            dataType: 'json',
-            url: urlWebservices+'/Usuariosservice/getUsuarioFromEmailAndPassword',
-            data:{ 'email': email, 'senha': senha, 'registroDeDispositivo': serial },
-            beforeSend: function(){ },
-            complete: function(){ },
-            success: function(x){
-                return x;
-            },
-            error: function (error) {
-                return false;
-            }
-        });
-    },
-
-
-
-    atualizarUsuarioMicroService: function(Data){
-        if(!Data){
-            console.log("ERROR MEUSDADOS: Atualização inapropriada do usuario");
-        }else{
+        if(app.isOnline()==true){
             return $.ajax({
                 type: 'POST',
                 dataType: 'json',
-                url: urlWebservices+'/Usuariosservice/usuarioUpdate',
-                data:Data,
+                url: urlWebservices+'/Usuariosservice/getUsuarioFromEmailAndPassword',
+                data:{ 'email': email, 'senha': senha, 'registroDeDispositivo': serial },
                 beforeSend: function(){ },
                 complete: function(){ },
                 success: function(x){
@@ -49,6 +28,35 @@ var USUARIOS_ACTIONS = {
                 }
             });
 
+        }else{
+            navigator.notification.alert('Você não esta conectado à internet. \n Este recurso necessita de conexão com a internet. ', '','Desconectado', 'OK');
+        }
+    },
+
+
+
+    atualizarUsuarioMicroService: function(Data){
+        if(!Data){
+            console.log("ERROR MEUSDADOS: Atualização inapropriada do usuario");
+        }else{
+            if(app.isOnline()==true){
+                return $.ajax({
+                    type: 'POST',
+                    dataType: 'json',
+                    url: urlWebservices+'/Usuariosservice/usuarioUpdate',
+                    data:Data,
+                    beforeSend: function(){ },
+                    complete: function(){ },
+                    success: function(x){
+                        return x;
+                    },
+                    error: function (error) {
+                        return false;
+                    }
+                });
+            }else{
+                navigator.notification.alert('Você não esta conectado à internet. \n Este recurso necessita de conexão com a internet. ', '','Desconectado', 'OK');
+            }
         }
     },
 
