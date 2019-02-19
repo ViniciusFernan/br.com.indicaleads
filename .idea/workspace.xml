@@ -1,9 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2daa2abc-aafd-4db8-8d1d-40163fe820bf" name="Default" comment="">
+    <list default="true" id="2daa2abc-aafd-4db8-8d1d-40163fe820bf" name="Default" comment="teste">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config.xml" afterPath="$PROJECT_DIR$/config.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/db/meusleadsDB.js" afterPath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/db/meusleadsDB.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/meusleads.html" afterPath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/meusleads.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/app/src/main/res/xml/config.xml" afterPath="$PROJECT_DIR$/platforms/android/app/src/main/res/xml/config.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/browser/config.xml" afterPath="$PROJECT_DIR$/platforms/browser/config.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/browser/www/config.xml" afterPath="$PROJECT_DIR$/platforms/browser/www/config.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/browser/www/db/meusleadsDB.js" afterPath="$PROJECT_DIR$/platforms/browser/www/db/meusleadsDB.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/browser/www/meusleads.html" afterPath="$PROJECT_DIR$/platforms/browser/www/meusleads.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/db/meusleadsDB.js" afterPath="$PROJECT_DIR$/www/db/meusleadsDB.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/db/notificatioIndicaActions.js" afterPath="$PROJECT_DIR$/www/db/notificatioIndicaActions.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/db/plantoesDB.js" afterPath="$PROJECT_DIR$/www/db/plantoesDB.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/meusleads.html" afterPath="$PROJECT_DIR$/www/meusleads.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -14,33 +24,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="dashboard.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/www/dashboard.html">
+      <file leaf-file-name="meusleads.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/www/meusleads.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="501">
-              <caret line="106" column="13" lean-forward="true" selection-start-line="101" selection-start-column="4" selection-end-line="106" selection-end-column="13" />
-              <folding>
-                <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/www/assets/css/index.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="536">
-              <caret line="77" column="93" lean-forward="false" selection-start-line="77" selection-start-column="93" selection-end-line="77" selection-end-column="93" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="meusdados.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/www/meusdados.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1411">
-              <caret line="68" column="56" lean-forward="false" selection-start-line="68" selection-start-column="26" selection-end-line="68" selection-end-column="56" />
+            <state relative-caret-position="739">
+              <caret line="281" column="97" lean-forward="true" selection-start-line="281" selection-start-column="97" selection-end-line="281" selection-end-column="97" />
               <folding />
             </state>
           </provider>
@@ -49,77 +37,49 @@
       <file leaf-file-name="meusleadsDB.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/www/db/meusleadsDB.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="777">
-              <caret line="50" column="87" lean-forward="false" selection-start-line="50" selection-start-column="87" selection-end-line="50" selection-end-column="87" />
+            <state relative-caret-position="151">
+              <caret line="62" column="9" lean-forward="true" selection-start-line="60" selection-start-column="7" selection-end-line="62" selection-end-column="9" />
               <folding>
-                <marker date="1550522471928" expanded="true" signature="1531:1548" ph="..." />
-                <marker date="1550522471928" expanded="true" signature="2550:2566" ph="..." />
-                <marker date="1550522471928" expanded="true" signature="2650:2667" ph="..." />
-                <marker date="1550522471928" expanded="true" signature="3754:3770" ph="..." />
-                <marker date="1550522471928" expanded="true" signature="3831:3842" ph="..." />
-                <marker date="1550522471928" expanded="true" signature="4241:4248" ph="..." />
-                <marker date="1550522471928" expanded="true" signature="6718:6752" ph="..." />
-                <marker date="1550522471928" expanded="true" signature="7180:7278" ph="..." />
+                <marker date="1550593804842" expanded="true" signature="1447:1464" ph="..." />
+                <marker date="1550593804842" expanded="true" signature="2494:2510" ph="..." />
+                <marker date="1550593804842" expanded="true" signature="2598:2615" ph="..." />
+                <marker date="1550593804842" expanded="true" signature="4187:4203" ph="..." />
+                <marker date="1550593804842" expanded="true" signature="4268:4279" ph="..." />
+                <marker date="1550593804842" expanded="true" signature="4690:4697" ph="..." />
+                <marker date="1550593804842" expanded="true" signature="7267:7301" ph="..." />
+                <marker date="1550593804842" expanded="true" signature="7745:7843" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="meusleads.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/www/meusleads.html">
+      <file leaf-file-name="plantoesDB.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/www/db/plantoesDB.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="416">
-              <caret line="228" column="48" lean-forward="false" selection-start-line="228" selection-start-column="48" selection-end-line="228" selection-end-column="48" />
+            <state relative-caret-position="153">
+              <caret line="9" column="7" lean-forward="false" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="plantoes.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/www/plantoes.html">
+      <file leaf-file-name="meusdadosDB.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/www/db/meusdadosDB.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="311">
-              <caret line="69" column="56" lean-forward="false" selection-start-line="69" selection-start-column="26" selection-end-line="69" selection-end-column="56" />
-              <folding />
+            <state relative-caret-position="510">
+              <caret line="30" column="44" lean-forward="false" selection-start-line="30" selection-start-column="44" selection-end-line="30" selection-end-column="44" />
+              <folding>
+                <marker date="1550075166449" expanded="true" signature="520:534" ph="..." />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/www/index.html">
+      <file leaf-file-name="notificatioIndicaActions.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/www/db/notificatioIndicaActions.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="586">
-              <caret line="59" column="0" lean-forward="false" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="menu.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/www/includes/menu.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" column="48" lean-forward="false" selection-start-line="12" selection-start-column="40" selection-end-line="12" selection-end-column="48" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="config.xml" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/config.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="366">
-              <caret line="86" column="62" lean-forward="true" selection-start-line="86" selection-start-column="62" selection-end-line="86" selection-end-column="62" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/www/assets/js/index.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="573">
-              <caret line="65" column="0" lean-forward="false" selection-start-line="65" selection-start-column="0" selection-end-line="65" selection-end-column="0" />
+            <state relative-caret-position="612">
+              <caret line="36" column="0" lean-forward="true" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -149,6 +109,7 @@
       <find>pull-to-refresh-material</find>
       <find>refresh</find>
       <find>loader</find>
+      <find>placeholder</find>
       <find>splash</find>
     </findStrings>
   </component>
@@ -161,7 +122,6 @@
       <list>
         <option value="$PROJECT_DIR$/webservice/controllers/Notificationservice.controller.php" />
         <option value="$PROJECT_DIR$/plugins/browser.json" />
-        <option value="$PROJECT_DIR$/www/db/notificatioIndicaActions.js" />
         <option value="$PROJECT_DIR$/config-bacup.xml" />
         <option value="$PROJECT_DIR$/www/db/loginDB.js" />
         <option value="$PROJECT_DIR$/www/assets/css/navbar.css" />
@@ -178,18 +138,19 @@
         <option value="$PROJECT_DIR$/www/db/meusdadosDB.js" />
         <option value="$PROJECT_DIR$/www/assets/css/animate.css" />
         <option value="$PROJECT_DIR$/www/includes/menu.html" />
-        <option value="$PROJECT_DIR$/www/db/plantoesDB.js" />
-        <option value="$PROJECT_DIR$/www/db/meusleadsDB.js" />
         <option value="$PROJECT_DIR$/www/assets/css/login.css" />
         <option value="$PROJECT_DIR$/www/index.html" />
         <option value="$PROJECT_DIR$/www/meusdados.html" />
-        <option value="$PROJECT_DIR$/www/meusleads.html" />
         <option value="$PROJECT_DIR$/www/plantoes.html" />
         <option value="$PROJECT_DIR$/www/dashboard.html" />
         <option value="$PROJECT_DIR$/www/assets/js/actionsApp.js" />
         <option value="$PROJECT_DIR$/www/assets/js/index.js" />
         <option value="$PROJECT_DIR$/www/assets/css/index.css" />
         <option value="$PROJECT_DIR$/config.xml" />
+        <option value="$PROJECT_DIR$/www/meusleads.html" />
+        <option value="$PROJECT_DIR$/www/db/notificatioIndicaActions.js" />
+        <option value="$PROJECT_DIR$/www/db/meusleadsDB.js" />
+        <option value="$PROJECT_DIR$/www/db/plantoesDB.js" />
       </list>
     </option>
   </component>
@@ -254,27 +215,7 @@
               <item name="br.com.indicaleads" type="b2602c69:ProjectViewProjectNode" />
               <item name="br.com.indicaleads" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="www" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="assets" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="br.com.indicaleads" type="b2602c69:ProjectViewProjectNode" />
-              <item name="br.com.indicaleads" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="www" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="assets" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="css" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="br.com.indicaleads" type="b2602c69:ProjectViewProjectNode" />
-              <item name="br.com.indicaleads" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="www" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="assets" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="js" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="br.com.indicaleads" type="b2602c69:ProjectViewProjectNode" />
-              <item name="br.com.indicaleads" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="www" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="includes" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="db" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
           </expand>
           <select />
@@ -288,7 +229,7 @@
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="WebServerToolWindowFactoryState" value="true" />
     <property name="nodejs_interpreter_path" value="C:/Program Files/nodejs/node" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Vinicius/AVFAppBase" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../backend.com.br" />
     <property name="node.js.path.for.package.jscs" value="$PROJECT_DIR$/www/db/meusdadosDB.js" />
     <property name="node.js.detected.package.jscs" value="true" />
     <property name="node.js.selected.package.jscs" value="" />
@@ -371,35 +312,7 @@
       <workItem from="1549907306393" duration="46053000" />
       <workItem from="1550142176871" duration="28462000" />
       <workItem from="1550494143236" duration="5446000" />
-      <workItem from="1550500179357" duration="24455000" />
-    </task>
-    <task id="LOCAL-00092" summary="cmmt3">
-      <created>1549046113590</created>
-      <option name="number" value="00092" />
-      <option name="presentableId" value="LOCAL-00092" />
-      <option name="project" value="LOCAL" />
-      <updated>1549046113590</updated>
-    </task>
-    <task id="LOCAL-00093" summary="cmmt3">
-      <created>1549046833227</created>
-      <option name="number" value="00093" />
-      <option name="presentableId" value="LOCAL-00093" />
-      <option name="project" value="LOCAL" />
-      <updated>1549046833227</updated>
-    </task>
-    <task id="LOCAL-00094" summary="cmmt3">
-      <created>1549047094204</created>
-      <option name="number" value="00094" />
-      <option name="presentableId" value="LOCAL-00094" />
-      <option name="project" value="LOCAL" />
-      <updated>1549047094204</updated>
-    </task>
-    <task id="LOCAL-00095" summary="cmmt3">
-      <created>1549286635905</created>
-      <option name="number" value="00095" />
-      <option name="presentableId" value="LOCAL-00095" />
-      <option name="project" value="LOCAL" />
-      <updated>1549286635905</updated>
+      <workItem from="1550500179357" duration="29484000" />
     </task>
     <task id="LOCAL-00096" summary="cmmt3">
       <created>1549287370197</created>
@@ -716,11 +629,39 @@
       <option name="project" value="LOCAL" />
       <updated>1550584695143</updated>
     </task>
-    <option name="localTasksCounter" value="141" />
+    <task id="LOCAL-00141" summary="teste">
+      <created>1550585031832</created>
+      <option name="number" value="00141" />
+      <option name="presentableId" value="LOCAL-00141" />
+      <option name="project" value="LOCAL" />
+      <updated>1550585031832</updated>
+    </task>
+    <task id="LOCAL-00142" summary="teste">
+      <created>1550585099152</created>
+      <option name="number" value="00142" />
+      <option name="presentableId" value="LOCAL-00142" />
+      <option name="project" value="LOCAL" />
+      <updated>1550585099152</updated>
+    </task>
+    <task id="LOCAL-00143" summary="teste">
+      <created>1550585402974</created>
+      <option name="number" value="00143" />
+      <option name="presentableId" value="LOCAL-00143" />
+      <option name="project" value="LOCAL" />
+      <updated>1550585402974</updated>
+    </task>
+    <task id="LOCAL-00144" summary="teste">
+      <created>1550586542570</created>
+      <option name="number" value="00144" />
+      <option name="presentableId" value="LOCAL-00144" />
+      <option name="project" value="LOCAL" />
+      <updated>1550586542570</updated>
+    </task>
+    <option name="localTasksCounter" value="145" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="414293000" />
+    <option name="totallyTimeSpent" value="419322000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -735,7 +676,7 @@
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18603411" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16684435" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16684435" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934782" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -1019,13 +960,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/db/meusdadosDB.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="30" column="44" lean-forward="false" selection-start-line="30" selection-start-column="44" selection-end-line="30" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/www/db/dashboardDB.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1034,25 +968,52 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/db/plantoesDB.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="35" column="59" lean-forward="false" selection-start-line="35" selection-start-column="20" selection-end-line="35" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/db/notificatioIndicaActions.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/www/assets/css/login.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="663">
           <caret line="168" column="30" lean-forward="false" selection-start-line="168" selection-start-column="30" selection-end-line="168" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/assets/js/actionsApp.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="7" lean-forward="true" selection-start-line="6" selection-start-column="7" selection-end-line="6" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/dashboard.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="756">
+          <caret line="121" column="7" lean-forward="true" selection-start-line="121" selection-start-column="7" selection-end-line="121" selection-end-column="7" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/assets/css/index.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="468">
+          <caret line="97" column="0" lean-forward="true" selection-start-line="97" selection-start-column="0" selection-end-line="97" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/meusdados.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1411">
+          <caret line="68" column="56" lean-forward="false" selection-start-line="68" selection-start-column="26" selection-end-line="68" selection-end-column="56" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/plantoes.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="311">
+          <caret line="69" column="56" lean-forward="false" selection-start-line="69" selection-start-column="26" selection-end-line="69" selection-end-column="56" />
           <folding />
         </state>
       </provider>
@@ -1073,62 +1034,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/plantoes.html">
+    <entry file="file://$PROJECT_DIR$/config.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="311">
-          <caret line="69" column="56" lean-forward="false" selection-start-line="69" selection-start-column="26" selection-end-line="69" selection-end-column="56" />
+        <state relative-caret-position="282">
+          <caret line="88" column="25" lean-forward="true" selection-start-line="88" selection-start-column="25" selection-end-line="88" selection-end-column="25" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/db/meusleadsDB.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="777">
-          <caret line="50" column="87" lean-forward="false" selection-start-line="50" selection-start-column="87" selection-end-line="50" selection-end-column="87" />
-          <folding>
-            <marker date="1550522471928" expanded="true" signature="1531:1548" ph="..." />
-            <marker date="1550522471928" expanded="true" signature="2550:2566" ph="..." />
-            <marker date="1550522471928" expanded="true" signature="2650:2667" ph="..." />
-            <marker date="1550522471928" expanded="true" signature="3754:3770" ph="..." />
-            <marker date="1550522471928" expanded="true" signature="3831:3842" ph="..." />
-            <marker date="1550522471928" expanded="true" signature="4241:4248" ph="..." />
-            <marker date="1550522471928" expanded="true" signature="6718:6752" ph="..." />
-            <marker date="1550522471928" expanded="true" signature="7180:7278" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/meusleads.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="416">
-          <caret line="228" column="48" lean-forward="false" selection-start-line="228" selection-start-column="48" selection-end-line="228" selection-end-column="48" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/assets/js/actionsApp.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="7" lean-forward="true" selection-start-line="6" selection-start-column="7" selection-end-line="6" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/meusdados.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1411">
-          <caret line="68" column="56" lean-forward="false" selection-start-line="68" selection-start-column="26" selection-end-line="68" selection-end-column="56" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/dashboard.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="501">
-          <caret line="106" column="13" lean-forward="true" selection-start-line="101" selection-start-column="4" selection-end-line="106" selection-end-column="13" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1140,18 +1050,53 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/assets/css/index.css">
+    <entry file="file://$PROJECT_DIR$/www/db/meusdadosDB.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="536">
-          <caret line="77" column="93" lean-forward="false" selection-start-line="77" selection-start-column="93" selection-end-line="77" selection-end-column="93" />
+        <state relative-caret-position="510">
+          <caret line="30" column="44" lean-forward="false" selection-start-line="30" selection-start-column="44" selection-end-line="30" selection-end-column="44" />
+          <folding>
+            <marker date="1550075166449" expanded="true" signature="520:534" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/meusleads.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="739">
+          <caret line="281" column="97" lean-forward="true" selection-start-line="281" selection-start-column="97" selection-end-line="281" selection-end-column="97" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config.xml">
+    <entry file="file://$PROJECT_DIR$/www/db/notificatioIndicaActions.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="366">
-          <caret line="86" column="62" lean-forward="true" selection-start-line="86" selection-start-column="62" selection-end-line="86" selection-end-column="62" />
+        <state relative-caret-position="612">
+          <caret line="36" column="0" lean-forward="true" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/db/meusleadsDB.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="151">
+          <caret line="62" column="9" lean-forward="true" selection-start-line="60" selection-start-column="7" selection-end-line="62" selection-end-column="9" />
+          <folding>
+            <marker date="1550593804842" expanded="true" signature="1447:1464" ph="..." />
+            <marker date="1550593804842" expanded="true" signature="2494:2510" ph="..." />
+            <marker date="1550593804842" expanded="true" signature="2598:2615" ph="..." />
+            <marker date="1550593804842" expanded="true" signature="4187:4203" ph="..." />
+            <marker date="1550593804842" expanded="true" signature="4268:4279" ph="..." />
+            <marker date="1550593804842" expanded="true" signature="4690:4697" ph="..." />
+            <marker date="1550593804842" expanded="true" signature="7267:7301" ph="..." />
+            <marker date="1550593804842" expanded="true" signature="7745:7843" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/db/plantoesDB.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="7" lean-forward="false" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
           <folding />
         </state>
       </provider>

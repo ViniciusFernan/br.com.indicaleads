@@ -273,6 +273,14 @@
             });
             $(this).addClass('yesStatus').removeClass('noStatus');
         });
+
+
+
+        $('.maisLeads').on('click', function (){
+            var usuario = JSON.parse( window.localStorage.getItem('usuario'));
+            var ultimoLead = $('.box-lead').last().attr('data-idlead');
+            MEUSLEADS_DB.getListaLeadsMicroService(usuario.idUsuario, usuario.email, ultimoLead);
+        });
     });
 
 
