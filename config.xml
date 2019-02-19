@@ -84,7 +84,7 @@
     </platform>
 
     <preference name="SplashScreenDelay" value="6000" />
-    <preference name="FadeSplashScreenDuration" value="1000"/>
+    <preference name="FadeSplashScreenDuration" value="800"/>
 
     <access origin="*" />
     <allow-intent href="http://*/*" />
