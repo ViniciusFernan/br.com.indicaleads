@@ -14,21 +14,24 @@ var NOTIFICATIONS_INDICA = {
     },
 
     getNotificationsMicroService: function(idUsuario, tipoNotificacao){
-        return $.ajax({
-            type: 'POST',
-            dataType: 'json',
-            url: urlWebservices+'/Notificationservice/getNotifications',
-            data:{ 'idUsuario': idUsuario, 'tipoNotificacao': tipoNotificacao },
-            beforeSend: function(){ },
-            complete: function(){ },
-            success: function(x){
-                return x;
-            },
-            error: function (error) {
-                return false;
-            }
-        });
-
+        if(app.isOnline()==true){
+            return $.ajax({
+                type: 'POST',
+                dataType: 'json',
+                url: urlWebservices+'/Notificationservice/getNotifications',
+                data:{ 'idUsuario': idUsuario, 'tipoNotificacao': tipoNotificacao },
+                beforeSend: function(){ },
+                complete: function(){ },
+                success: function(x){
+                    return x;
+                },
+                error: function (error) {
+                    return false;
+                }
+            });
+        }else{
+            navigator.notification.alert('Você não esta conectado à internet. \n Este recurso necessita de conexão com a internet. ', '','Desconectado', 'OK');
+        }
 
     }
 

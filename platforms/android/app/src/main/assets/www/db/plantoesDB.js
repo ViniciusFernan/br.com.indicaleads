@@ -7,58 +7,54 @@ var PLANTOES_DB = {
             window.location="index.html";
         };
 
-
-        if(app.isOnline()==true){
-            this.getListaPlantoesMicroService(usuario.idUsuario, usuario.email);
-        }else{
-            navigator.notification.alert('Você não esta conectado à internet. \n Este recurso necessita de conexão com a internet. ', '','Desconectado', 'OK');
-        }
-
-
-
+        this.getListaPlantoesMicroService(usuario.idUsuario, usuario.email);
 
     },
 
     getListaPlantoesMicroService: function(idUsuario, email){
-        var serial = window.localStorage.getItem('serial');
-        $.ajax({
-            url: urlWebservices+'/Plantoesservice/getListaPlantoesFromUsuario',
-            type: 'POST',
-            dataType: 'json',
-            data:{ 'idUsuario': idUsuario, 'email': email, 'registroDeDispositivo': serial },
-            beforeSend: function(){
-                $("#deviceready").append('<img class="loader" src="./img/loader.gif">');
-            },
-            complete: function(){ },
-            success: function(resp){
-                var table="";
-                if(resp.type=='success'){
-                    $.each(resp.data ,function(x, plantao){
+        if(app.isOnline()==true){
+            var serial = window.localStorage.getItem('serial');
+            $.ajax({
+                url: urlWebservices+'/Plantoesservice/getListaPlantoesFromUsuario',
+                type: 'POST',
+                dataType: 'json',
+                data:{ 'idUsuario': idUsuario, 'email': email, 'registroDeDispositivo': serial },
+                beforeSend: function(){
+                    $("#deviceready").append('<img class="loader" src="./img/loader.gif">');
+                },
+                complete: function(){ },
+                success: function(resp){
+                    var table="";
+                    if(resp.type=='success'){
+                        $.each(resp.data ,function(x, plantao){
 
-                        table+='<div class="card mb-3 card-plantao '+( PLANTOES_DB.checkDateCurrenteDate(plantao.dataPlantao) ? 'currentPlantao' : '' )+' " >';
-                        table+='    <div class="row no-gutters">';
-                        table+='        <div class="col-4 cart-left-box">';
-                        table+='            <div class="data-box"><span class="diaSize">'+plantao.diaFormat+'</span><br/>'+PLANTOES_DB.formateMes(plantao.mesFormat)+'</div>';
-                        table+='        </div>';
-                        table+='        <div class="col-8">';
-                        table+='            <div class="card-body section-box">';
-                        table+='                <h5 class="card-title title"> Plantão - <small class="text-muted">'+plantao.dataFormatada+'</small></h5> <hr>';
-                        table+='                <p class="card-text"><small >Atendimento: '+ PLANTOES_DB.fomateHora(plantao.inicioAtendimento) +' as '+ PLANTOES_DB.fomateHora(plantao.fimAtendimento) +' </small></p>';
-                        table+='            </div>';
-                        table+='        </div>';
-                        table+='    </div>';
-                        table+='</div>';
+                            table+='<div class="card mb-3 card-plantao '+( PLANTOES_DB.checkDateCurrenteDate(plantao.dataPlantao) ? 'currentPlantao' : '' )+' " >';
+                            table+='    <div class="row no-gutters">';
+                            table+='        <div class="col-4 cart-left-box">';
+                            table+='            <div class="data-box"><span class="diaSize">'+plantao.diaFormat+'</span><br/>'+PLANTOES_DB.formateMes(plantao.mesFormat)+'</div>';
+                            table+='        </div>';
+                            table+='        <div class="col-8">';
+                            table+='            <div class="card-body section-box">';
+                            table+='                <h5 class="card-title title"> Plantão - <small class="text-muted">'+plantao.dataFormatada+'</small></h5> <hr>';
+                            table+='                <p class="card-text"><small >Atendimento: '+ PLANTOES_DB.fomateHora(plantao.inicioAtendimento) +' as '+ PLANTOES_DB.fomateHora(plantao.fimAtendimento) +' </small></p>';
+                            table+='            </div>';
+                            table+='        </div>';
+                            table+='    </div>';
+                            table+='</div>';
 
-                    });
-                }else{
-                    table="<h4>Nenhum plantão encontrado</h4>";
+                        });
+                    }else{
+                        table="<h4>Nenhum plantão encontrado</h4>";
+                    }
+
+                    $('.loader').fadeOut().remove();
+                    $('#litagemDePlantao').append(table);
+
                 }
-
-                $('.loader').fadeOut().remove();
-                $('#litagemDePlantao').append(table);
-
-            }
-        });
+            });
+        }else{
+            navigator.notification.alert('Você não esta conectado à internet. \n Este recurso necessita de conexão com a internet. ', '','Desconectado', 'OK');
+        }
     },
 
     fomateHora:function(date){
