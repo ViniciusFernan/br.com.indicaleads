@@ -75,7 +75,7 @@ body *{text-shadow:none !important;}
 .input-fake{ display: block; cursor: none;  width: 100%; height: calc(2.25rem + 2px); padding: .375rem .75rem; font-size: 1rem; line-height: 1.5; color: #495057; background-color: #e8e5e5; background-clip: padding-box; border: 1px solid #ced4da; border-radius: .25rem; transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out; }
 
 #deviceready{  min-height: 420px;  height: 100%;  }
-.footer {  font-size: 12px;  position: fixed;  bottom: 0;  left: 0; width: 100%;  }
+.footer {  font-size: 12px;  position: fixed;  bottom: 0;  left: 0; width: 100%;  z-index: 2; }
 .btn-primary{background-color: #2f82bf  }
 
 

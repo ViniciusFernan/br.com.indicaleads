@@ -60,8 +60,13 @@ var app = {
         ((document.getElementById('imgemPerfilMeusDados')) ? document.getElementById('imgemPerfilMeusDados').src = imgPerfil : '' );
         ((document.getElementById('imgemPerfilMeusDadosMenu')) ? document.getElementById('imgemPerfilMeusDadosMenu').src = imgPerfil : '' );
 
+        setTimeout(function(){
+            document.getElementById('deviceready').classList.remove('animated');
+        }, 800);
 
         document.addEventListener("backbutton", this.exitApp, false);
+
+
     },
 
 
