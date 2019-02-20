@@ -89,8 +89,8 @@
         </section>
 
         <section  role="main" class="ui-content container conteudoBody" data-role="plantoes" >
-            <div class="text-center footer-btn-more-plantao col-12" style="margin-bottom: 30px">
-                <btn class="maisPlantoes btn btn-primary btn-block uppercase">Plantões passados</btn>
+            <div class="text-center footer-btn-more-plantao col-12" style="margin-bottom: 15px">
+                <btn class="plantoesPassados btn btn-primary btn-block uppercase">Plantões passados</btn>
             </div>
             <div id="litagemDePlantao" class=""  data-placeholder="Não há Plantões no momento" ></div>
             <div class="text-center footer-btn-more-plantao col-12" style="margin-bottom: 30px">
@@ -129,6 +129,37 @@
 
 <script type="text/javascript">
     this.PLANTOES_DB.initPage();
+
+    var usuario = JSON.parse( window.localStorage.getItem('usuario'));
+
+    $('.maisPlantoes').on('click', function (){
+        var ultimaData=null;
+        ultimaData = $('.card-plantao').last().attr('data-plantao');
+
+        $("#deviceready").append('<img class="loader" src="./img/loader.gif">');
+
+        setTimeout(function(){
+            $('.maisPlantoes').fadeOut('500');
+            $('.loader').fadeOut().remove();
+        }, 800);
+
+        //PLANTOES_DB.getListaLeadsMicroService(usuario.idUsuario, usuario.email, ultimaData);
+    });
+
+    $('.plantoesPassados').on('click', function (){
+        var ultimaData=null;
+        ultimaData = $('.card-plantao').last().attr('data-plantao');
+
+        $("#deviceready").append('<img class="loader" src="./img/loader.gif">');
+
+        setTimeout(function(){
+            $('.plantoesPassados').fadeOut('500');
+            $('.loader').fadeOut().remove();
+        }, 800);
+
+        //PLANTOES_DB.getListaLeadsMicroService(usuario.idUsuario, usuario.email, ultimaData);
+    });
+
 </script>
 
 </body>

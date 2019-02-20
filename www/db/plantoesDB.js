@@ -27,7 +27,6 @@ var PLANTOES_DB = {
                     var table="";
                     if(resp.type=='success'){
                         $.each(resp.data ,function(x, plantao){
-
                             table+='<div class="card mb-3 card-plantao '+( PLANTOES_DB.checkDateCurrenteDate(plantao.dataPlantao) ? 'currentPlantao' : '' )+' "  data-plantao="'+ plantao.dataPlantao +'">';
                             table+='    <div class="row no-gutters">';
                             table+='        <div class="col-4 cart-left-box">';
@@ -41,7 +40,6 @@ var PLANTOES_DB = {
                             table+='        </div>';
                             table+='    </div>';
                             table+='</div>';
-
                         });
                     }else{
                         table="<h4>Nenhum plantão encontrado</h4>";
