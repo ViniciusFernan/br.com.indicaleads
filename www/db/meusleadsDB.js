@@ -28,8 +28,8 @@ var MEUSLEADS_DB = {
                     var table="";
                     if(resp.type=='success'){
                         $.each(resp.data ,function(x, lead){
-
-                            table +='<div class="box-lead card mb-2 cardClose '+((lead.dataVisualizado != null && lead.idLeadStatus == null) ? 'noFeedback' : '')+'" data-idLead="'+lead.idLead+'">';
+                            var classFeedbak = ((lead.dataVisualizado != null && lead.idLeadStatus == null) ? 'noFeedback' : (lead.dataVisualizado != null && lead.idLeadStatus != null) ? 'yesStatus' : '' );
+                            table +='<div class="box-lead card mb-2 cardClose '+classFeedbak+'" data-idLead="'+lead.idLead+'">';
                                 table +='<div class="row card-header" style="min-height: 46px;">';
                                     table +='<div class="col-6 col-md-6 p-0 "><h5 class="title ellipsis" ><i class="far fa-envelope icon-lead"></i>'+ lead.nome +'</h5></div>';
                                     table +='<div class="col-3 col-md-3 p-0 border-left border-right "><small class="small bold">DDD: '+ lead.dddTel +' </small></div>';
@@ -58,7 +58,7 @@ var MEUSLEADS_DB = {
             });
 
         }else{
-            navigator.notification.alert('Você não esta conectado à internet. \n Este recurso necessita de conexão com a internet. ', '','Desconectado', 'OK');
+            navigator.notification.alert('Você não esta conectado à internet. \nEste recurso necessita de conexão com a internet. ', '','Desconectado', 'OK');
         }
     },
 
@@ -195,18 +195,25 @@ var MEUSLEADS_DB = {
 
                         var footer='';
 
-                        footer+='<label class="btn btn-sm btn-primary status-l   " data-idLeadStatus="1" data-idLead-btn="'+lead.idLead+'" >Aguardando Atendimento </label>';
-                        footer+='<label class="btn btn-sm btn-warning status-l  " data-idLeadStatus="2" data-idLead-btn="'+lead.idLead+'" >Em Negociação </label>';
-                        footer+='<label class="btn btn-sm btn-danger status-l  " data-idLeadStatus="3" data-idLead-btn="'+lead.idLead+'" >Lead Inválido </label>';
-                        footer+='<label class="btn btn-sm btn-info status-l  " data-idLeadStatus="4" data-idLead-btn="'+lead.idLead+'" >Sem Interesse </label>';
-                        footer+='<label class="btn btn-sm btn-success status-l  " data-idLeadStatus="5" data-idLead-btn="'+lead.idLead+'" >Finalizado </label>';
-                        footer+='<label class="btn btn-sm btn-default btn-default-br status-l  " data-idLeadStatus="6" data-idLead-btn="'+lead.idLead+'" >Outros </label>';
+                        var classFeedbakNoStatus =( (lead.idLeadStatus!=null) ? 'noStatusBTN' : '' );
+
+                        ((lead.idLeadStatus != null) ? (lead.idLeadStatus==1 ? 'checked' : 'noStatusBTN') : '')
+
+                        footer+='<label class="btn btn-sm btn-primary status-l  '+((lead.idLeadStatus != null) ? (lead.idLeadStatus==1 ? 'checkedStatusBTN' : 'noStatusBTN') : '')+'  " data-idLeadStatus="1" data-idLead-btn="'+lead.idLead+'" >Aguardando Atendimento </label>';
+                        footer+='<label class="btn btn-sm btn-warning status-l  '+((lead.idLeadStatus != null) ? (lead.idLeadStatus==2 ? 'checkedStatusBTN' : 'noStatusBTN') : '')+' " data-idLeadStatus="2" data-idLead-btn="'+lead.idLead+'" >Em Negociação </label>';
+                        footer+='<label class="btn btn-sm btn-danger status-l   '+((lead.idLeadStatus != null) ? (lead.idLeadStatus==3 ? 'checkedStatusBTN' : 'noStatusBTN') : '')+' " data-idLeadStatus="3" data-idLead-btn="'+lead.idLead+'" >Lead Inválido </label>';
+                        footer+='<label class="btn btn-sm btn-info status-l     '+((lead.idLeadStatus != null) ? (lead.idLeadStatus==4 ? 'checkedStatusBTN' : 'noStatusBTN') : '')+' " data-idLeadStatus="4" data-idLead-btn="'+lead.idLead+'" >Sem Interesse </label>';
+                        footer+='<label class="btn btn-sm btn-success status-l  '+((lead.idLeadStatus != null) ? (lead.idLeadStatus==5 ? 'checkedStatusBTN' : 'noStatusBTN') : '')+' " data-idLeadStatus="5" data-idLead-btn="'+lead.idLead+'" >Finalizado </label>';
+                        footer+='<label class="btn btn-sm btn-default btn-default-br status-l '+((lead.idLeadStatus != null) ? (lead.idLeadStatus==6 ? 'checkedStatusBTN' : 'noStatusBTN') : '')+'  " data-idLeadStatus="6" data-idLead-btn="'+lead.idLead+'" >Outros </label>';
 
                     }else{
                         body="<h4>OPS!</h4>";
                     }
 
-                    $('[data-idLead="'+lead.idLead+'"]').addClass('noFeedback');
+                    if(!$('[data-idLead="'+lead.idLead+'"]').hasClass('yesStatus')){
+                        $('[data-idLead="'+lead.idLead+'"]').addClass('noFeedback');
+                    }
+
                     $('[data-idLead="'+lead.idLead+'"]').find('.card-body').html(body);
                     $('[data-idLead="'+lead.idLead+'"]').find('.card-footer').html(footer);
                     $('.loader').fadeOut().remove();
@@ -223,9 +230,46 @@ var MEUSLEADS_DB = {
                 }
             });
         }else{
-            navigator.notification.alert('Você não esta conectado à internet. \n Este recurso necessita de conexão com a internet. ', '','Desconectado', 'OK');
+            navigator.notification.alert('Você não esta conectado à internet. \nEste recurso necessita de conexão com a internet. ', '','Desconectado', 'OK');
         }
     },
+
+
+    setSstatusLeadMicroService: function (idLead, idleadstatus){
+        if(app.isOnline()==true){
+            var serial = window.localStorage.getItem('serial');
+            var usuario = JSON.parse( window.localStorage.getItem('usuario'));
+
+            $.ajax({
+                url: urlWebservices+'/Leadservice/setStatusLead',
+                type: 'POST',
+                dataType: 'json',
+                data:{ 'idUsuario': usuario.idUsuario, 'registroDeDispositivo': serial, idLead: idLead, idleadstatus: idleadstatus },
+                beforeSend: function(){
+                    $("#deviceready").append('<img class="loader" src="./img/loader.gif">');
+                },
+                complete: function(){ },
+                success: function(resp){
+                    var table="";
+                    if(resp.type=='success'){
+
+
+                    }else{
+
+                    }
+
+                    $('.loader').fadeOut().remove();
+                    $('#litagemDeLeads').append(table);
+
+                }
+            });
+
+
+        }else{
+            navigator.notification.alert('Você não esta conectado à internet. \nEste recurso necessita de conexão com a internet. ', '','Desconectado', 'OK');
+        }
+
+    }
 
 
 

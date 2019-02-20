@@ -74,14 +74,21 @@
 
         .tipoitemsmall{ position: absolute;  bottom: -8px;  left: 0px;  font-weight: bold;  font-size: 8px;  width: 100%;  text-align: center; }
 
-        .noFeedback:not(.flayCard) {background-color: #fde6e9}
+
 
         .status-l{padding: 3px 2px;  font-size: 11px !important;  margin: 0 5px 5px 0 !important;}
         .status-l i{display: none}
 
-        .yesStatus{color: #ffffff; background-color: #2ecc71; border-color: #2ecc71;}
-        .yesStatus:active, .yesStatus:hover, .yesStatus:focus{color: #ffffff; background-color: #2ecc71; border-color: #2ecc71;}
-        .noStatus{  background-color: #e4e4e4 !important;  border-color: #e4e4e4 !important;  color: #6f6f6f !important;  }
+        .noFeedback:not(.flayCard){background-color: #fde6e9}
+
+
+        .yesStatus:not(.flayCard){color: #ffffff; background-color: #187d4a; border-color: #187d4a;}
+        .yesStatus:not(.flayCard):active, .yesStatus:not(.flayCard):hover, .yesStatus:not(.flayCard):focus{color: #ffffff; background-color: #187d4a; border-color: #187d4a;}
+
+
+        .checkedStatusBTN{color: #ffffff; background-color: #187d4a; border-color: #187d4a;}
+        .noStatusBTN{  background-color: #e4e4e4 !important;  border-color: #e4e4e4 !important;  color: #6f6f6f !important;  }
+
 
 
         .view-repetidos{width: 100%;}
@@ -267,9 +274,15 @@
 
         $('body').on('tap', '.status-l', function(){
             $('.status-l').each(function(){
-                $(this).removeClass('yesStatus').addClass('noStatus');
+                $(this).removeClass('checkedStatusBTN').addClass('noStatusBTN');
             });
-            $(this).addClass('yesStatus').removeClass('noStatus');
+            $(this).addClass('checkedStatusBTN').removeClass('noStatusBTN');
+
+            var idleadstatus = $(this).attr('data-idleadstatus');
+            var idLead = $(this).attr('data-idlead-btn');
+
+            MEUSLEADS_DB.setSstatusLeadMicroService(idLead, idleadstatus);
+
         });
 
 
