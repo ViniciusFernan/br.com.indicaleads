@@ -36,6 +36,30 @@
     <link rel="stylesheet" type="text/css" href="./assets/css/navbar.css" />
 
     <title>Inaweb Digital - dashboard</title>
+
+    <style>
+        .btn-corretor-cheio-de-opniao{
+            align-items: center;
+            display: flex;
+            flex: 1 0 auto;
+            justify-content: center;
+            margin: 0 auto;
+            position: absolute;
+            transition: .3s cubic-bezier(.25,.8,.5,1);
+            white-space: nowrap;
+            width: 85px;
+            right: 20px;
+            bottom: 20px;
+            height: 85px;
+            background: #0b5a9e;
+            border-radius: 100%;
+            z-index: 3;
+            font-size: 42px;
+            color: #fff;
+            box-shadow: 4px 10px 21px -1px #000;
+
+        }
+    </style>
 </head>
 
 
@@ -65,6 +89,14 @@
         </section>
 
         <section role="main" class="ui-content container conteudoBody" data-placeholder="Não há avisos no momento" data-role="home" ></section>
+
+        <div class="container">
+            <div class="row">
+
+                <btn class="btn-corretor-cheio-de-opniao animated heartBeat" ><i class="fas fa-bullhorn"></i></btn>
+
+            </div>
+        </div>
 
         <section class="footer" data-role="footer" ><h6>Desenvolvido por Inaweb Digital</h6></section><!-- /footer -->
     </div>
@@ -115,6 +147,14 @@
         app.avisos(titulo, texto, 'fa-envelope' );
 
     }, 5000);
+
+
+    window.setInterval(function(){
+        $('.btn-corretor-cheio-de-opniao').removeClass('heartBeat').delay(200).queue(function(nt){
+            $(this).addClass('heartBeat');
+            nt();
+        });
+    }, 100000);
 
 </script>
 

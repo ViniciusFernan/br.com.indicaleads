@@ -42,8 +42,12 @@ var PLANTOES_DB = {
                             table+='</div>';
                         });
                     }else{
-                        if(tipoDeBusca==='plantoesPassados'){  $('.plantoesPassados ').fadeOut(500).remove();    }
-                        if(tipoDeBusca==='maisPlantoes'){  $('.maisPlantoes').fadeOut(500).remove();  }
+                        if(tipoDeBusca==='plantoesPassados'){
+                            $('.plantoesPassados ').fadeOut(500).remove();
+                        }
+                        if(tipoDeBusca==='maisPlantoes'){
+                            $('.maisPlantoes').fadeOut(500).remove();
+                        }
                     }
 
                     $('.loader').fadeOut().remove();
