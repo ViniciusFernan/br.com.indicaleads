@@ -134,33 +134,22 @@
 
     var usuario = JSON.parse( window.localStorage.getItem('usuario'));
 
-    $('.maisPlantoes').on('click', function (){
-        var ultimaData=null;
-        ultimaData = $('.card-plantao').last().attr('data-plantao');
-
-        $("#deviceready").append('<img class="loader" src="./img/loader.gif">');
-
-        setTimeout(function(){
-            $('.maisPlantoes').fadeOut('500');
-            $('.loader').fadeOut().remove();
-        }, 800);
-
-        //PLANTOES_DB.getListaLeadsMicroService(usuario.idUsuario, usuario.email, ultimaData);
-    });
-
     $('.plantoesPassados').on('click', function (){
         var ultimaData=null;
-        ultimaData = $('.card-plantao').last().attr('data-plantao');
+        dataReferencia = $('.card-plantao').first().attr('data-plantao');
 
-        $("#deviceready").append('<img class="loader" src="./img/loader.gif">');
-
-        setTimeout(function(){
-            $('.plantoesPassados').fadeOut('500');
-            $('.loader').fadeOut().remove();
-        }, 800);
-
-        //PLANTOES_DB.getListaLeadsMicroService(usuario.idUsuario, usuario.email, ultimaData);
+        PLANTOES_DB.getListaPlantoesMicroService(usuario.idUsuario, usuario.email, dataReferencia, 'plantoesPassados');
     });
+
+    $('.maisPlantoes').on('click', function (){
+        var ultimaData=null;
+        dataReferencia = $('.card-plantao').last().attr('data-plantao');
+
+        PLANTOES_DB.getListaPlantoesMicroService(usuario.idUsuario, usuario.email, dataReferencia, 'maisPlantoes' );
+    });
+
+
+
 
 </script>
 

@@ -3,10 +3,14 @@
   <component name="ChangeListManager">
     <list default="true" id="2daa2abc-aafd-4db8-8d1d-40163fe820bf" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/db/meusleadsDB.js" afterPath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/db/meusleadsDB.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/db/plantoesDB.js" afterPath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/db/plantoesDB.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/plantoes.html" afterPath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/plantoes.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/browser/www/db/meusleadsDB.js" afterPath="$PROJECT_DIR$/platforms/browser/www/db/meusleadsDB.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/browser/www/db/plantoesDB.js" afterPath="$PROJECT_DIR$/platforms/browser/www/db/plantoesDB.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/browser/www/plantoes.html" afterPath="$PROJECT_DIR$/platforms/browser/www/plantoes.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/db/meusleadsDB.js" afterPath="$PROJECT_DIR$/www/db/meusleadsDB.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/db/plantoesDB.js" afterPath="$PROJECT_DIR$/www/db/plantoesDB.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/plantoes.html" afterPath="$PROJECT_DIR$/www/plantoes.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -22,27 +26,27 @@
         <entry file="file://$PROJECT_DIR$/www/dashboard.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="515">
-              <caret line="106" column="13" lean-forward="true" selection-start-line="101" selection-start-column="4" selection-end-line="106" selection-end-column="13" />
+              <caret line="106" column="13" lean-forward="false" selection-start-line="101" selection-start-column="4" selection-end-line="106" selection-end-column="13" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="plantoes.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="plantoes.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/www/plantoes.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="277">
-              <caret line="94" column="0" lean-forward="false" selection-start-line="94" selection-start-column="0" selection-end-line="94" selection-end-column="0" />
+            <state relative-caret-position="617">
+              <caret line="140" column="116" lean-forward="false" selection-start-line="140" selection-start-column="100" selection-end-line="140" selection-end-column="116" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="plantoesDB.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="plantoesDB.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/www/db/plantoesDB.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="47" column="52" lean-forward="true" selection-start-line="47" selection-start-column="20" selection-end-line="47" selection-end-column="52" />
+            <state relative-caret-position="238">
+              <caret line="49" column="37" lean-forward="false" selection-start-line="49" selection-start-column="37" selection-end-line="49" selection-end-column="37" />
               <folding />
             </state>
           </provider>
@@ -113,8 +117,8 @@
         <option value="$PROJECT_DIR$/www/assets/js/index.js" />
         <option value="$PROJECT_DIR$/www/meusleads.html" />
         <option value="$PROJECT_DIR$/www/db/meusleadsDB.js" />
-        <option value="$PROJECT_DIR$/www/db/plantoesDB.js" />
         <option value="$PROJECT_DIR$/www/plantoes.html" />
+        <option value="$PROJECT_DIR$/www/db/plantoesDB.js" />
       </list>
     </option>
   </component>
@@ -187,7 +191,7 @@
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="WebServerToolWindowFactoryState" value="true" />
     <property name="nodejs_interpreter_path" value="C:/Program Files/nodejs/node" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Vinicius/avfweb" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Vinicius/AVFAppBase" />
     <property name="node.js.path.for.package.jscs" value="$PROJECT_DIR$/www/db/meusdadosDB.js" />
     <property name="node.js.detected.package.jscs" value="true" />
     <property name="node.js.selected.package.jscs" value="" />
@@ -270,14 +274,7 @@
       <workItem from="1549907306393" duration="46053000" />
       <workItem from="1550142176871" duration="28462000" />
       <workItem from="1550494143236" duration="5446000" />
-      <workItem from="1550500179357" duration="53433000" />
-    </task>
-    <task id="LOCAL-00128" summary="teste">
-      <created>1550503217970</created>
-      <option name="number" value="00128" />
-      <option name="presentableId" value="LOCAL-00128" />
-      <option name="project" value="LOCAL" />
-      <updated>1550503217970</updated>
+      <workItem from="1550500179357" duration="62232000" />
     </task>
     <task id="LOCAL-00129" summary="teste">
       <created>1550517182324</created>
@@ -615,11 +612,18 @@
       <option name="project" value="LOCAL" />
       <updated>1550682670427</updated>
     </task>
-    <option name="localTasksCounter" value="177" />
+    <task id="LOCAL-00177" summary="teste">
+      <created>1550683325557</created>
+      <option name="number" value="00177" />
+      <option name="presentableId" value="LOCAL-00177" />
+      <option name="project" value="LOCAL" />
+      <updated>1550683325557</updated>
+    </task>
+    <option name="localTasksCounter" value="178" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="443271000" />
+    <option name="totallyTimeSpent" value="452070000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -634,7 +638,7 @@
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.010660981" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14552239" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14552239" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934782" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -1004,23 +1008,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/db/meusleadsDB.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3179">
-          <caret line="187" column="25" lean-forward="true" selection-start-line="187" selection-start-column="25" selection-end-line="187" selection-end-column="25" />
-          <folding>
-            <marker date="1550667668117" expanded="true" signature="1583:1600" ph="..." />
-            <marker date="1550667668117" expanded="true" signature="2630:2646" ph="..." />
-            <marker date="1550667668117" expanded="true" signature="2734:2751" ph="..." />
-            <marker date="1550667668117" expanded="true" signature="4322:4338" ph="..." />
-            <marker date="1550667668117" expanded="true" signature="4403:4414" ph="..." />
-            <marker date="1550667668117" expanded="true" signature="4825:4832" ph="..." />
-            <marker date="1550667668117" expanded="true" signature="7402:7436" ph="..." />
-            <marker date="1550667668117" expanded="true" signature="7880:7978" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/www/meusleads.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1320">
@@ -1040,23 +1027,40 @@
     <entry file="file://$PROJECT_DIR$/www/dashboard.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="515">
-          <caret line="106" column="13" lean-forward="true" selection-start-line="101" selection-start-column="4" selection-end-line="106" selection-end-column="13" />
+          <caret line="106" column="13" lean-forward="false" selection-start-line="101" selection-start-column="4" selection-end-line="106" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/db/meusleadsDB.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="72" lean-forward="false" selection-start-line="14" selection-start-column="72" selection-end-line="14" selection-end-column="72" />
+          <folding>
+            <marker date="1550768334496" expanded="true" signature="1583:1600" ph="..." />
+            <marker date="1550768334496" expanded="true" signature="2630:2646" ph="..." />
+            <marker date="1550768334496" expanded="true" signature="2734:2751" ph="..." />
+            <marker date="1550768334496" expanded="true" signature="4322:4338" ph="..." />
+            <marker date="1550768334496" expanded="true" signature="4403:4414" ph="..." />
+            <marker date="1550768334496" expanded="true" signature="4825:4832" ph="..." />
+            <marker date="1550768334496" expanded="true" signature="7402:7436" ph="..." />
+            <marker date="1550768334496" expanded="true" signature="7880:7978" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/plantoes.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="617">
+          <caret line="140" column="116" lean-forward="false" selection-start-line="140" selection-start-column="100" selection-end-line="140" selection-end-column="116" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/www/db/plantoesDB.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="47" column="52" lean-forward="true" selection-start-line="47" selection-start-column="20" selection-end-line="47" selection-end-column="52" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/plantoes.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="277">
-          <caret line="94" column="0" lean-forward="false" selection-start-line="94" selection-start-column="0" selection-end-line="94" selection-end-column="0" />
+        <state relative-caret-position="238">
+          <caret line="49" column="37" lean-forward="false" selection-start-line="49" selection-start-column="37" selection-end-line="49" selection-end-column="37" />
           <folding />
         </state>
       </provider>

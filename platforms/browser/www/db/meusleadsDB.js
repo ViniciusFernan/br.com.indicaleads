@@ -201,10 +201,10 @@ var MEUSLEADS_DB = {
 
                         footer+='<label class="btn btn-sm btn-primary status-l  '+((lead.idLeadStatus != null) ? (lead.idLeadStatus==1 ? 'checkedStatusBTN' : 'noStatusBTN') : '')+'  " data-idLeadStatus="1" data-idLead-btn="'+lead.idLead+'" >Aguardando Atendimento </label>';
                         footer+='<label class="btn btn-sm btn-warning status-l  '+((lead.idLeadStatus != null) ? (lead.idLeadStatus==2 ? 'checkedStatusBTN' : 'noStatusBTN') : '')+' " data-idLeadStatus="2" data-idLead-btn="'+lead.idLead+'" >Em Negociação </label>';
-                        footer+='<label class="btn btn-sm btn-danger status-l   '+((lead.idLeadStatus != null) ? (lead.idLeadStatus==3 ? 'checkedStatusBTN' : 'noStatusBTN') : '')+' " data-idLeadStatus="3" data-idLead-btn="'+lead.idLead+'" >Lead Inválido </label>';
-                        footer+='<label class="btn btn-sm btn-info status-l     '+((lead.idLeadStatus != null) ? (lead.idLeadStatus==4 ? 'checkedStatusBTN' : 'noStatusBTN') : '')+' " data-idLeadStatus="4" data-idLead-btn="'+lead.idLead+'" >Sem Interesse </label>';
-                        footer+='<label class="btn btn-sm btn-success status-l  '+((lead.idLeadStatus != null) ? (lead.idLeadStatus==5 ? 'checkedStatusBTN' : 'noStatusBTN') : '')+' " data-idLeadStatus="5" data-idLead-btn="'+lead.idLead+'" >Finalizado </label>';
-                        footer+='<label class="btn btn-sm btn-default btn-default-br status-l '+((lead.idLeadStatus != null) ? (lead.idLeadStatus==6 ? 'checkedStatusBTN' : 'noStatusBTN') : '')+'  " data-idLeadStatus="6" data-idLead-btn="'+lead.idLead+'" >Outros </label>';
+                        footer+='<label class="btn btn-sm btn-danger status-l   '+((lead.idLeadStatus != null) ? (lead.idLeadStatus==3 ? 'checked' : 'noStatusBTN') : '')+' " data-idLeadStatus="3" data-idLead-btn="'+lead.idLead+'" >Lead Inválido </label>';
+                        footer+='<label class="btn btn-sm btn-info status-l     '+((lead.idLeadStatus != null) ? (lead.idLeadStatus==4 ? 'checked' : 'noStatusBTN') : '')+' " data-idLeadStatus="4" data-idLead-btn="'+lead.idLead+'" >Sem Interesse </label>';
+                        footer+='<label class="btn btn-sm btn-success status-l  '+((lead.idLeadStatus != null) ? (lead.idLeadStatus==5 ? 'checked' : 'noStatusBTN') : '')+' " data-idLeadStatus="5" data-idLead-btn="'+lead.idLead+'" >Finalizado </label>';
+                        footer+='<label class="btn btn-sm btn-default btn-default-br status-l '+((lead.idLeadStatus != null) ? (lead.idLeadStatus==6 ? 'checked' : 'noStatusBTN') : '')+'  " data-idLeadStatus="6" data-idLead-btn="'+lead.idLead+'" >Outros </label>';
 
                     }else{
                         body="<h4>OPS!</h4>";

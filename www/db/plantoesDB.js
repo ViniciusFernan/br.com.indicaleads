@@ -7,18 +7,18 @@ var PLANTOES_DB = {
             window.location="index.html";
         };
 
-        this.getListaPlantoesMicroService(usuario.idUsuario, usuario.email);
+        this.getListaPlantoesMicroService(usuario.idUsuario, usuario.email, null, null);
 
     },
 
-    getListaPlantoesMicroService: function(idUsuario, email){
+    getListaPlantoesMicroService: function(idUsuario, email, dataReferencia, tipoDeBusca){
         if(app.isOnline()==true){
             var serial = window.localStorage.getItem('serial');
             $.ajax({
                 url: urlWebservices+'/Plantoesservice/getListaPlantoesFromUsuario',
                 type: 'POST',
                 dataType: 'json',
-                data:{ 'idUsuario': idUsuario, 'email': email, 'registroDeDispositivo': serial },
+                data:{ 'idUsuario': idUsuario, 'email': email, 'registroDeDispositivo': serial, dataReferencia: dataReferencia, tipoDeBusca},
                 beforeSend: function(){
                     $("#deviceready").append('<img class="loader" src="./img/loader.gif">');
                 },
@@ -42,11 +42,17 @@ var PLANTOES_DB = {
                             table+='</div>';
                         });
                     }else{
-                        table="<h4>Nenhum plantão encontrado</h4>";
+                        if(tipoDeBusca==='plantoesPassados'){  $('.plantoesPassados ').fadeOut(500).remove();    }
+                        if(tipoDeBusca==='maisPlantoes'){  $('.maisPlantoes').fadeOut(500).remove();  }
                     }
 
                     $('.loader').fadeOut().remove();
-                    $('#litagemDePlantao').append(table);
+                    if(tipoDeBusca==='plantoesPassados'){
+                        $('#litagemDePlantao').prepend(table);
+                    }else{
+                        $('#litagemDePlantao').append(table);
+                    }
+
 
                 }
             });
