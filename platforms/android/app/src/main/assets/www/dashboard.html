@@ -39,25 +39,13 @@
 
     <style>
         .btn-corretor-cheio-de-opniao{
-            align-items: center;
-            display: flex;
-            flex: 1 0 auto;
-            justify-content: center;
-            margin: 0 auto;
-            position: absolute;
-            transition: .3s cubic-bezier(.25,.8,.5,1);
-            white-space: nowrap;
-            width: 85px;
-            right: 20px;
-            bottom: 20px;
-            height: 85px;
-            background: #0b5a9e;
-            border-radius: 100%;
-            z-index: 3;
-            font-size: 42px;
-            color: #fff;
-            box-shadow: 4px 10px 21px -1px #000;
+            align-items: center;  display: flex;  flex: 1 0 auto;  justify-content: center;  margin: 0 auto;  position: absolute;  transition: .3s cubic-bezier(.25,.8,.5,1);
+            white-space: nowrap;  width: 69px;  height: 67px;  right: 20px;  bottom: 20px;  background: #0b5a9e;
+            border-radius: 100%; z-index: 3;  font-size: 33px; color: #fff !important;  box-shadow: 4px 10px 21px -1px #000;
+        }
 
+        .errorInput{
+            border: 1px solid #f1b0b7;
         }
     </style>
 </head>
@@ -67,7 +55,7 @@
 
 <body>
 <div class="app">
-    <div id="deviceready" class="animated bounceInRight" data-role="page"  style="display: none">
+    <div id="deviceready" class="animated bounceInRight" data-role="page" >
         <section data-role="header" class="fixedTop header-avf">
             <h1><img class="logo" src="./img/logoWhite.png" style="max-height: 30px;max-width: 150px;"></h1>
             <i class="fas fa-align-justify toogle-menu open-menu"></i>
@@ -100,6 +88,26 @@
 
         <section class="footer" data-role="footer" ><h6>Desenvolvido por Inaweb Digital</h6></section><!-- /footer -->
     </div>
+
+    <div id="sugestoes" class="animated bounceInRight" data-role="page" style="display: none" >
+        <section data-role="header" class="fixedTop header-avf">
+            <h4 style="padding: 10px; margin: 0">Enviar sugestões?</h4>
+            <i class="far fa-times-circle fecharSugestoes" style="position: absolute; right: 0px; top:0px; font-size: 30px; padding: 8px 15px; "></i>
+        </section><!-- /header -->
+
+        <section role="main" class="ui-content container"  style="margin-top: 50px" >
+            <form class="SugestaoFormDados " method="post" >
+                <div class="card-text form-group bold">
+                    <textarea name="sugestao" class="form-control" style="min-height: 70vh;" ></textarea>
+                </div>
+                <div class="card-text form-group text-right ">
+                    <button type="button" class="btn btn-primary salvarSugestao btn-block uppercase">Enviar Sugestão</button>
+                </div>
+            </form>
+        </section>
+
+    </div>
+
 </div>
 
 <script type="text/javascript" src="cordova.js"></script>
@@ -155,6 +163,47 @@
             nt();
         });
     }, 100000);
+
+
+    $('.btn-corretor-cheio-de-opniao').on('tap', function(){
+        $('#deviceready').fadeOut(500, function(){
+            $('#sugestoes').fadeIn();
+        })
+    });
+    $('.fecharSugestoes').on('tap', function(){
+        $('#sugestoes').fadeOut(500, function(){
+            $('#deviceready').fadeIn();
+        })
+    });
+
+    $('.salvarSugestao').on('tap', function(){
+        if($('[name="sugestao"]').val().length==''){
+            navigator.notification.alert('Campo sugestão precisa ser preenchido', function (){
+                $('[name="sugestao"]').addClass('errorInput').focus();
+            },'ERROR', 'FECHAR');
+        }else{
+            var serial = window.localStorage.getItem('serial');
+            var usuario = JSON.parse( window.localStorage.getItem('usuario'));
+            var sugestaoText = $('[name="sugestao"]').val();
+            $.ajax({
+                type: 'POST',
+                dataType: 'json',
+                url: urlWebservices+'/Sugestoesservice/enviarSugestoes',
+                data:{ 'idUsuario': usuario.idUsuario, 'idCorretora': usuario.idCorretora,  'registroDeDispositivo': serial, 'mensagem': sugestaoText },
+                beforeSend: function(){ },
+                complete: function(){ },
+                success: function(x){
+                    if(x.type=='success'){
+                        $('[name="sugestao"]').val('');
+                        notify('Sugestões', 'Sugestão enviada com sucesso.', 'success', true);
+                    }
+                },
+                error: function (error) {
+                    notify('Sugestões', 'Error ao enviar sugestão.', 'error', true);
+                }
+            });
+        }
+    });
 
 </script>
 
