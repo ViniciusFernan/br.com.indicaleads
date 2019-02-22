@@ -10,10 +10,10 @@ var firebaseGCM={
     },
 
     onDeviceReady: function () {
-        firebaseGCM.setupPush();
+        firebaseGCM.initPush();
     },
 
-    setupPush: function () {
+    initPush: function () {
         try {
             var push = PushNotification.init({
                 "android" : {
@@ -86,4 +86,4 @@ var firebaseGCM={
     }
 };
 
-firebaseGCM.initialize();
+this.firebaseGCM.initialize();
