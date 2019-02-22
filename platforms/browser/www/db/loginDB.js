@@ -9,10 +9,7 @@ var LOGIN_DB = {
     },
 
     onDeviceReady: function () {
-        LOGIN_DB.initPageLogin().then(function () {
-            var parentElement = document.getElementById('deviceready');
-            parentElement.setAttribute('style', 'display:block;');
-        });
+        LOGIN_DB.initPageLogin();
 
 
 
@@ -27,7 +24,11 @@ var LOGIN_DB = {
             if(usuario){
                 window.location = "dashboard.html";
                 //notify('SUCCESS!', 'USUARIO LOGADO! ', 'success', true);
+            }else{
+                var parentElement = document.getElementById('deviceready');
+                parentElement.setAttribute('style', 'display:block;');
             }
+
         }else{
             navigator.notification.alert('Você não esta conectado à internet. \n Verifique sua conexão e tente de novo. ', '','Desconectado', 'OK');
         }

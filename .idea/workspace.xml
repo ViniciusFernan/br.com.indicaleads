@@ -3,38 +3,15 @@
   <component name="ChangeListManager">
     <list default="true" id="2daa2abc-aafd-4db8-8d1d-40163fe820bf" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/assets/js/index.js" afterPath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/assets/js/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/dashboard.html" afterPath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/dashboard.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/db/dashboardDB.js" afterPath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/db/dashboardDB.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/assets/js/firebaseGCM.js" afterPath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/assets/js/firebaseGCM.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/db/loginDB.js" afterPath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/db/loginDB.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/db/meusdadosDB.js" afterPath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/db/meusdadosDB.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/db/meusleadsDB.js" afterPath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/db/meusleadsDB.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/db/plantoesDB.js" afterPath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/db/plantoesDB.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/includes/menu.html" afterPath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/includes/menu.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/meusdados.html" afterPath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/meusdados.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/meusleads.html" afterPath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/meusleads.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/plantoes.html" afterPath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/plantoes.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/browser/www/assets/js/index.js" afterPath="$PROJECT_DIR$/platforms/browser/www/assets/js/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/browser/www/dashboard.html" afterPath="$PROJECT_DIR$/platforms/browser/www/dashboard.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/browser/www/db/dashboardDB.js" afterPath="$PROJECT_DIR$/platforms/browser/www/db/dashboardDB.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/index.html" afterPath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/browser/www/assets/js/firebaseGCM.js" afterPath="$PROJECT_DIR$/platforms/browser/www/assets/js/firebaseGCM.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/browser/www/db/loginDB.js" afterPath="$PROJECT_DIR$/platforms/browser/www/db/loginDB.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/browser/www/db/meusdadosDB.js" afterPath="$PROJECT_DIR$/platforms/browser/www/db/meusdadosDB.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/browser/www/db/meusleadsDB.js" afterPath="$PROJECT_DIR$/platforms/browser/www/db/meusleadsDB.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/browser/www/db/plantoesDB.js" afterPath="$PROJECT_DIR$/platforms/browser/www/db/plantoesDB.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/browser/www/includes/menu.html" afterPath="$PROJECT_DIR$/platforms/browser/www/includes/menu.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/browser/www/meusdados.html" afterPath="$PROJECT_DIR$/platforms/browser/www/meusdados.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/browser/www/meusleads.html" afterPath="$PROJECT_DIR$/platforms/browser/www/meusleads.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/browser/www/plantoes.html" afterPath="$PROJECT_DIR$/platforms/browser/www/plantoes.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/assets/js/index.js" afterPath="$PROJECT_DIR$/www/assets/js/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/dashboard.html" afterPath="$PROJECT_DIR$/www/dashboard.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/db/dashboardDB.js" afterPath="$PROJECT_DIR$/www/db/dashboardDB.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/browser/www/index.html" afterPath="$PROJECT_DIR$/platforms/browser/www/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/assets/js/firebaseGCM.js" afterPath="$PROJECT_DIR$/www/assets/js/firebaseGCM.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/db/loginDB.js" afterPath="$PROJECT_DIR$/www/db/loginDB.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/db/meusdadosDB.js" afterPath="$PROJECT_DIR$/www/db/meusdadosDB.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/db/meusleadsDB.js" afterPath="$PROJECT_DIR$/www/db/meusleadsDB.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/db/plantoesDB.js" afterPath="$PROJECT_DIR$/www/db/plantoesDB.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/meusdados.html" afterPath="$PROJECT_DIR$/www/meusdados.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/meusleads.html" afterPath="$PROJECT_DIR$/www/meusleads.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/plantoes.html" afterPath="$PROJECT_DIR$/www/plantoes.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/index.html" afterPath="$PROJECT_DIR$/www/index.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -45,23 +22,51 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="meusdadosDB.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/www/db/meusdadosDB.js">
+      <file leaf-file-name="dashboard.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/www/dashboard.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="493">
-              <caret line="35" column="100" lean-forward="false" selection-start-line="35" selection-start-column="100" selection-end-line="35" selection-end-column="100" />
-              <folding>
-                <marker date="1550849168237" expanded="true" signature="1091:1105" ph="..." />
-              </folding>
+            <state relative-caret-position="187">
+              <caret line="137" column="31" lean-forward="false" selection-start-line="137" selection-start-column="21" selection-end-line="137" selection-end-column="31" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/www/assets/js/index.js">
+      <file leaf-file-name="firebaseGCM.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/www/assets/js/firebaseGCM.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
-              <caret line="56" column="180" lean-forward="false" selection-start-line="56" selection-start-column="180" selection-end-line="56" selection-end-column="180" />
+            <state relative-caret-position="238">
+              <caret line="42" column="68" lean-forward="false" selection-start-line="42" selection-start-column="68" selection-end-line="42" selection-end-column="68" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/www/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="651">
+              <caret line="108" column="30" lean-forward="false" selection-start-line="108" selection-start-column="30" selection-end-line="108" selection-end-column="30" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="meusdados.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/www/meusdados.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="425">
+              <caret line="184" column="7" lean-forward="true" selection-start-line="176" selection-start-column="3" selection-end-line="184" selection-end-column="7" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="loginDB.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/www/db/loginDB.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="476">
+              <caret line="28" column="70" lean-forward="false" selection-start-line="28" selection-start-column="70" selection-end-line="28" selection-end-column="70" />
               <folding />
             </state>
           </provider>
@@ -107,7 +112,6 @@
         <option value="$PROJECT_DIR$/plugins/browser.json" />
         <option value="$PROJECT_DIR$/config-bacup.xml" />
         <option value="$PROJECT_DIR$/www/assets/css/navbar.css" />
-        <option value="$PROJECT_DIR$/www/assets/js/firebaseGCM.js" />
         <option value="$PROJECT_DIR$/../Vinicius/testeOrlando/index.php" />
         <option value="$PROJECT_DIR$/google-services.json" />
         <option value="$PROJECT_DIR$/www/assets/js/jquery-2.2.4.js" />
@@ -118,15 +122,12 @@
         <option value="$PROJECT_DIR$/www/assets/plugins/pulltorefresh/pulltorefresh.js" />
         <option value="$PROJECT_DIR$/www/assets/css/animate.css" />
         <option value="$PROJECT_DIR$/www/assets/css/login.css" />
-        <option value="$PROJECT_DIR$/www/index.html" />
         <option value="$PROJECT_DIR$/www/assets/js/actionsApp.js" />
         <option value="$PROJECT_DIR$/config.xml" />
         <option value="$PROJECT_DIR$/www/db/notificatioIndicaActions.js" />
         <option value="$PROJECT_DIR$/www/db/usuariosActions.js" />
         <option value="$PROJECT_DIR$/www/assets/css/index.css" />
         <option value="$PROJECT_DIR$/www/includes/menu.html" />
-        <option value="$PROJECT_DIR$/www/db/loginDB.js" />
-        <option value="$PROJECT_DIR$/www/dashboard.html" />
         <option value="$PROJECT_DIR$/www/db/dashboardDB.js" />
         <option value="$PROJECT_DIR$/www/db/plantoesDB.js" />
         <option value="$PROJECT_DIR$/www/plantoes.html" />
@@ -135,6 +136,10 @@
         <option value="$PROJECT_DIR$/www/meusleads.html" />
         <option value="$PROJECT_DIR$/www/assets/js/index.js" />
         <option value="$PROJECT_DIR$/www/db/meusdadosDB.js" />
+        <option value="$PROJECT_DIR$/www/dashboard.html" />
+        <option value="$PROJECT_DIR$/www/db/loginDB.js" />
+        <option value="$PROJECT_DIR$/www/index.html" />
+        <option value="$PROJECT_DIR$/www/assets/js/firebaseGCM.js" />
       </list>
     </option>
   </component>
@@ -164,8 +169,8 @@
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
-    <option name="width" value="1936" />
-    <option name="height" value="1056" />
+    <option name="width" value="654" />
+    <option name="height" value="903" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -194,19 +199,6 @@
               <item name="br.com.indicaleads" type="b2602c69:ProjectViewProjectNode" />
               <item name="br.com.indicaleads" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="www" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="br.com.indicaleads" type="b2602c69:ProjectViewProjectNode" />
-              <item name="br.com.indicaleads" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="www" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="assets" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="br.com.indicaleads" type="b2602c69:ProjectViewProjectNode" />
-              <item name="br.com.indicaleads" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="www" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="assets" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="js" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="br.com.indicaleads" type="b2602c69:ProjectViewProjectNode" />
@@ -309,14 +301,7 @@
       <workItem from="1549907306393" duration="46053000" />
       <workItem from="1550142176871" duration="28462000" />
       <workItem from="1550494143236" duration="5446000" />
-      <workItem from="1550500179357" duration="78501000" />
-    </task>
-    <task id="LOCAL-00137" summary="teste">
-      <created>1550579376916</created>
-      <option name="number" value="00137" />
-      <option name="presentableId" value="LOCAL-00137" />
-      <option name="project" value="LOCAL" />
-      <updated>1550579376916</updated>
+      <workItem from="1550500179357" duration="82778000" />
     </task>
     <task id="LOCAL-00138" summary="teste">
       <created>1550580381856</created>
@@ -654,11 +639,18 @@
       <option name="project" value="LOCAL" />
       <updated>1550844806368</updated>
     </task>
-    <option name="localTasksCounter" value="186" />
+    <task id="LOCAL-00186" summary="teste">
+      <created>1550849191971</created>
+      <option name="number" value="00186" />
+      <option name="presentableId" value="LOCAL-00186" />
+      <option name="project" value="LOCAL" />
+      <updated>1550849191971</updated>
+    </task>
+    <option name="localTasksCounter" value="187" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="468339000" />
+    <option name="totallyTimeSpent" value="472616000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -673,7 +665,7 @@
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.010660981" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14552239" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14552239" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934782" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -831,13 +823,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/assets/js/firebaseGCM.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1049">
-          <caret line="71" column="0" lean-forward="false" selection-start-line="71" selection-start-column="0" selection-end-line="71" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/plugins/cordova-plugin-camera/www/Camera.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-128">
@@ -981,53 +966,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="719">
-          <caret line="93" column="21" lean-forward="false" selection-start-line="93" selection-start-column="21" selection-end-line="93" selection-end-column="21" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/db/dashboardDB.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="6" lean-forward="false" selection-start-line="1" selection-start-column="3" selection-end-line="12" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/db/loginDB.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="6" lean-forward="false" selection-start-line="2" selection-start-column="3" selection-end-line="18" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/dashboard.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="136" column="34" lean-forward="false" selection-start-line="136" selection-start-column="34" selection-end-line="136" selection-end-column="34" />
-          <folding>
-            <element signature="n#style#0;n#h4#0;n#section#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#i#0;n#section#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#section#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#textarea#0;n#div#0;n#form#0;n#section#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/meusdados.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="130">
-          <caret line="130" column="32" lean-forward="false" selection-start-line="130" selection-start-column="32" selection-end-line="130" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/www/db/meusleadsDB.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
@@ -1053,14 +991,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/db/plantoesDB.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="26" lean-forward="true" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/www/plantoes.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="430">
@@ -1069,21 +999,77 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/www/db/plantoesDB.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="26" lean-forward="true" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/db/dashboardDB.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="6" lean-forward="false" selection-start-line="1" selection-start-column="3" selection-end-line="12" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/www/assets/js/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="56" column="180" lean-forward="false" selection-start-line="56" selection-start-column="180" selection-end-line="56" selection-end-column="180" />
+        <state relative-caret-position="476">
+          <caret line="54" column="47" lean-forward="true" selection-start-line="54" selection-start-column="7" selection-end-line="54" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/db/loginDB.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="28" column="70" lean-forward="false" selection-start-line="28" selection-start-column="70" selection-end-line="28" selection-end-column="70" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/dashboard.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="137" column="31" lean-forward="false" selection-start-line="137" selection-start-column="21" selection-end-line="137" selection-end-column="31" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/www/db/meusdadosDB.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="35" column="100" lean-forward="false" selection-start-line="35" selection-start-column="100" selection-end-line="35" selection-end-column="100" />
+        <state relative-caret-position="505">
+          <caret line="43" column="182" lean-forward="false" selection-start-line="43" selection-start-column="148" selection-end-line="43" selection-end-column="182" />
           <folding>
             <marker date="1550849168237" expanded="true" signature="1091:1105" ph="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/meusdados.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="184" column="7" lean-forward="true" selection-start-line="176" selection-start-column="3" selection-end-line="184" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="651">
+          <caret line="108" column="30" lean-forward="false" selection-start-line="108" selection-start-column="30" selection-end-line="108" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/assets/js/firebaseGCM.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="42" column="68" lean-forward="false" selection-start-line="42" selection-start-column="68" selection-end-line="42" selection-end-column="68" />
+          <folding />
         </state>
       </provider>
     </entry>
