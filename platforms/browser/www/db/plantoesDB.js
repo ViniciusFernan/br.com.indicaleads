@@ -1,4 +1,18 @@
 var PLANTOES_DB = {
+
+    initialize: function () {
+        this.bindEvents();
+    },
+    bindEvents: function () {
+        document.addEventListener('deviceready', this.onDeviceReady, false);
+    },
+
+    onDeviceReady: function () {
+        PLANTOES_DB.initPage();
+        var parentElement = document.getElementById('deviceready');
+        parentElement.setAttribute('style', 'display:block;');
+    },
+
     initPage: function () {
         var usuario = JSON.parse( window.localStorage.getItem('usuario'));
 

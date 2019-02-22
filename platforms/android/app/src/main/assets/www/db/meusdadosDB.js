@@ -1,6 +1,26 @@
 var MEUSDADOS_DB = {
+
+    initialize: function () {
+        this.bindEvents();
+    },
+
+    bindEvents: function () {
+        document.addEventListener('deviceready', this.onDeviceReady, false);
+    },
+
+    onDeviceReady: function () {
+        MEUSDADOS_DB.initPage();
+        var parentElement = document.getElementById('deviceready');
+        parentElement.setAttribute('style', 'display:block;');
+
+
+
+
+    },
+
     initPage: function () {
         var usuario = JSON.parse( window.localStorage.getItem('usuario'));
+        var imgPerfil = (window.localStorage.getItem('imgPerfil') ?  urlUploads +"/"+ usuario.idUsuario +"/perfil/"+ window.localStorage.getItem('imgPerfil') : './img/avatar.png');
 
         if( usuario==null ){
             window.localStorage.clear();
@@ -13,7 +33,7 @@ var MEUSDADOS_DB = {
             var item = usuario;
             var table="";
             table +='<form class="updateMeusDados" method="post" > <input type="file" name="imgPerfil" style="display: none;">';
-            table += '<div class="row mb-3"><div class="col-6 pr-2 boximgUser"><img src="./img/avatar.png" class="imgUser" id="imgemPerfilMeusDados" > <i class="fas fa-camera novaImagem"></i> </div><div class="col-6 pl-0"><p class="card-title form-group" >Nome: <input type="text" name="nome" value="' + item.nome + '"  class="form-control" ></p> <p class="card-title form-group" >Apelido: <input type="text" name="apelido" value="' + ((item.apelido) ? item.apelido : '') + '"  class="form-control" ></p> </div></div>';
+            table += '<div class="row mb-3"><div class="col-6 pr-2 boximgUser"><img src="'+imgPerfil+'" class="imgUser" id="imgemPerfilMeusDados" > <i class="fas fa-camera novaImagem"></i> </div><div class="col-6 pl-0"><p class="card-title form-group" >Nome: <input type="text" name="nome" value="' + item.nome + '"  class="form-control" ></p> <p class="card-title form-group" >Apelido: <input type="text" name="apelido" value="' + ((item.apelido) ? item.apelido : '') + '"  class="form-control" ></p> </div></div>';
 
             table +='<p class="card-text form-group bold"><strong>Email:</strong> <b class="input-fake"> '+item.email+' </b> </p>';
             if(item.CPF){

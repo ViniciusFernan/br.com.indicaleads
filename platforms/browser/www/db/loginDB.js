@@ -9,7 +9,13 @@ var LOGIN_DB = {
     },
 
     onDeviceReady: function () {
-        LOGIN_DB.initPageLogin();
+        LOGIN_DB.initPageLogin().then(function () {
+            var parentElement = document.getElementById('deviceready');
+            parentElement.setAttribute('style', 'display:block;');
+        });
+
+
+
     },
 
     initPageLogin: function () {

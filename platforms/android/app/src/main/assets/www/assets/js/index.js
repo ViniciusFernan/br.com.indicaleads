@@ -37,9 +37,7 @@ var app = {
         app.receivedEvent('deviceready');
     },
     // Update DOM on a Received Event
-    receivedEvent: function(id) {
-        var parentElement = document.getElementById(id);
-        parentElement.setAttribute('style', 'display:block;');
+    receivedEvent: function(idPage) {
 
         var usuario = JSON.parse( window.localStorage.getItem('usuario'));
         var infoUsuario = document.getElementById("infoUsuario");
@@ -57,12 +55,17 @@ var app = {
         localStorage.setItem('serial', serial);
 
         var imgPerfil = (window.localStorage.getItem('imgPerfil') ?  urlUploads +"/"+ usuario.idUsuario +"/perfil/"+ window.localStorage.getItem('imgPerfil') : './img/avatar.png');
-        ((document.getElementById('imgemPerfilMeusDados')) ? document.getElementById('imgemPerfilMeusDados').src = imgPerfil : '' );
         ((document.getElementById('imgemPerfilMeusDadosMenu')) ? document.getElementById('imgemPerfilMeusDadosMenu').src = imgPerfil : '' );
+
 
         setTimeout(function(){
             document.getElementById('deviceready').classList.remove('animated');
         }, 800);
+
+
+
+
+
 
         document.addEventListener("backbutton", this.exitApp, false);
 
