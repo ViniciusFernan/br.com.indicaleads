@@ -1,4 +1,4 @@
-var GOOGLE_SENDER_ID = '188349334350';
+var GOOGLE_SENDER_ID = '396611735164';
 var firebaseGCM={
 
     initialize: function () {
@@ -39,9 +39,10 @@ var firebaseGCM={
             push.on('registration', function (data) {
                 var currentRegId = localStorage.getItem('gcmId');
                 if (currentRegId !== data.registrationId) {
-                    localStorage.setItem('gcmId', currentRegId);
-                    firebaseGCM.registroDoDispositivo(currentRegId);
+                    currentRegId = data.registrationId;
                 }
+                localStorage.setItem('gcmId', currentRegId);
+                firebaseGCM.registroDoDispositivo(currentRegId);
 
             });
 

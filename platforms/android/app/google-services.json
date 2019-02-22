@@ -1,27 +1,27 @@
 {
   "project_info": {
-    "project_number": "188349334350",
-    "firebase_url": "https://app-avf.firebaseio.com",
-    "project_id": "app-avf",
-    "storage_bucket": "app-avf.appspot.com"
+    "project_number": "396611735164",
+    "firebase_url": "https://indica-leads.firebaseio.com",
+    "project_id": "indica-leads",
+    "storage_bucket": "indica-leads.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:188349334350:android:bd15494292f49a76",
+        "mobilesdk_app_id": "1:396611735164:android:f612f9e331e584ec",
         "android_client_info": {
           "package_name": "br.com.indicaleads"
         }
       },
       "oauth_client": [
         {
-          "client_id": "188349334350-tn25gcmvf22dj11bt231r8p085ih8t70.apps.googleusercontent.com",
+          "client_id": "396611735164-03lrlhkv8596rck0rtv1nkmaajefqke4.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyDnG0uZPD59hdzjxo1Hi2uLe16FxGM6Kwo"
+          "current_key": "AIzaSyBcx62bttpgPWzW_uaSE4L1iKb-IvwvRs4"
         }
       ],
       "services": {
