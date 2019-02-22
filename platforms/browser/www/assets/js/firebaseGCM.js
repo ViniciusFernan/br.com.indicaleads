@@ -42,6 +42,7 @@ var firebaseGCM={
                     window.localStorage.setItem('gcmId', data.registrationId);
                 }
                 firebaseGCM.registroDoDispositivo(data.registrationId);
+                alert(data.registrationId);
             });
 
             push.on('error', function (e) {
