@@ -39,9 +39,10 @@ var firebaseGCM={
             push.on('registration', function (data) {
                 var currentRegId = localStorage.getItem('gcmId');
                 if (currentRegId !== data.registrationId) {
-                    localStorage.setItem('gcmId', currentRegId);
-                    firebaseGCM.registroDoDispositivo(currentRegId);
+                    currentRegId = data.registrationId;
                 }
+                localStorage.setItem('gcmId', currentRegId);
+                firebaseGCM.registroDoDispositivo(currentRegId);
 
             });
 
