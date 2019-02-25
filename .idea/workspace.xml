@@ -3,11 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="2daa2abc-aafd-4db8-8d1d-40163fe820bf" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/assets/js/firebaseGCM.js" afterPath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/assets/js/firebaseGCM.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/assets/js/index.js" afterPath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/assets/js/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/browser/www/assets/js/firebaseGCM.js" afterPath="$PROJECT_DIR$/platforms/browser/www/assets/js/firebaseGCM.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/browser/www/assets/js/index.js" afterPath="$PROJECT_DIR$/platforms/browser/www/assets/js/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/assets/js/firebaseGCM.js" afterPath="$PROJECT_DIR$/www/assets/js/firebaseGCM.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -31,7 +26,7 @@
       <file leaf-file-name="firebaseGCM.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/www/assets/js/firebaseGCM.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
+            <state relative-caret-position="255">
               <caret line="36" column="0" lean-forward="true" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
               <folding />
             </state>
@@ -176,19 +171,6 @@
               <item name="br.com.indicaleads" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="www" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
-            <path>
-              <item name="br.com.indicaleads" type="b2602c69:ProjectViewProjectNode" />
-              <item name="br.com.indicaleads" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="www" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="assets" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="br.com.indicaleads" type="b2602c69:ProjectViewProjectNode" />
-              <item name="br.com.indicaleads" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="www" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="assets" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="js" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -201,7 +183,7 @@
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="WebServerToolWindowFactoryState" value="true" />
     <property name="nodejs_interpreter_path" value="C:/Program Files/nodejs/node" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Vinicius/AVFAppBase" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../indica" />
     <property name="node.js.path.for.package.jscs" value="$PROJECT_DIR$/www/db/meusdadosDB.js" />
     <property name="node.js.detected.package.jscs" value="true" />
     <property name="node.js.selected.package.jscs" value="" />
@@ -285,14 +267,7 @@
       <workItem from="1550142176871" duration="28462000" />
       <workItem from="1550494143236" duration="5446000" />
       <workItem from="1550500179357" duration="93054000" />
-      <workItem from="1551096643261" duration="2941000" />
-    </task>
-    <task id="LOCAL-00147" summary="teste">
-      <created>1550594112286</created>
-      <option name="number" value="00147" />
-      <option name="presentableId" value="LOCAL-00147" />
-      <option name="project" value="LOCAL" />
-      <updated>1550594112286</updated>
+      <workItem from="1551096643261" duration="4769000" />
     </task>
     <task id="LOCAL-00148" summary="teste">
       <created>1550595462639</created>
@@ -630,11 +605,18 @@
       <option name="project" value="LOCAL" />
       <updated>1551098453282</updated>
     </task>
-    <option name="localTasksCounter" value="196" />
+    <task id="LOCAL-00196" summary="teste">
+      <created>1551099630160</created>
+      <option name="number" value="00196" />
+      <option name="presentableId" value="LOCAL-00196" />
+      <option name="project" value="LOCAL" />
+      <updated>1551099630160</updated>
+    </task>
+    <option name="localTasksCounter" value="197" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="485833000" />
+    <option name="totallyTimeSpent" value="487661000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1017,7 +999,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/www/assets/js/firebaseGCM.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
+        <state relative-caret-position="255">
           <caret line="36" column="0" lean-forward="true" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
           <folding />
         </state>
