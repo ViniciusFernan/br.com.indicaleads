@@ -3,12 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="2daa2abc-aafd-4db8-8d1d-40163fe820bf" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/assets/js/index.js" afterPath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/assets/js/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/db/meusdadosDB.js" afterPath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/db/meusdadosDB.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/browser/www/assets/js/index.js" afterPath="$PROJECT_DIR$/platforms/browser/www/assets/js/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/browser/www/db/meusdadosDB.js" afterPath="$PROJECT_DIR$/platforms/browser/www/db/meusdadosDB.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/assets/js/index.js" afterPath="$PROJECT_DIR$/www/assets/js/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/db/meusdadosDB.js" afterPath="$PROJECT_DIR$/www/db/meusdadosDB.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/meusleads.html" afterPath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/meusleads.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/browser/www/meusleads.html" afterPath="$PROJECT_DIR$/platforms/browser/www/meusleads.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/meusleads.html" afterPath="$PROJECT_DIR$/www/meusleads.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -29,7 +26,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="meusdadosDB.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="meusdadosDB.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/www/db/meusdadosDB.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="272">
@@ -37,6 +34,16 @@
               <folding>
                 <marker date="1551121302509" expanded="true" signature="1055:1069" ph="..." />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="meusleads.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/www/meusleads.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="328">
+              <caret line="89" column="48" lean-forward="false" selection-start-line="89" selection-start-column="48" selection-end-line="89" selection-end-column="48" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -116,9 +123,9 @@
         <option value="$PROJECT_DIR$/config.xml" />
         <option value="$PROJECT_DIR$/www/assets/js/firebaseGCM.js" />
         <option value="$PROJECT_DIR$/www/meusdados.html" />
-        <option value="$PROJECT_DIR$/www/meusleads.html" />
         <option value="$PROJECT_DIR$/www/db/meusdadosDB.js" />
         <option value="$PROJECT_DIR$/www/assets/js/index.js" />
+        <option value="$PROJECT_DIR$/www/meusleads.html" />
       </list>
     </option>
   </component>
@@ -178,19 +185,6 @@
               <item name="br.com.indicaleads" type="b2602c69:ProjectViewProjectNode" />
               <item name="br.com.indicaleads" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="www" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="br.com.indicaleads" type="b2602c69:ProjectViewProjectNode" />
-              <item name="br.com.indicaleads" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="www" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="assets" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="br.com.indicaleads" type="b2602c69:ProjectViewProjectNode" />
-              <item name="br.com.indicaleads" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="www" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="assets" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="js" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
           </expand>
           <select />
@@ -288,14 +282,7 @@
       <workItem from="1550142176871" duration="28462000" />
       <workItem from="1550494143236" duration="5446000" />
       <workItem from="1550500179357" duration="93054000" />
-      <workItem from="1551096643261" duration="9626000" />
-    </task>
-    <task id="LOCAL-00153" summary="teste">
-      <created>1550596894180</created>
-      <option name="number" value="00153" />
-      <option name="presentableId" value="LOCAL-00153" />
-      <option name="project" value="LOCAL" />
-      <updated>1550596894180</updated>
+      <workItem from="1551096643261" duration="10379000" />
     </task>
     <task id="LOCAL-00154" summary="teste">
       <created>1550597038828</created>
@@ -633,11 +620,18 @@
       <option name="project" value="LOCAL" />
       <updated>1551120817020</updated>
     </task>
-    <option name="localTasksCounter" value="202" />
+    <task id="LOCAL-00202" summary="teste">
+      <created>1551124924539</created>
+      <option name="number" value="00202" />
+      <option name="presentableId" value="LOCAL-00202" />
+      <option name="project" value="LOCAL" />
+      <updated>1551124924539</updated>
+    </task>
+    <option name="localTasksCounter" value="203" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="492518000" />
+    <option name="totallyTimeSpent" value="493271000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -997,14 +991,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/meusleads.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="481">
-          <caret line="287" column="74" lean-forward="false" selection-start-line="287" selection-start-column="74" selection-end-line="287" selection-end-column="74" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/www/db/meusleadsDB.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="196">
@@ -1045,6 +1031,14 @@
           <folding>
             <marker date="1551121302509" expanded="true" signature="1055:1069" ph="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/meusleads.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="328">
+          <caret line="89" column="48" lean-forward="false" selection-start-line="89" selection-start-column="48" selection-end-line="89" selection-end-column="48" />
+          <folding />
         </state>
       </provider>
     </entry>
