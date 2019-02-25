@@ -3,6 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="2daa2abc-aafd-4db8-8d1d-40163fe820bf" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/meusdados.html" afterPath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/meusdados.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/browser/www/meusdados.html" afterPath="$PROJECT_DIR$/platforms/browser/www/meusdados.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/meusdados.html" afterPath="$PROJECT_DIR$/www/meusdados.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -27,8 +29,8 @@
       <file leaf-file-name="meusdados.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/www/meusdados.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="646">
-              <caret line="230" column="67" lean-forward="false" selection-start-line="230" selection-start-column="67" selection-end-line="230" selection-end-column="67" />
+            <state relative-caret-position="459">
+              <caret line="289" column="67" lean-forward="false" selection-start-line="289" selection-start-column="67" selection-end-line="289" selection-end-column="67" />
               <folding />
             </state>
           </provider>
@@ -258,14 +260,7 @@
       <workItem from="1550142176871" duration="28462000" />
       <workItem from="1550494143236" duration="5446000" />
       <workItem from="1550500179357" duration="93054000" />
-      <workItem from="1551096643261" duration="6930000" />
-    </task>
-    <task id="LOCAL-00149" summary="teste">
-      <created>1550595617097</created>
-      <option name="number" value="00149" />
-      <option name="presentableId" value="LOCAL-00149" />
-      <option name="project" value="LOCAL" />
-      <updated>1550595617097</updated>
+      <workItem from="1551096643261" duration="6999000" />
     </task>
     <task id="LOCAL-00150" summary="teste">
       <created>1550596149971</created>
@@ -603,11 +598,18 @@
       <option name="project" value="LOCAL" />
       <updated>1551103395092</updated>
     </task>
-    <option name="localTasksCounter" value="198" />
+    <task id="LOCAL-00198" summary="teste">
+      <created>1551119730134</created>
+      <option name="number" value="00198" />
+      <option name="presentableId" value="LOCAL-00198" />
+      <option name="project" value="LOCAL" />
+      <updated>1551119730135</updated>
+    </task>
+    <option name="localTasksCounter" value="199" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="489822000" />
+    <option name="totallyTimeSpent" value="489891000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1001,8 +1003,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/www/meusdados.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="646">
-          <caret line="230" column="67" lean-forward="false" selection-start-line="230" selection-start-column="67" selection-end-line="230" selection-end-column="67" />
+        <state relative-caret-position="459">
+          <caret line="289" column="67" lean-forward="false" selection-start-line="289" selection-start-column="67" selection-end-line="289" selection-end-column="67" />
           <folding />
         </state>
       </provider>
