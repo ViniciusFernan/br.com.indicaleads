@@ -49,14 +49,14 @@ var app = {
             html+="<p class='infoEmail'>" + usuario.email + "</p>";
 
             document.getElementById('infoUsuario').innerHTML = '<p class="infoNome">' + html +'</p>';
+
+            var imagemPerfil = ((usuario.imgPerfil !== null)  ?  urlUploads +"/"+ usuario.idUsuario +"/perfil/"+usuario.imgPerfil : './img/avatar.png');
+            ((document.getElementById('imgemPerfilMeusDadosMenu')) ? document.getElementById('imgemPerfilMeusDadosMenu').src = imagemPerfil : '' );
         }
 
         var devicePlatform = device.platform;
         var serial = ((devicePlatform === 'browser') ? '123456-AVF' : device.serial);
         window.localStorage.setItem('serial', serial);
-
-        var imgPerfil = ((usuario.imgPerfil !== null) ?  urlUploads +"/"+ usuario.idUsuario +"/perfil/"+ window.localStorage.getItem('imgPerfil') : './img/avatar.png');
-        ((document.getElementById('imgemPerfilMeusDadosMenu')) ? document.getElementById('imgemPerfilMeusDadosMenu').src = imgPerfil : '' );
 
 
         setTimeout(function(){
@@ -64,12 +64,7 @@ var app = {
         }, 800);
 
 
-
-
-
-
         document.addEventListener("backbutton", this.exitApp, false);
-
 
     },
 
