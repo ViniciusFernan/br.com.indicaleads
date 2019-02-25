@@ -18,6 +18,7 @@
  */
 var urlWebservices="http://backend.com.br/WSAPP";
 var urlUploads="http://backend.com.br/_uploads";
+var GOOGLE_SENDER_ID='1046179569753';
 var app = {
     // Application Constructor
     initialize: function() {
