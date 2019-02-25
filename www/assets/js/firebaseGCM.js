@@ -1,4 +1,3 @@
-var GOOGLE_SENDER_ID='1046179569753';
 var firebaseGCM={
 
     initialize: function () {
