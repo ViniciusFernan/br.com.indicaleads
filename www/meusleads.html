@@ -286,7 +286,7 @@
             var idLead = $(this).attr('data-idlead-btn');
 
             MEUSLEADS_DB.setSstatusLeadMicroService(idLead, idleadstatus);
-
+            $(this).closest('.box-lead').addClass('yesStatus');
         });
 
 
