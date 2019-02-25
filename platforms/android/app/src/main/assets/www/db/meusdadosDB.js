@@ -20,7 +20,7 @@ var MEUSDADOS_DB = {
 
     initPage: function () {
         var usuario = JSON.parse( window.localStorage.getItem('usuario'));
-        var imgPerfil = (window.localStorage.getItem('imgPerfil') ?  urlUploads +"/"+ usuario.idUsuario +"/perfil/"+ window.localStorage.getItem('imgPerfil') : './img/avatar.png');
+        var imgPerfil = ((usuario.imgPerfil !== null) ?  urlUploads +"/"+ usuario.idUsuario +"/perfil/"+ window.localStorage.getItem('imgPerfil') : './img/avatar.png');
 
         if( usuario==null ){
             window.localStorage.clear();

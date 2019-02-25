@@ -55,7 +55,7 @@ var app = {
         var serial = ((devicePlatform === 'browser') ? '123456-AVF' : device.serial);
         window.localStorage.setItem('serial', serial);
 
-        var imgPerfil = (window.localStorage.getItem('imgPerfil') ?  urlUploads +"/"+ usuario.idUsuario +"/perfil/"+ window.localStorage.getItem('imgPerfil') : './img/avatar.png');
+        var imgPerfil = ((usuario.imgPerfil !== null) ?  urlUploads +"/"+ usuario.idUsuario +"/perfil/"+ window.localStorage.getItem('imgPerfil') : './img/avatar.png');
         ((document.getElementById('imgemPerfilMeusDadosMenu')) ? document.getElementById('imgemPerfilMeusDadosMenu').src = imgPerfil : '' );
 
 
