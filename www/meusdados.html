@@ -204,6 +204,7 @@
                     function successGaleria(fotoURI_C) {
                         var usuario = JSON.parse(window.localStorage.getItem('usuario'));
                         var passWID = app.appKey();
+                        $(".app").prepend('<img class="loader" src="./img/loader.gif">');
 
                         var ft = new FileTransfer();
                         ft.upload(
@@ -218,12 +219,16 @@
                                     document.getElementById('imgemPerfilMeusDadosMenu').src = ((resp.data) ? urlUploads+"/"+usuario.idUsuario +"/perfil/"+resp.data : './img/avatar.png' );
                                     //smallImage.src = fotoURI_C;
 
+                                    $('.loader').fadeOut(500).remove();
+
                                 }else{
                                     navigator.notification.alert('Error ao atualizar foto', '','NOVA FOTO', 'FECHAR');
+                                    $('.loader').fadeOut(500).remove();
                                 }
                             },
                             function (error) {
                                 navigator.notification.alert('Error ao atualizar foto, Tente novamente mais tarde', '','NOVA FOTO', 'FECHAR');
+                                $('.loader').fadeOut(500).remove();
                             },
                             { chunkedMode:false, fileKey:"file", fileName:'imgPerfil', mimeType:"image/jpeg" ,
                                 params: {idUsuario:usuario.idUsuario,appID:passWID }

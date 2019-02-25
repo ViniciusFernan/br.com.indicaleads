@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="2daa2abc-aafd-4db8-8d1d-40163fe820bf" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/meusdados.html" afterPath="$PROJECT_DIR$/www/meusdados.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -16,28 +17,18 @@
       <file leaf-file-name="dashboard.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/www/dashboard.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="118" column="73" lean-forward="false" selection-start-line="118" selection-start-column="73" selection-end-line="118" selection-end-column="73" />
+            <state relative-caret-position="-17">
+              <caret line="138" column="4" lean-forward="true" selection-start-line="138" selection-start-column="4" selection-end-line="138" selection-end-column="4" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="firebaseGCM.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/www/assets/js/firebaseGCM.js">
+      <file leaf-file-name="meusdados.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/www/meusdados.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="36" column="0" lean-forward="true" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/www/assets/js/index.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1042">
-              <caret line="20" column="37" lean-forward="true" selection-start-line="20" selection-start-column="37" selection-end-line="20" selection-end-column="37" />
+            <state relative-caret-position="646">
+              <caret line="230" column="67" lean-forward="false" selection-start-line="230" selection-start-column="67" selection-end-line="230" selection-end-column="67" />
               <folding />
             </state>
           </provider>
@@ -104,13 +95,13 @@
         <option value="$PROJECT_DIR$/www/db/loginDB.js" />
         <option value="$PROJECT_DIR$/google-services.json" />
         <option value="$PROJECT_DIR$/www/meusleads.html" />
-        <option value="$PROJECT_DIR$/www/meusdados.html" />
         <option value="$PROJECT_DIR$/www/plantoes.html" />
         <option value="$PROJECT_DIR$/www/index.html" />
         <option value="$PROJECT_DIR$/www/dashboard.html" />
         <option value="$PROJECT_DIR$/config.xml" />
         <option value="$PROJECT_DIR$/www/assets/js/index.js" />
         <option value="$PROJECT_DIR$/www/assets/js/firebaseGCM.js" />
+        <option value="$PROJECT_DIR$/www/meusdados.html" />
       </list>
     </option>
   </component>
@@ -183,7 +174,7 @@
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="WebServerToolWindowFactoryState" value="true" />
     <property name="nodejs_interpreter_path" value="C:/Program Files/nodejs/node" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../indica" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Vinicius/AVFAppBase" />
     <property name="node.js.path.for.package.jscs" value="$PROJECT_DIR$/www/db/meusdadosDB.js" />
     <property name="node.js.detected.package.jscs" value="true" />
     <property name="node.js.selected.package.jscs" value="" />
@@ -267,14 +258,7 @@
       <workItem from="1550142176871" duration="28462000" />
       <workItem from="1550494143236" duration="5446000" />
       <workItem from="1550500179357" duration="93054000" />
-      <workItem from="1551096643261" duration="4769000" />
-    </task>
-    <task id="LOCAL-00148" summary="teste">
-      <created>1550595462639</created>
-      <option name="number" value="00148" />
-      <option name="presentableId" value="LOCAL-00148" />
-      <option name="project" value="LOCAL" />
-      <updated>1550595462639</updated>
+      <workItem from="1551096643261" duration="6930000" />
     </task>
     <task id="LOCAL-00149" summary="teste">
       <created>1550595617097</created>
@@ -612,11 +596,18 @@
       <option name="project" value="LOCAL" />
       <updated>1551099630160</updated>
     </task>
-    <option name="localTasksCounter" value="197" />
+    <task id="LOCAL-00197" summary="teste">
+      <created>1551103395092</created>
+      <option name="number" value="00197" />
+      <option name="presentableId" value="LOCAL-00197" />
+      <option name="project" value="LOCAL" />
+      <updated>1551103395092</updated>
+    </task>
+    <option name="localTasksCounter" value="198" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="487661000" />
+    <option name="totallyTimeSpent" value="489822000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -794,6 +785,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="166617">
           <caret line="9813" column="4" lean-forward="false" selection-start-line="9813" selection-start-column="4" selection-end-line="9813" selection-end-column="4" />
+          <folding>
+            <element signature="n#!!doc" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -838,6 +832,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="559">
           <caret line="189" column="52" lean-forward="true" selection-start-line="189" selection-start-column="40" selection-end-line="189" selection-end-column="52" />
+          <folding>
+            <marker date="1549642832758" expanded="true" signature="3436:3500" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -913,6 +910,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="505">
           <caret line="43" column="182" lean-forward="false" selection-start-line="43" selection-start-column="148" selection-end-line="43" selection-end-column="182" />
+          <folding>
+            <marker date="1550849168237" expanded="true" signature="1091:1105" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -928,6 +928,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="6" column="4" lean-forward="false" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="4" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -935,13 +936,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="391">
           <caret line="47" column="44" lean-forward="false" selection-start-line="47" selection-start-column="44" selection-end-line="47" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/meusdados.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="105" column="67" lean-forward="false" selection-start-line="105" selection-start-column="67" selection-end-line="105" selection-end-column="67" />
         </state>
       </provider>
     </entry>
@@ -981,10 +975,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/dashboard.html">
+    <entry file="file://$PROJECT_DIR$/www/assets/js/firebaseGCM.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="118" column="73" lean-forward="false" selection-start-line="118" selection-start-column="73" selection-end-line="118" selection-end-column="73" />
+        <state relative-caret-position="255">
+          <caret line="36" column="0" lean-forward="true" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -997,10 +991,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/assets/js/firebaseGCM.js">
+    <entry file="file://$PROJECT_DIR$/www/dashboard.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="36" column="0" lean-forward="true" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+        <state relative-caret-position="-17">
+          <caret line="138" column="4" lean-forward="true" selection-start-line="138" selection-start-column="4" selection-end-line="138" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/meusdados.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="646">
+          <caret line="230" column="67" lean-forward="false" selection-start-line="230" selection-start-column="67" selection-end-line="230" selection-end-column="67" />
           <folding />
         </state>
       </provider>
