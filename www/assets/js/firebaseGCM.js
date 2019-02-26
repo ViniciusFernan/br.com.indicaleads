@@ -57,7 +57,7 @@ var firebaseGCM={
                 );
 
                 if(data.additionalData.pageLoad!==null){
-                    window.location.href = data.pageLoad;
+                    window.location.href = data.additionalData.pageLoad;
                 }
             });
 
