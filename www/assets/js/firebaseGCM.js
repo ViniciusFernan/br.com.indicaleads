@@ -58,9 +58,10 @@ var firebaseGCM={
 
                 //window.location.href = data.additionalData.pageLoad;
 
-                var  additionalData = JSON.stringify(data.additionalData);
-                alert('obj: '+ additionalData);
-                alert('data: '+ additionalData.pageLoad);
+                var  additionalData =  JSON.parse(JSON.stringify(data.additionalData));
+                var  additional = JSON.parse(data.additionalData);
+                alert('obj: '+ additionalData.pageLoad);
+                alert('data: '+ additional.pageLoad);
 
 
             });
