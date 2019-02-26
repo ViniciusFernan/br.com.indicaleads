@@ -57,13 +57,11 @@ var firebaseGCM={
 
 
                 //window.location.href = data.additionalData.pageLoad;
-                alert('data1: '+ data.additionalData);
-                alert('dataurl: '+ data.url);
-                alert('surveyID: '+ data.surveyID);
+                alert('data1: '+ data.additionalData.pageLoad);
+
 
                 let additionalData = JSON.parse(JSON.stringify(data.additionalData));
-                alert('additionalData: '+ additionalData);
-                alert('pageLoad: '+ additionalData.pageLoad);
+                alert('additionalData: '+ additionalData.pageLoad);
 
 
             });
