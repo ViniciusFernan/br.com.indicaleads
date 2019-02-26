@@ -47,13 +47,18 @@ var firebaseGCM={
                 navigator.notification.alert(e.message, '','Push error', 'FECHAR');
             });
 
-            push.on('notification', function (data) {
+            push.on('notification', function (data){
                 navigator.notification.alert(
                     data.message,       // message
                     null,               // callback
                     data.title,         // title
                     'Ok'                // buttonName
                 );
+
+                if(data.pageLoad){
+                    alert(data);
+                    window.location.href = data.pageLoad;
+                }
             });
 
 
