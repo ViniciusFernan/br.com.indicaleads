@@ -55,10 +55,23 @@ var firebaseGCM={
                     'Ok'                // buttonName
                 );
 
-                alert('page'+data.additionalData);
-                if(data.additionalData.pageLoad!==null){
-                    //window.location.href = data.additionalData.pageLoad;
+
+                //window.location.href = data.additionalData.pageLoad;
+
+
+
+                var additionalData = data.additionalData;
+                if (additionalData.pageLoad){
+                    alert('page1: '+ additionalData.pageLoad);
+                    for (var pageLoad in additionalData.pageLoad) {
+                        var action_data = additionalData.pageLoad[pageLoad];
+                        if(pageLoad === 'pageLoad') {
+                            alert('page3: '+ pageLoad);
+                        }
+                    }
                 }
+
+
             });
 
 
