@@ -48,6 +48,7 @@ var firebaseGCM={
             });
 
             push.on('notification', function (data){
+                alert(JSON.stringify(data));
                 navigator.notification.alert(
                     data.message,       // message
                     null,               // callback
@@ -55,9 +56,8 @@ var firebaseGCM={
                     'Ok'                // buttonName
                 );
 
-                if(data.pageLoad){
-                    alert(data);
-                    window.location.href = data.pageLoad;
+                if(data.additionalData.pageLoad!==null){
+                    window.location.href = data.additionalData.pageLoad;
                 }
             });
 
