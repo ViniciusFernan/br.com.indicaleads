@@ -4,8 +4,10 @@
     <list default="true" id="2daa2abc-aafd-4db8-8d1d-40163fe820bf" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/assets/js/firebaseGCM.js" afterPath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/assets/js/firebaseGCM.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/meusleads.html" afterPath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/meusleads.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/browser/www/assets/js/firebaseGCM.js" afterPath="$PROJECT_DIR$/platforms/browser/www/assets/js/firebaseGCM.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/assets/js/firebaseGCM.js" afterPath="$PROJECT_DIR$/www/assets/js/firebaseGCM.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/browser/www/meusleads.html" afterPath="$PROJECT_DIR$/platforms/browser/www/meusleads.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/meusleads.html" afterPath="$PROJECT_DIR$/www/meusleads.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -26,11 +28,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="firebaseGCM.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="firebaseGCM.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/www/assets/js/firebaseGCM.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="573">
-              <caret line="61" column="0" lean-forward="false" selection-start-line="61" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
+            <state relative-caret-position="255">
+              <caret line="36" column="0" lean-forward="true" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -48,21 +50,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="meusleads.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="meusleads.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/www/meusleads.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2154">
-              <caret line="104" column="84" lean-forward="false" selection-start-line="104" selection-start-column="84" selection-end-line="104" selection-end-column="84" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/www/assets/js/index.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="20" column="35" lean-forward="false" selection-start-line="20" selection-start-column="22" selection-end-line="20" selection-end-column="35" />
+            <state relative-caret-position="124">
+              <caret line="262" column="27" lean-forward="false" selection-start-line="262" selection-start-column="27" selection-end-line="262" selection-end-column="27" />
               <folding />
             </state>
           </provider>
@@ -134,9 +126,9 @@
         <option value="$PROJECT_DIR$/www/meusdados.html" />
         <option value="$PROJECT_DIR$/www/db/meusdadosDB.js" />
         <option value="$PROJECT_DIR$/www/assets/js/index.js" />
-        <option value="$PROJECT_DIR$/www/meusleads.html" />
         <option value="$USER_HOME$/Downloads/getLista.php" />
         <option value="$PROJECT_DIR$/www/assets/js/firebaseGCM.js" />
+        <option value="$PROJECT_DIR$/www/meusleads.html" />
       </list>
     </option>
   </component>
@@ -228,7 +220,7 @@
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="WebServerToolWindowFactoryState" value="true" />
     <property name="nodejs_interpreter_path" value="C:/Program Files/nodejs/node" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Vinicius/HOME" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Vinicius/AVFAppBase" />
     <property name="node.js.path.for.package.jscs" value="$PROJECT_DIR$/www/db/meusdadosDB.js" />
     <property name="node.js.detected.package.jscs" value="true" />
     <property name="node.js.selected.package.jscs" value="" />
@@ -312,70 +304,7 @@
       <workItem from="1550142176871" duration="28462000" />
       <workItem from="1550494143236" duration="5446000" />
       <workItem from="1550500179357" duration="93054000" />
-      <workItem from="1551096643261" duration="29371000" />
-    </task>
-    <task id="LOCAL-00178" summary="teste">
-      <created>1550771492459</created>
-      <option name="number" value="00178" />
-      <option name="presentableId" value="LOCAL-00178" />
-      <option name="project" value="LOCAL" />
-      <updated>1550771492459</updated>
-    </task>
-    <task id="LOCAL-00179" summary="teste">
-      <created>1550771568798</created>
-      <option name="number" value="00179" />
-      <option name="presentableId" value="LOCAL-00179" />
-      <option name="project" value="LOCAL" />
-      <updated>1550771568798</updated>
-    </task>
-    <task id="LOCAL-00180" summary="teste">
-      <created>1550781802368</created>
-      <option name="number" value="00180" />
-      <option name="presentableId" value="LOCAL-00180" />
-      <option name="project" value="LOCAL" />
-      <updated>1550781802368</updated>
-    </task>
-    <task id="LOCAL-00181" summary="teste">
-      <created>1550782312388</created>
-      <option name="number" value="00181" />
-      <option name="presentableId" value="LOCAL-00181" />
-      <option name="project" value="LOCAL" />
-      <updated>1550782312388</updated>
-    </task>
-    <task id="LOCAL-00182" summary="teste">
-      <created>1550782436501</created>
-      <option name="number" value="00182" />
-      <option name="presentableId" value="LOCAL-00182" />
-      <option name="project" value="LOCAL" />
-      <updated>1550782436501</updated>
-    </task>
-    <task id="LOCAL-00183" summary="teste">
-      <created>1550782768893</created>
-      <option name="number" value="00183" />
-      <option name="presentableId" value="LOCAL-00183" />
-      <option name="project" value="LOCAL" />
-      <updated>1550782768893</updated>
-    </task>
-    <task id="LOCAL-00184" summary="teste">
-      <created>1550843531428</created>
-      <option name="number" value="00184" />
-      <option name="presentableId" value="LOCAL-00184" />
-      <option name="project" value="LOCAL" />
-      <updated>1550843531428</updated>
-    </task>
-    <task id="LOCAL-00185" summary="teste">
-      <created>1550844806368</created>
-      <option name="number" value="00185" />
-      <option name="presentableId" value="LOCAL-00185" />
-      <option name="project" value="LOCAL" />
-      <updated>1550844806368</updated>
-    </task>
-    <task id="LOCAL-00186" summary="teste">
-      <created>1550849191971</created>
-      <option name="number" value="00186" />
-      <option name="presentableId" value="LOCAL-00186" />
-      <option name="project" value="LOCAL" />
-      <updated>1550849191971</updated>
+      <workItem from="1551096643261" duration="34156000" />
     </task>
     <task id="LOCAL-00187" summary="teste">
       <created>1550856398636</created>
@@ -657,11 +586,74 @@
       <option name="project" value="LOCAL" />
       <updated>1551208024748</updated>
     </task>
-    <option name="localTasksCounter" value="227" />
+    <task id="LOCAL-00227" summary="teste page loag push">
+      <created>1551208357431</created>
+      <option name="number" value="00227" />
+      <option name="presentableId" value="LOCAL-00227" />
+      <option name="project" value="LOCAL" />
+      <updated>1551208357431</updated>
+    </task>
+    <task id="LOCAL-00228" summary="teste page loag push">
+      <created>1551208509868</created>
+      <option name="number" value="00228" />
+      <option name="presentableId" value="LOCAL-00228" />
+      <option name="project" value="LOCAL" />
+      <updated>1551208509868</updated>
+    </task>
+    <task id="LOCAL-00229" summary="teste page loag push">
+      <created>1551209268340</created>
+      <option name="number" value="00229" />
+      <option name="presentableId" value="LOCAL-00229" />
+      <option name="project" value="LOCAL" />
+      <updated>1551209268340</updated>
+    </task>
+    <task id="LOCAL-00230" summary="teste page loag push">
+      <created>1551210341419</created>
+      <option name="number" value="00230" />
+      <option name="presentableId" value="LOCAL-00230" />
+      <option name="project" value="LOCAL" />
+      <updated>1551210341421</updated>
+    </task>
+    <task id="LOCAL-00231" summary="teste page loag push">
+      <created>1551211064346</created>
+      <option name="number" value="00231" />
+      <option name="presentableId" value="LOCAL-00231" />
+      <option name="project" value="LOCAL" />
+      <updated>1551211064346</updated>
+    </task>
+    <task id="LOCAL-00232" summary="teste page loag push">
+      <created>1551211115433</created>
+      <option name="number" value="00232" />
+      <option name="presentableId" value="LOCAL-00232" />
+      <option name="project" value="LOCAL" />
+      <updated>1551211115433</updated>
+    </task>
+    <task id="LOCAL-00233" summary="teste page loag push">
+      <created>1551211530836</created>
+      <option name="number" value="00233" />
+      <option name="presentableId" value="LOCAL-00233" />
+      <option name="project" value="LOCAL" />
+      <updated>1551211530836</updated>
+    </task>
+    <task id="LOCAL-00234" summary="teste page loag push">
+      <created>1551212129891</created>
+      <option name="number" value="00234" />
+      <option name="presentableId" value="LOCAL-00234" />
+      <option name="project" value="LOCAL" />
+      <updated>1551212129891</updated>
+    </task>
+    <task id="LOCAL-00235" summary="teste page loag push">
+      <created>1551212515538</created>
+      <option name="number" value="00235" />
+      <option name="presentableId" value="LOCAL-00235" />
+      <option name="project" value="LOCAL" />
+      <updated>1551212515538</updated>
+    </task>
+    <option name="localTasksCounter" value="236" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="512263000" />
+    <option name="totallyTimeSpent" value="517048000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -676,7 +668,7 @@
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.010660981" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14712153" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14712153" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934782" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -994,16 +986,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/db/meusdadosDB.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="22" column="121" lean-forward="false" selection-start-line="22" selection-start-column="121" selection-end-line="22" selection-end-column="121" />
-          <folding>
-            <marker date="1551121302509" expanded="true" signature="1055:1069" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/Downloads/getLista.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="838">
@@ -1032,34 +1014,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/meusdados.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="80" column="12" lean-forward="false" selection-start-line="80" selection-start-column="12" selection-end-line="80" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/assets/js/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="20" column="35" lean-forward="false" selection-start-line="20" selection-start-column="22" selection-end-line="20" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/www/assets/js/menu.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-323">
           <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/meusleads.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2154">
-          <caret line="104" column="84" lean-forward="false" selection-start-line="104" selection-start-column="84" selection-end-line="104" selection-end-column="84" />
           <folding />
         </state>
       </provider>
@@ -1072,10 +1030,44 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/www/db/meusdadosDB.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="22" column="121" lean-forward="false" selection-start-line="22" selection-start-column="121" selection-end-line="22" selection-end-column="121" />
+          <folding>
+            <marker date="1551121302509" expanded="true" signature="1055:1069" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/assets/js/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="20" column="35" lean-forward="false" selection-start-line="20" selection-start-column="22" selection-end-line="20" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/www/assets/js/firebaseGCM.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="573">
-          <caret line="61" column="0" lean-forward="false" selection-start-line="61" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
+        <state relative-caret-position="255">
+          <caret line="36" column="0" lean-forward="true" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/meusdados.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="80" column="12" lean-forward="false" selection-start-line="80" selection-start-column="12" selection-end-line="80" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/meusleads.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="124">
+          <caret line="262" column="27" lean-forward="false" selection-start-line="262" selection-start-column="27" selection-end-line="262" selection-end-column="27" />
           <folding />
         </state>
       </provider>
