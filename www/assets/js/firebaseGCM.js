@@ -55,9 +55,11 @@ var firebaseGCM={
                     'Ok'                // buttonName
                 );
 
-                if(data.additionalData.pageLoad!==null){
+                if(data.additionalData!==null){
                     var page = JSON.parse(data.additionalData);
-                    alert(page.pageLoad);
+                    var page22 = data.additionalData;
+                    alert('page'+page);
+                    alert('page22'+page22);
                     //window.location.href = data.additionalData.pageLoad;
                 }
             });
