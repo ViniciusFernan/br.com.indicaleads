@@ -55,14 +55,10 @@ var firebaseGCM={
                     'Ok'                // buttonName
                 );
 
-
-                //window.location.href = data.additionalData.pageLoad;
                 alert('dataString: '+ JSON.stringify(data.additionalData));
+                alert('dataURL: '+ data.additionalData.url);
 
-                alert('data1: '+ data.additionalData.pageLoad);
-
-                let additionalData = JSON.parse(JSON.stringify(data.additionalData));
-                alert('additionalData: '+ additionalData.pageLoad);
+                //window.location.href = data.additionalData.url;
 
 
             });
