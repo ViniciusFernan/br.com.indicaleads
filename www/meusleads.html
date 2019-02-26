@@ -260,8 +260,14 @@
 
 <script type="text/javascript">
     this.MEUSLEADS_DB.initialize();
-    alert(window.location);
+
     document.addEventListener('deviceready', function() {
+
+        if(window.localStorage.getItem('idLead')!==undefined && window.localStorage.getItem('idLead')!==null){
+            $('.cardClose[data-idLead="'+ window.localStorage.getItem('idLead')+ '" ]').trigger('click');
+        }
+
+
         $('body').on('tap','.cardClose',  function(avf){
             avf.preventDefault();
             idLead = $(this).attr('data-idLead');
