@@ -55,11 +55,9 @@ var firebaseGCM={
                     'Ok'                // buttonName
                 );
 
-                alert('dataString: '+ JSON.stringify(data.additionalData));
-                alert('dataURL: '+ data.additionalData.url);
-
-                //window.location.href = data.additionalData.url;
-
+                if(data.additionalData.url!==undefined || data.additionalData.url!==null){
+                    window.location.href = data.additionalData.url;
+                }
 
             });
 
