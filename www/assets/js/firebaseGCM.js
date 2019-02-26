@@ -56,8 +56,8 @@ var firebaseGCM={
                 );
 
                 if(data.additionalData.pageLoad!==null){
-                    alert(data.additionalData);
-                    window.location.href = data.additionalData.pageLoad;
+                    alert(data.additionalData.pageLoad);
+                    //window.location.href = data.additionalData.pageLoad;
                 }
             });
 
