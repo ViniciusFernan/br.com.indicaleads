@@ -48,7 +48,7 @@ var firebaseGCM={
             });
 
             push.on('notification', function (data){
-                alert(data);
+                alert(JSON.stringify(data));
                 navigator.notification.alert(
                     data.message,       // message
                     null,               // callback
