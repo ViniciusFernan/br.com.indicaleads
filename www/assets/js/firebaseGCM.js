@@ -55,6 +55,7 @@ var firebaseGCM={
                     'Ok'                // buttonName
                 );
 
+                alert(data.additionalData.url);
                 if(data.additionalData.url!==undefined || data.additionalData.url!==null){
                     window.location.href = './'+data.additionalData.url;
                 }
