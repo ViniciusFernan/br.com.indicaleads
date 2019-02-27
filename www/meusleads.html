@@ -311,7 +311,7 @@
             if(window.localStorage.getItem('idLead')!==undefined && window.localStorage.getItem('idLead')!==null){
                 var idLead = window.localStorage.getItem('idLead');
                 $('[data-idlead="'+idLead+ '" ]').trigger('tap');
-                window.localStorage.removeItem("idLead");
+                window.localStorage.setItem('idLead', null);
             }
         }, 900);
     });
