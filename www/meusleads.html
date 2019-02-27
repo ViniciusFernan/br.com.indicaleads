@@ -306,10 +306,10 @@
     });
 
 
-    document.addEventListener('load',function (){
+   $(window).on('load', function(){
         setTimeout(function() {
             if(window.localStorage.getItem('idLead')!==undefined && window.localStorage.getItem('idLead')!==null){
-                $('.box-lead[data-idLead="'+ window.localStorage.getItem('idLead')+ '" ]').trigger('click');
+                $('[data-idlead="'+ window.localStorage.getItem('idLead')+ '" ]').trigger('tap');
             }
         }, 900);
     });
