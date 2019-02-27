@@ -310,6 +310,7 @@
         setTimeout(function() {
             if(window.localStorage.getItem('idLead')!==undefined && window.localStorage.getItem('idLead')!==null){
                 $('[data-idlead="'+ window.localStorage.getItem('idLead')+ '" ]').trigger('tap');
+                window.localStorage.removeItem("idLead");
             }
         }, 900);
     });
