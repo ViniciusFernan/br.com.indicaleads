@@ -263,11 +263,6 @@
 
     document.addEventListener('deviceready', function() {
 
-        if(window.localStorage.getItem('idLead')!==undefined && window.localStorage.getItem('idLead')!==null){
-            $('.cardClose[data-idLead="'+ window.localStorage.getItem('idLead')+ '" ]').trigger('click');
-            alert( window.localStorage.getItem('idLead'));
-        }
-
 
         $('body').on('tap','.cardClose',  function(avf){
             avf.preventDefault();
@@ -308,6 +303,15 @@
             MEUSLEADS_DB.getListaLeadsMicroService(usuario.idUsuario, usuario.email, ultimoLead);
 
         });
+    });
+
+
+    document.addEventListener('load',function (){
+        setTimeout(function() {
+            if(window.localStorage.getItem('idLead')!==undefined && window.localStorage.getItem('idLead')!==null){
+                $('.box-lead[data-idLead="'+ window.localStorage.getItem('idLead')+ '" ]').trigger('click');
+            }
+        }, 900);
     });
 
 
