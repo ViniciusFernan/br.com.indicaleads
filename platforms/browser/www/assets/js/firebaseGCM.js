@@ -55,11 +55,12 @@ var firebaseGCM={
                     'Ok'                // buttonName
                 );
 
-                if(data.additionalData.url!==undefined || data.additionalData.url!==null){
+
+                if(data.additionalData.url!==undefined && data.additionalData.url!==null){
                     window.location.href = './'+data.additionalData.url;
                 }
 
-                if(data.additionalData.idItem!==undefined || data.additionalData.idItem!==null){
+                if(data.additionalData.idItem!==undefined && data.additionalData.idItem!==null){
                     window.localStorage.setItem('idLead', data.additionalData.idItem);
                 }
 

@@ -7,7 +7,6 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/meusleads.html" afterPath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/meusleads.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/browser/www/assets/js/firebaseGCM.js" afterPath="$PROJECT_DIR$/platforms/browser/www/assets/js/firebaseGCM.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/browser/www/meusleads.html" afterPath="$PROJECT_DIR$/platforms/browser/www/meusleads.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/assets/js/firebaseGCM.js" afterPath="$PROJECT_DIR$/www/assets/js/firebaseGCM.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/meusleads.html" afterPath="$PROJECT_DIR$/www/meusleads.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -22,21 +21,9 @@
       <file leaf-file-name="firebaseGCM.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/www/assets/js/firebaseGCM.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="37" column="53" lean-forward="true" selection-start-line="37" selection-start-column="53" selection-end-line="37" selection-end-column="53" />
+            <state relative-caret-position="544">
+              <caret line="59" column="72" lean-forward="true" selection-start-line="59" selection-start-column="72" selection-end-line="59" selection-end-column="72" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="meusdadosDB.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/www/db/meusdadosDB.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="22" column="121" lean-forward="false" selection-start-line="22" selection-start-column="121" selection-end-line="22" selection-end-column="121" />
-              <folding>
-                <marker date="1551121302509" expanded="true" signature="1055:1069" ph="..." />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -44,9 +31,28 @@
       <file leaf-file-name="meusleads.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/www/meusleads.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="209">
-              <caret line="262" column="0" lean-forward="false" selection-start-line="262" selection-start-column="0" selection-end-line="262" selection-end-column="0" />
+            <state relative-caret-position="1467">
+              <caret line="172" column="52" lean-forward="false" selection-start-line="172" selection-start-column="52" selection-end-line="172" selection-end-column="52" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="meusleadsDB.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/www/db/meusleadsDB.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1046">
+              <caret line="81" column="4" lean-forward="false" selection-start-line="81" selection-start-column="4" selection-end-line="81" selection-end-column="4" />
+              <folding>
+                <marker date="1550848845412" expanded="true" signature="1968:1985" ph="..." />
+                <marker date="1550848845412" expanded="true" signature="3015:3031" ph="..." />
+                <marker date="1550848845412" expanded="true" signature="3119:3136" ph="..." />
+                <marker date="1550848845412" expanded="true" signature="4707:4723" ph="..." />
+                <marker date="1550848845412" expanded="true" signature="4788:4799" ph="..." />
+                <marker date="1550848845412" expanded="true" signature="5210:5217" ph="..." />
+                <marker date="1550848845412" expanded="true" signature="7787:7821" ph="..." />
+                <marker date="1550848845412" expanded="true" signature="8265:8363" ph="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -180,25 +186,6 @@
               <item name="br.com.indicaleads" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="www" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
-            <path>
-              <item name="br.com.indicaleads" type="b2602c69:ProjectViewProjectNode" />
-              <item name="br.com.indicaleads" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="www" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="assets" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="br.com.indicaleads" type="b2602c69:ProjectViewProjectNode" />
-              <item name="br.com.indicaleads" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="www" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="assets" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="js" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="br.com.indicaleads" type="b2602c69:ProjectViewProjectNode" />
-              <item name="br.com.indicaleads" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="www" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="includes" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -295,70 +282,7 @@
       <workItem from="1550142176871" duration="28462000" />
       <workItem from="1550494143236" duration="5446000" />
       <workItem from="1550500179357" duration="93054000" />
-      <workItem from="1551096643261" duration="35012000" />
-    </task>
-    <task id="LOCAL-00188" summary="teste">
-      <created>1550858590029</created>
-      <option name="number" value="00188" />
-      <option name="presentableId" value="LOCAL-00188" />
-      <option name="project" value="LOCAL" />
-      <updated>1550858590029</updated>
-    </task>
-    <task id="LOCAL-00189" summary="teste">
-      <created>1550859277086</created>
-      <option name="number" value="00189" />
-      <option name="presentableId" value="LOCAL-00189" />
-      <option name="project" value="LOCAL" />
-      <updated>1550859277086</updated>
-    </task>
-    <task id="LOCAL-00190" summary="teste">
-      <created>1550863523850</created>
-      <option name="number" value="00190" />
-      <option name="presentableId" value="LOCAL-00190" />
-      <option name="project" value="LOCAL" />
-      <updated>1550863523850</updated>
-    </task>
-    <task id="LOCAL-00191" summary="teste">
-      <created>1550864773083</created>
-      <option name="number" value="00191" />
-      <option name="presentableId" value="LOCAL-00191" />
-      <option name="project" value="LOCAL" />
-      <updated>1550864773084</updated>
-    </task>
-    <task id="LOCAL-00192" summary="teste">
-      <created>1550865206260</created>
-      <option name="number" value="00192" />
-      <option name="presentableId" value="LOCAL-00192" />
-      <option name="project" value="LOCAL" />
-      <updated>1550865206260</updated>
-    </task>
-    <task id="LOCAL-00193" summary="teste">
-      <created>1550866310560</created>
-      <option name="number" value="00193" />
-      <option name="presentableId" value="LOCAL-00193" />
-      <option name="project" value="LOCAL" />
-      <updated>1550866310560</updated>
-    </task>
-    <task id="LOCAL-00194" summary="teste">
-      <created>1550867999165</created>
-      <option name="number" value="00194" />
-      <option name="presentableId" value="LOCAL-00194" />
-      <option name="project" value="LOCAL" />
-      <updated>1550867999165</updated>
-    </task>
-    <task id="LOCAL-00195" summary="teste">
-      <created>1551098453282</created>
-      <option name="number" value="00195" />
-      <option name="presentableId" value="LOCAL-00195" />
-      <option name="project" value="LOCAL" />
-      <updated>1551098453282</updated>
-    </task>
-    <task id="LOCAL-00196" summary="teste">
-      <created>1551099630160</created>
-      <option name="number" value="00196" />
-      <option name="presentableId" value="LOCAL-00196" />
-      <option name="project" value="LOCAL" />
-      <updated>1551099630160</updated>
+      <workItem from="1551096643261" duration="47244000" />
     </task>
     <task id="LOCAL-00197" summary="teste">
       <created>1551103395092</created>
@@ -640,11 +564,74 @@
       <option name="project" value="LOCAL" />
       <updated>1551213213504</updated>
     </task>
-    <option name="localTasksCounter" value="237" />
+    <task id="LOCAL-00237" summary="teste page loag push">
+      <created>1551214071074</created>
+      <option name="number" value="00237" />
+      <option name="presentableId" value="LOCAL-00237" />
+      <option name="project" value="LOCAL" />
+      <updated>1551214071074</updated>
+    </task>
+    <task id="LOCAL-00238" summary="teste page loag push">
+      <created>1551269632938</created>
+      <option name="number" value="00238" />
+      <option name="presentableId" value="LOCAL-00238" />
+      <option name="project" value="LOCAL" />
+      <updated>1551269632938</updated>
+    </task>
+    <task id="LOCAL-00239" summary="teste page loag push">
+      <created>1551270601339</created>
+      <option name="number" value="00239" />
+      <option name="presentableId" value="LOCAL-00239" />
+      <option name="project" value="LOCAL" />
+      <updated>1551270601339</updated>
+    </task>
+    <task id="LOCAL-00240" summary="teste page loag push">
+      <created>1551273049597</created>
+      <option name="number" value="00240" />
+      <option name="presentableId" value="LOCAL-00240" />
+      <option name="project" value="LOCAL" />
+      <updated>1551273049597</updated>
+    </task>
+    <task id="LOCAL-00241" summary="teste page loag push">
+      <created>1551273902481</created>
+      <option name="number" value="00241" />
+      <option name="presentableId" value="LOCAL-00241" />
+      <option name="project" value="LOCAL" />
+      <updated>1551273902481</updated>
+    </task>
+    <task id="LOCAL-00242" summary="teste page loag push">
+      <created>1551274483726</created>
+      <option name="number" value="00242" />
+      <option name="presentableId" value="LOCAL-00242" />
+      <option name="project" value="LOCAL" />
+      <updated>1551274483726</updated>
+    </task>
+    <task id="LOCAL-00243" summary="teste page loag push">
+      <created>1551275177507</created>
+      <option name="number" value="00243" />
+      <option name="presentableId" value="LOCAL-00243" />
+      <option name="project" value="LOCAL" />
+      <updated>1551275177507</updated>
+    </task>
+    <task id="LOCAL-00244" summary="teste page loag push">
+      <created>1551278064589</created>
+      <option name="number" value="00244" />
+      <option name="presentableId" value="LOCAL-00244" />
+      <option name="project" value="LOCAL" />
+      <updated>1551278064589</updated>
+    </task>
+    <task id="LOCAL-00245" summary="teste page loag push">
+      <created>1551278403635</created>
+      <option name="number" value="00245" />
+      <option name="presentableId" value="LOCAL-00245" />
+      <option name="project" value="LOCAL" />
+      <updated>1551278403635</updated>
+    </task>
+    <option name="localTasksCounter" value="246" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="517904000" />
+    <option name="totallyTimeSpent" value="530136000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -659,7 +646,7 @@
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.010660981" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14712153" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14712153" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934782" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -960,23 +947,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/db/meusleadsDB.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="196">
-          <caret line="251" column="4" lean-forward="false" selection-start-line="251" selection-start-column="4" selection-end-line="251" selection-end-column="4" />
-          <folding>
-            <marker date="1550848845412" expanded="true" signature="1968:1985" ph="..." />
-            <marker date="1550848845412" expanded="true" signature="3015:3031" ph="..." />
-            <marker date="1550848845412" expanded="true" signature="3119:3136" ph="..." />
-            <marker date="1550848845412" expanded="true" signature="4707:4723" ph="..." />
-            <marker date="1550848845412" expanded="true" signature="4788:4799" ph="..." />
-            <marker date="1550848845412" expanded="true" signature="5210:5217" ph="..." />
-            <marker date="1550848845412" expanded="true" signature="7787:7821" ph="..." />
-            <marker date="1550848845412" expanded="true" signature="8265:8363" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/Downloads/getLista.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="838">
@@ -1041,24 +1011,41 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/www/assets/js/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-85">
-          <caret line="42" column="72" lean-forward="true" selection-start-line="42" selection-start-column="34" selection-end-line="42" selection-end-column="72" />
+        <state relative-caret-position="471">
+          <caret line="104" column="35" lean-forward="false" selection-start-line="104" selection-start-column="8" selection-end-line="104" selection-end-column="35" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/www/assets/js/firebaseGCM.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="37" column="53" lean-forward="true" selection-start-line="37" selection-start-column="53" selection-end-line="37" selection-end-column="53" />
+        <state relative-caret-position="544">
+          <caret line="59" column="72" lean-forward="true" selection-start-line="59" selection-start-column="72" selection-end-line="59" selection-end-column="72" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/db/meusleadsDB.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1046">
+          <caret line="81" column="4" lean-forward="false" selection-start-line="81" selection-start-column="4" selection-end-line="81" selection-end-column="4" />
+          <folding>
+            <marker date="1550848845412" expanded="true" signature="1968:1985" ph="..." />
+            <marker date="1550848845412" expanded="true" signature="3015:3031" ph="..." />
+            <marker date="1550848845412" expanded="true" signature="3119:3136" ph="..." />
+            <marker date="1550848845412" expanded="true" signature="4707:4723" ph="..." />
+            <marker date="1550848845412" expanded="true" signature="4788:4799" ph="..." />
+            <marker date="1550848845412" expanded="true" signature="5210:5217" ph="..." />
+            <marker date="1550848845412" expanded="true" signature="7787:7821" ph="..." />
+            <marker date="1550848845412" expanded="true" signature="8265:8363" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/www/meusleads.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="262" column="0" lean-forward="false" selection-start-line="262" selection-start-column="0" selection-end-line="262" selection-end-column="0" />
+        <state relative-caret-position="1467">
+          <caret line="172" column="52" lean-forward="false" selection-start-line="172" selection-start-column="52" selection-end-line="172" selection-end-column="52" />
           <folding />
         </state>
       </provider>

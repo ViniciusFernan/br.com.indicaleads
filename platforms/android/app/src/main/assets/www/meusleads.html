@@ -62,11 +62,11 @@
         .actionOpenLeadBox i{     position: absolute;  top: -11px;  right: -14px;  padding: 15px;  z-index: 2; }
         .cardClose .card-body,  .cardClose .card-footer{display: none}
 
-        .flayCard{position: fixed;  width: 95%;  top: 57px;  right: 10px;  height: 81vh;  z-index: 50;  box-shadow: 0px 8px 50px -3px #000;
-            -webkit-animation:1s linear 1 bounceIn;
-            -moz-animation:1s linear 1 bounceIn;
-            -o-animation:1s linear 1 bounceIn;
-            animation:1s linear 1 bounceIn;}
+        .flayCard{position: fixed;  width: 100%;  top: 57px;  right: 0px;  height: calc(100vh - 57px);  z-index: 50;  box-shadow: 0px 8px 50px -3px #000;
+            -webkit-animation: .4s linear .0s avfEfectIn;
+            -moz-animation: .4s linear .0s avfEfectIn;
+            -o-animation: .4s linear .0s avfEfectIn;
+            animation: .4s linear .0s avfEfectIn;}
 
 
         .linha-info-lead{position: relative; }
@@ -106,71 +106,71 @@
         .view-repetidos .panel-body ul li{ padding: 5px 8px; border-bottom: 1px solid #dedede; }
 
 
-        @-webkit-keyframes bounceIn {
-            0% {  opacity: 0;  -webkit-transform: scale(.3);  }
-            50% {  opacity: 1;  -webkit-transform: scale(1.05);  }
-            70% {opacity: 1;  -webkit-transform: scale(.9);  }
-            100% {opacity: 1;  -webkit-transform: scale(1);  }
+        @-webkit-keyframes avfEfectIn {
+            0% { opacity: 0;  -webkit-transform: scale(.3);  }
+            50% { opacity: 1;  -webkit-transform: scale(.5);  }
+            70% { opacity: 1;  -webkit-transform: scale(.7);  }
+            100% { opacity: 1;  -webkit-transform: scale(1);  }
         }
 
-        @-moz-keyframes bounceIn {
-            0% {  opacity: 0;  -moz-transform: scale(.3);  }
-            50% {  opacity: 1;  -moz-transform: scale(1.05);  }
-            70% {opacity: 1;  -moz-transform: scale(.9);  }
-            100% {opacity: 1;  -moz-transform: scale(1);  }
+        @-moz-keyframes avfEfectIn {
+            0% { opacity: 0;  -moz-transform: scale(.3);  }
+            50% { opacity: 1;  -moz-transform: scale(.5);  }
+            70% { opacity: 1;  -moz-transform: scale(.7);  }
+            100% {  opacity: 1;  -moz-transform: scale(1);  }
         }
 
-        @-o-keyframes bounceIn {
+        @-o-keyframes avfEfectIn {
             0% {  opacity: 0;  -o-transform: scale(.3);  }
-            50% {  opacity: 1;  -o-transform: scale(1.05);  }
-            70% {opacity: 1;  -o-transform: scale(.9);  }
-            100% {opacity: 1;  -o-transform: scale(1);  }
+            50% {  opacity: 1;  -o-transform: scale(.5);  }
+            70% {   opacity: 1;  -o-transform: scale(.7);  }
+            100% {  opacity: 1;  -o-transform: scale(1);  }
         }
 
-        @keyframes bounceIn {
+        @keyframes avfEfectIn {
             0% {  opacity: 0;  transform: scale(.3);  }
-            50% {  opacity: 1;  transform: scale(1.05);  }
-            70% {opacity: 1;  transform: scale(.9);  }
-            100% {opacity: 1;  transform: scale(1);  }
+            50% {  opacity: 1;  transform: scale(.5);  }
+            70% {   opacity: 1;  transform: scale(.7);  }
+            100% {  opacity: 1;  transform: scale(1);  }
         }
 
 
 
 
 
-        .bounceOut {
-            -webkit-animation:1s linear 1 bounceOut;
-            -moz-animation:1s linear 1 bounceOut;
-            -o-animation:1s linear 1 bounceOut;
-            animation:1s linear 1 bounceOut;
+        .avfEfectOut {
+            -webkit-animation: .8s linear 1 avfEfectOut;
+            -moz-animation: .8s  linear 1 avfEfectOut;
+            -o-animation: .8s  linear 1 avfEfectOut;
+            animation: .8s  linear 1 avfEfectOut;
         }
 
-        @-webkit-keyframes bounceOut {
+        @-webkit-keyframes avfEfectOut {
             0% {  -webkit-transform: scale(1);  }
-            25% {  -webkit-transform: scale(.95);  }
-            50% {  opacity: 1;  -webkit-transform: scale(1.1);  }
-            100% {  opacity: 0;  -webkit-transform: scale(.3);  }
+            25% {  -webkit-transform: scale(.7);  }
+            50% {  opacity: 1;  -webkit-transform: scale(.5);  }
+            100% {  opacity: 0;  -webkit-transform: scale(.1);  }
         }
 
-        @-moz-keyframes bounceOut {
+        @-moz-keyframes avfEfectOut {
             0% {  -moz-transform: scale(1);  }
-            25% {  -moz-transform: scale(.95);  }
-            50% {  opacity: 1;  -moz-transform: scale(1.1);  }
-            100% {  opacity: 0;  -moz-transform: scale(.3);  }
+            25% {  -moz-transform: scale(.7);  }
+            50% {  opacity: 1;  -moz-transform: scale(.5);  }
+            100% {  opacity: 0;  -moz-transform: scale(.1);  }
         }
 
-        @-o-keyframes bounceOut {
+        @-o-keyframes avfEfectOut {
             0% {  -o-transform: scale(1);  }
-            25% {  -o-transform: scale(.95);  }
-            50% {  opacity: 1;  -o-transform: scale(1.1);  }
-            100% {  opacity: 0;  -o-transform: scale(.3);  }
+            25% {  -o-transform: scale(.7);  }
+            50% {  opacity: 1;  -o-transform: scale(.5);  }
+            100% {  opacity: 0;  -o-transform: scale(.1);  }
         }
 
-        @keyframes bounceOut {
+        @keyframes avfEfectOut {
             0% {  transform: scale(1);  }
-            25% {  transform: scale(.95);  }
-            50% {  opacity: 1;  transform: scale(1.1);  }
-            100% {  opacity: 0;  transform: scale(.3);  }
+            25% {  transform: scale(.7);  }
+            50% {  opacity: 1;  transform: scale(.5);  }
+            100% {  opacity: 0;  transform: scale(.1);  }
         }
 
     </style>
@@ -263,11 +263,6 @@
 
     document.addEventListener('deviceready', function() {
 
-        if(window.localStorage.getItem('idLead')!==undefined && window.localStorage.getItem('idLead')!==null){
-            $('.cardClose[data-idLead="'+ window.localStorage.getItem('idLead')+ '" ]').trigger('click');
-
-        }
-
 
         $('body').on('tap','.cardClose',  function(avf){
             avf.preventDefault();
@@ -279,10 +274,10 @@
         $('body').on('tap', '.fecharLead', function (avf) {
             avf.preventDefault();
             $(this).removeClass('fa-times fecharLead').addClass('fa-angle-double-down');
-            $(this).closest('.box-lead').addClass('bounceOut');
+            $(this).closest('.box-lead').addClass('avfEfectOut');
 
             setTimeout(function() {
-                $('.box-lead.flayCard').removeClass('flayCard bounceOut').addClass('cardClose');
+                $('.box-lead.flayCard').removeClass('flayCard avfEfectOut').addClass('cardClose');
             }, 800);
         });
 
@@ -308,6 +303,17 @@
             MEUSLEADS_DB.getListaLeadsMicroService(usuario.idUsuario, usuario.email, ultimoLead);
 
         });
+    });
+
+
+   $(window).on('load', function(){
+        setTimeout(function() {
+            if(window.localStorage.getItem('idLead')!==undefined && window.localStorage.getItem('idLead')!==null){
+                var idLead = window.localStorage.getItem('idLead');
+                $('[data-idlead="'+idLead+ '" ]').trigger('tap');
+                window.localStorage.setItem('idLead', null);
+            }
+        }, 900);
     });
 
 
