@@ -104,8 +104,10 @@ body *{text-shadow:none !important;}
 /*AVISOS BOX*/
 #cardAvisos{position: relative}
 #cardAvisos .removeCard{position: absolute; top: 2px; right: 8px; font-size: 24px; color: #ccc; z-index: 15}
-#cardAvisos  .box-icon {background-color: #0b5a9e; position: relative}
-#cardAvisos  .box-icon .icon-item{color: #fff; vertical-align: middle; font-size: 60px; position: absolute; top: 50%; transform: translate(-50%, -50%)}
+#cardAvisos .box-icon {background-color: #0b5a9e; position: relative}
+#cardAvisos .box-icon .icon-item{color: #fff; vertical-align: middle; font-size: 60px; position: absolute; top: 50%; transform: translate(-50%, -50%)}
+#cardAvisos .card-body{ padding: .5rem; }
+
 /*AVISOS BOX*/
 
 
