@@ -145,10 +145,11 @@
                 var keyNotify = window.localStorage.getItem('keyNotify');
                 if(keyNotify != response.hash ){
                     $.each(response.data ,function(x, notific){
+                        var classIcon = ((notific.idTipoNotificacao ==10)? 'fa-ban' : 'fa-envelope' );
                         html +='<div id="cardAvisos" class="card mb-3 shadow animated bounceInDown '+((notific.idTipoNotificacao ==10)? 'bloqueado' : '' ) +' " data-notification="'+notific.idNotificacao+'">';
                         html +='    <i class="fas fa-times removeCard" ></i>';
                         html +='    <div class="row no-gutters">';
-                        html +='        <div class="col-4 box-icon" ><i class="fas fa-envelope icon-item" ></i></div>';
+                        html +='        <div class="col-4 box-icon" ><i class="fas '+classIcon+' icon-item" ></i></div>';
                         html +='        <div class="col-8">';
                         html +='            <div class="card-body">';
                         html +='                <h5 class="card-title mb-0">'+notific.tipoNotificacao+'</h5>';
