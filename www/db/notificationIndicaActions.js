@@ -8,12 +8,13 @@ var NOTIFICATIONS_INDICA = {
     },
 
     getNotificationsMicroService: function(idUsuario, tipoNotificacao){
+        var serial = window.localStorage.getItem('serial');
         if(app.isOnline()==true){
             return $.ajax({
                 type: 'POST',
                 dataType: 'json',
                 url: urlWebservices+'/Notificationservice/getNotifications',
-                data:{ 'idUsuario': idUsuario, 'tipoNotificacao': tipoNotificacao },
+                data:{ 'idUsuario': idUsuario, 'tipoNotificacao': tipoNotificacao, 'registroDeDispositivo': serial },
                 beforeSend: function(){ },
                 complete: function(){ },
                 success: function(x){

@@ -118,7 +118,7 @@
 
 <script type="text/javascript" src="./assets/js/firebaseGCM.js"></script>
 <script type="text/javascript" src="./db/dashboardDB.js"></script>
-<script type="text/javascript" src="./db/notificatioIndicaActions.js"></script>
+<script type="text/javascript" src="./db/notificationIndicaActions.js"></script>
 
 <!-- Importação popper obrigatoria antes do bootstrap  -->
 <script src="./assets/js/popper.min.js" ></script>
@@ -136,9 +136,9 @@
 <script type="text/javascript">
     this.DASHBOARD_DB.initialize();
 
+    var usuario = JSON.parse( window.localStorage.getItem('usuario'));
     window.setInterval(function () {
         this.NOTIFICATIONS_INDICA.getNotificationsMicroService(usuario.idUsuario, 1).done(function(response){
-            alert(response.type);
             if(response.type=='success'){
                 var titulo = 'NOVO LEAD ';
                 var texto = '<a href="./meusleads.html" rel="external"  > Você recebeu um novo lead! </a>';
@@ -146,6 +146,7 @@
             }
         });
     }, 3000);
+
 
 
     window.setInterval(function(){
