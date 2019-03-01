@@ -136,24 +136,16 @@
 <script type="text/javascript">
     this.DASHBOARD_DB.initialize();
 
-    //window.setInterval(this.NOTIFICATIONS_INDICA.constructor, 10000);
-
-    setTimeout(function(){
-        var usuario = JSON.parse(window.localStorage.getItem('usuario'));
-        var texto = 'Essa é a nova ferramenta de vendas integrada ao portal de indicações. \n Agora você será avisado em tempo real das leads que você recebe. ';
-        app.avisos('Bem vindo '+usuario.nome, texto);
-
-    }, 3500);
-
-
-
-    /// função desnecessaria apenas para apresentação do app
-    setTimeout(function(){
-        var titulo = 'NOVO LEAD ';
-        var texto = '<a href="./meusleads.html" rel="external"  > Você recebeu um novo lead, corre lá para não perde-lo! </a>';
-        app.avisos(titulo, texto, 'fa-envelope' );
-
-    }, 5000);
+    window.setInterval(function () {
+        this.NOTIFICATIONS_INDICA.getNotificationsMicroService(usuario.idUsuario, 1).done(function(response){
+            alert(response.type);
+            if(response.type=='success'){
+                var titulo = 'NOVO LEAD ';
+                var texto = '<a href="./meusleads.html" rel="external"  > Você recebeu um novo lead! </a>';
+                app.avisos(titulo, texto, 'fa-envelope' );
+            }
+        });
+    }, 3000);
 
 
     window.setInterval(function(){

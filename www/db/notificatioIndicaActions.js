@@ -5,12 +5,6 @@ var NOTIFICATIONS_INDICA = {
             window.localStorage.clear();
             window.location="index.html";
         };
-
-        NOTIFICATIONS_INDICA.getNotificationsMicroService(usuario.idUsuario, 1).done(function(response){
-            if(response.type=='success'){
-                notify('Novo Lead', 'Você recebeu novo lead.', 'success', true);
-            }
-        });
     },
 
     getNotificationsMicroService: function(idUsuario, tipoNotificacao){
@@ -29,8 +23,6 @@ var NOTIFICATIONS_INDICA = {
                     return false;
                 }
             });
-        }else{
-            navigator.notification.alert('Você não esta conectado à internet. \n Este recurso necessita de conexão com a internet. ', '','Desconectado', 'OK');
         }
 
     }
