@@ -70,10 +70,11 @@ var app = {
 
 
 
-    avisos: function(title, text, icon){
+    avisos: function(title, text, icon, data){
        var html = '';
        var iconL = icon ? icon : 'fa-bullhorn';
-        html +='<div id="cardAvisos" class="card mb-3 shadow animated bounceInDown">';
+        var dataL = data ? 'data-notification="'+data+'"' : '';
+        html +='<div id="cardAvisos" class="card mb-3 shadow animated bounceInDown" '+dataL+'>';
         html +='    <i class="fas fa-times removeCard" ></i>';
         html +='    <div class="row no-gutters">';
         html +='        <div class="col-4 box-icon" ><i class="fas '+iconL+' icon-item" ></i></div>';
