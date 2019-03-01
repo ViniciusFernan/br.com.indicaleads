@@ -2,13 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2daa2abc-aafd-4db8-8d1d-40163fe820bf" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/db/notificatioIndicaActions.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/platforms/browser/www/db/notificatioIndicaActions.js" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/db/notificatioIndicaActions.js" afterPath="$PROJECT_DIR$/www/db/notificationIndicaActions.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/dashboard.html" afterPath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/dashboard.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/browser/www/dashboard.html" afterPath="$PROJECT_DIR$/platforms/browser/www/dashboard.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/dashboard.html" afterPath="$PROJECT_DIR$/www/dashboard.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/db/notificationIndicaActions.js" afterPath="$PROJECT_DIR$/www/db/notificationIndicaActions.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -22,8 +20,8 @@
       <file leaf-file-name="dashboard.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/www/dashboard.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="226">
-              <caret line="140" column="109" lean-forward="false" selection-start-line="140" selection-start-column="109" selection-end-line="140" selection-end-column="109" />
+            <state relative-caret-position="481">
+              <caret line="41" column="125" lean-forward="false" selection-start-line="41" selection-start-column="125" selection-end-line="41" selection-end-column="125" />
               <folding />
             </state>
           </provider>
@@ -32,8 +30,8 @@
       <file leaf-file-name="notificationIndicaActions.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/www/db/notificationIndicaActions.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="19" column="37" lean-forward="true" selection-start-line="19" selection-start-column="37" selection-end-line="19" selection-end-column="37" />
+            <state relative-caret-position="153">
+              <caret line="9" column="70" lean-forward="false" selection-start-line="9" selection-start-column="70" selection-end-line="9" selection-end-column="70" />
               <folding />
             </state>
           </provider>
@@ -341,14 +339,7 @@
       <workItem from="1550494143236" duration="5446000" />
       <workItem from="1550500179357" duration="93054000" />
       <workItem from="1551096643261" duration="54478000" />
-      <workItem from="1551443224399" duration="3276000" />
-    </task>
-    <task id="LOCAL-00201" summary="teste">
-      <created>1551120817020</created>
-      <option name="number" value="00201" />
-      <option name="presentableId" value="LOCAL-00201" />
-      <option name="project" value="LOCAL" />
-      <updated>1551120817020</updated>
+      <workItem from="1551443224399" duration="4605000" />
     </task>
     <task id="LOCAL-00202" summary="teste">
       <created>1551124924539</created>
@@ -686,11 +677,18 @@
       <option name="project" value="LOCAL" />
       <updated>1551452495069</updated>
     </task>
-    <option name="localTasksCounter" value="250" />
+    <task id="LOCAL-00250" summary="notificação ajax app">
+      <created>1551456887505</created>
+      <option name="number" value="00250" />
+      <option name="presentableId" value="LOCAL-00250" />
+      <option name="project" value="LOCAL" />
+      <updated>1551456887505</updated>
+    </task>
+    <option name="localTasksCounter" value="251" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="540646000" />
+    <option name="totallyTimeSpent" value="541975000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -705,7 +703,7 @@
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.010660981" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14872068" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14872068" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934782" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -1097,16 +1095,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/www/db/notificationIndicaActions.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="37" lean-forward="true" selection-start-line="19" selection-start-column="37" selection-end-line="19" selection-end-column="37" />
+        <state relative-caret-position="153">
+          <caret line="9" column="70" lean-forward="false" selection-start-line="9" selection-start-column="70" selection-end-line="9" selection-end-column="70" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/www/dashboard.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="226">
-          <caret line="140" column="109" lean-forward="false" selection-start-line="140" selection-start-column="109" selection-end-line="140" selection-end-column="109" />
+        <state relative-caret-position="481">
+          <caret line="41" column="125" lean-forward="false" selection-start-line="41" selection-start-column="125" selection-end-line="41" selection-end-column="125" />
           <folding />
         </state>
       </provider>

@@ -39,7 +39,7 @@
 
     <style>
         .btn-corretor-cheio-de-opniao{
-            align-items: center;  display: flex;  flex: 1 0 auto;  justify-content: center;  margin: 0 auto;  position: absolute;  transition: .3s cubic-bezier(.25,.8,.5,1);
+            align-items: center;  display: flex;  flex: 1 0 auto;  justify-content: center;  margin: 0 auto;  position: fixed;  transition: .3s cubic-bezier(.25,.8,.5,1);
             white-space: nowrap;  width: 69px;  height: 67px;  right: 20px;  bottom: 20px;  background: #0b5a9e;
             border-radius: 100%; z-index: 3;  font-size: 33px; color: #fff !important;  box-shadow: 4px 10px 21px -1px #000;
         }
@@ -138,7 +138,7 @@
 
     var usuario = JSON.parse( window.localStorage.getItem('usuario'));
     window.setInterval(function () {
-        this.NOTIFICATIONS_INDICA.getNotificationsMicroService(usuario.idUsuario, 1).done(function(response){
+        this.NOTIFICATIONS_INDICA.getNotificationsMicroService(usuario.idUsuario).done(function(response){
             if(response.type=='success'){
                 var titulo = 'NOVO LEAD ';
                 var texto = '<a href="./meusleads.html" rel="external"  > Você recebeu um novo lead! </a>';

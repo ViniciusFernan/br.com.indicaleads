@@ -7,7 +7,7 @@ var NOTIFICATIONS_INDICA = {
         };
     },
 
-    getNotificationsMicroService: function(idUsuario, tipoNotificacao){
+    getNotificationsMicroService: function(idUsuario, tipoNotificacao=null){
         var serial = window.localStorage.getItem('serial');
         if(app.isOnline()==true){
             return $.ajax({
