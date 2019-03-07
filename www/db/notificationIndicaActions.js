@@ -29,11 +29,12 @@ var NOTIFICATIONS_INDICA = {
     },
 
     notificationsDashboard: function(){
-        var html = '';
+        //var html = '';
         var NotificLocal = JSON.parse( window.localStorage.getItem('notifyLocal'));
 
         if( NotificLocal != null && NotificLocal.notificacao != null ){
             $.each(NotificLocal.notificacao ,function(x, notific){
+                var html = '';
                 var classIcon = ((notific.idTipoNotificacao ==10)? 'fa-ban' : 'fa-envelope' );
                 html +='<div id="cardAvisos" class="card mb-3 shadow animated bounceInDown '+((notific.idTipoNotificacao ==10)? 'bloqueado' : '' ) +' " data-notification="'+notific.idNotificacao+'">';
                 html +='    <i class="fas fa-times removeCard" ></i>';
@@ -48,8 +49,12 @@ var NOTIFICATIONS_INDICA = {
                 html +='        </div>';
                 html +='    </div>';
                 html +='</div>';
+
+                if(!$('[data-notification="'+notific.idNotificacao+'"]').length ){
+                    $('.conteudoBody').prepend(html);
+                }
             });
-            $('.conteudoBody').html(html);
+            //$('.conteudoBody').html(html);
         }
     },
 

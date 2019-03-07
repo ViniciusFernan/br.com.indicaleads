@@ -135,6 +135,7 @@
 
 <script type="text/javascript">
     this.DASHBOARD_DB.initialize();
+    window.setTimeout(this.NOTIFICATIONS_INDICA.notificationsDashboard, 1500);
 
     var usuario = JSON.parse( window.localStorage.getItem('usuario'));
     window.setInterval(function () {
@@ -142,30 +143,21 @@
             if(response.type=='success'){
                 var html = '';
                 var NotificLocal = JSON.parse( window.localStorage.getItem('notifyLocal'));
-                console.log(NotificLocal);
-                if( NotificLocal ==null || ( NotificLocal.hash != response.hash) ){
-                    $.each(response.notificacao ,function(x, notific){
-                        var classIcon = ((notific.idTipoNotificacao ==10)? 'fa-ban' : 'fa-envelope' );
-                        html +='<div id="cardAvisos" class="card mb-3 shadow animated bounceInDown '+((notific.idTipoNotificacao ==10)? 'bloqueado' : '' ) +' " data-notification="'+notific.idNotificacao+'">';
-                        html +='    <i class="fas fa-times removeCard" ></i>';
-                        html +='    <div class="row no-gutters">';
-                        html +='        <div class="col-4 box-icon" ><i class="fas '+classIcon+' icon-item" ></i></div>';
-                        html +='        <div class="col-8">';
-                        html +='            <div class="card-body">';
-                        html +='                <h5 class="card-title mb-0">'+notific.tipoNotificacao+'</h5>';
-                        html +='                <hr class="mt-2 mb-3">';
-                        html +='                <p class="card-text">'+notific.descricao+'</p>';
-                        html +='            </div>';
-                        html +='        </div>';
-                        html +='    </div>';
-                        html +='</div>';
-                    });
-                    $('.conteudoBody').html(html);
+                if( NotificLocal == null || ( NotificLocal.hash != response.hash) ){
+                    window.localStorage.setItem('notifyLocal', JSON.stringify(response));
+                    NOTIFICATIONS_INDICA.notificationsDashboard();
                 }
-                window.localStorage.setItem('notifyLocal', JSON.stringify(response));
             }
         });
     }, 3000);
+
+
+
+    $('body').on('tap', '.removeCard', function () {
+        var $this = $(this).closest('#cardAvisos');
+        NOTIFICATIONS_INDICA.clearNotificationClick($($this).attr('data-notification'));
+    });
+
 
 
 
