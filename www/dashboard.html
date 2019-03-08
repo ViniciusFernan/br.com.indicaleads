@@ -160,9 +160,8 @@
 
 
     $('body').on('tap', '[data-openItem]', function() {
-        alert( $(this).attr('data-openItem'));
         window.localStorage.setItem('openItem', $(this).attr('data-openItem'));
-        NOTIFICATIONS_INDICA.clearNotificationClick($($this).attr('data-notification'));
+        NOTIFICATIONS_INDICA.clearNotificationClick($($this).attr('data-openItem'));
     });
 
 
