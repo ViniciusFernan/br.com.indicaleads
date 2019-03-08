@@ -3,6 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="2daa2abc-aafd-4db8-8d1d-40163fe820bf" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/db/loginDB.js" afterPath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/db/loginDB.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/browser/www/db/loginDB.js" afterPath="$PROJECT_DIR$/platforms/browser/www/db/loginDB.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/db/loginDB.js" afterPath="$PROJECT_DIR$/www/db/loginDB.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -18,7 +20,7 @@
         <entry file="file://$PROJECT_DIR$/www/dashboard.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="396">
-              <caret line="146" column="89" lean-forward="true" selection-start-line="146" selection-start-column="19" selection-end-line="146" selection-end-column="89" />
+              <caret line="146" column="89" lean-forward="false" selection-start-line="146" selection-start-column="19" selection-end-line="146" selection-end-column="89" />
               <folding />
             </state>
           </provider>
@@ -38,7 +40,7 @@
         <entry file="file://$PROJECT_DIR$/www/index.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="1110">
-              <caret line="101" column="24" lean-forward="true" selection-start-line="101" selection-start-column="24" selection-end-line="101" selection-end-column="24" />
+              <caret line="101" column="24" lean-forward="false" selection-start-line="101" selection-start-column="24" selection-end-line="101" selection-end-column="24" />
               <folding />
             </state>
           </provider>
@@ -47,8 +49,8 @@
       <file leaf-file-name="loginDB.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/www/db/loginDB.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="544">
-              <caret line="35" column="148" lean-forward="false" selection-start-line="35" selection-start-column="148" selection-end-line="35" selection-end-column="148" />
+            <state relative-caret-position="561">
+              <caret line="36" column="0" lean-forward="false" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -292,14 +294,7 @@
       <workItem from="1550500179357" duration="93054000" />
       <workItem from="1551096643261" duration="54478000" />
       <workItem from="1551443224399" duration="12677000" />
-      <workItem from="1551963681453" duration="10233000" />
-    </task>
-    <task id="LOCAL-00209" summary="teste page loag push">
-      <created>1551192417406</created>
-      <option name="number" value="00209" />
-      <option name="presentableId" value="LOCAL-00209" />
-      <option name="project" value="LOCAL" />
-      <updated>1551192417407</updated>
+      <workItem from="1551963681453" duration="13267000" />
     </task>
     <task id="LOCAL-00210" summary="teste page loag push">
       <created>1551193142721</created>
@@ -637,11 +632,18 @@
       <option name="project" value="LOCAL" />
       <updated>1551988709987</updated>
     </task>
-    <option name="localTasksCounter" value="258" />
+    <task id="LOCAL-00258" summary="notificação ajax app">
+      <created>1552046345247</created>
+      <option name="number" value="00258" />
+      <option name="presentableId" value="LOCAL-00258" />
+      <option name="project" value="LOCAL" />
+      <updated>1552046345247</updated>
+    </task>
+    <option name="localTasksCounter" value="259" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="560280000" />
+    <option name="totallyTimeSpent" value="563314000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -656,7 +658,7 @@
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.010660981" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15031983" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15031983" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934782" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -935,13 +937,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/meusdados.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1236">
-          <caret line="80" column="12" lean-forward="false" selection-start-line="80" selection-start-column="12" selection-end-line="80" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/www/assets/css/login.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -983,6 +978,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
           <caret line="21" column="74" lean-forward="true" selection-start-line="21" selection-start-column="8" selection-end-line="21" selection-end-column="74" />
+          <folding>
+            <marker date="1551121302509" expanded="true" signature="1055:1069" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1013,7 +1011,7 @@
     <entry file="file://$PROJECT_DIR$/www/dashboard.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="396">
-          <caret line="146" column="89" lean-forward="true" selection-start-line="146" selection-start-column="19" selection-end-line="146" selection-end-column="89" />
+          <caret line="146" column="89" lean-forward="false" selection-start-line="146" selection-start-column="19" selection-end-line="146" selection-end-column="89" />
           <folding />
         </state>
       </provider>
@@ -1029,15 +1027,23 @@
     <entry file="file://$PROJECT_DIR$/www/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1110">
-          <caret line="101" column="24" lean-forward="true" selection-start-line="101" selection-start-column="24" selection-end-line="101" selection-end-column="24" />
+          <caret line="101" column="24" lean-forward="false" selection-start-line="101" selection-start-column="24" selection-end-line="101" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/meusdados.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-34">
+          <caret line="80" column="12" lean-forward="false" selection-start-line="80" selection-start-column="12" selection-end-line="80" selection-end-column="12" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/www/db/loginDB.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="35" column="148" lean-forward="false" selection-start-line="35" selection-start-column="148" selection-end-line="35" selection-end-column="148" />
+        <state relative-caret-position="561">
+          <caret line="36" column="0" lean-forward="false" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
           <folding />
         </state>
       </provider>
