@@ -30,6 +30,9 @@ var LOGIN_DB = {
             }
 
         }else{
+            var parentElement = document.getElementById('deviceready');
+            parentElement.setAttribute('style', 'display:block;');
+
             navigator.notification.alert('Você não esta conectado à internet. \n Verifique sua conexão e tente de novo. ', '','Desconectado', 'OK');
         }
 
