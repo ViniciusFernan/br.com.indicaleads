@@ -61,7 +61,7 @@ var firebaseGCM={
                 }
 
                 if(data.additionalData.idItem!==undefined && data.additionalData.idItem!==null){
-                    window.localStorage.setItem('idLead', data.additionalData.idItem);
+                    window.localStorage.setItem('openItem', data.additionalData.idItem);
                 }
 
             });

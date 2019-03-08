@@ -159,6 +159,13 @@
     });
 
 
+    $('body').on('tap', '[data-openItem]', function() {
+        alert( $(this).attr('data-openItem'));
+        window.localStorage.setItem('openItem', $(this).attr('data-openItem'));
+    });
+
+
+
 
 
     window.setInterval(function(){
@@ -208,6 +215,8 @@
             });
         }
     });
+
+
 
 </script>
 

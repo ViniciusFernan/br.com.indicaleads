@@ -308,10 +308,10 @@
 
    $(window).on('load', function(){
         setTimeout(function() {
-            if(window.localStorage.getItem('idLead')!==undefined && window.localStorage.getItem('idLead')!==null){
-                var idLead = window.localStorage.getItem('idLead');
+            if(window.localStorage.getItem('openItem')!==undefined && window.localStorage.getItem('openItem')!==null){
+                var idLead = window.localStorage.getItem('openItem');
                 $('[data-idlead="'+idLead+ '" ]').trigger('tap');
-                window.localStorage.setItem('idLead', null);
+                window.localStorage.setItem('openItem', null);
             }
         }, 900);
     });

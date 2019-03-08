@@ -42,9 +42,19 @@ var NOTIFICATIONS_INDICA = {
                 html +='        <div class="col-3 box-icon" ><i class="fas '+classIcon+' icon-item" ></i></div>';
                 html +='        <div class="col-9">';
                 html +='            <div class="card-body">';
-                html +='                <h5 class="card-title mb-0">'+notific.tipoNotificacao+'</h5>';
+                if(notific.linkPage){
+                    html +='            <h5 class="card-title mb-0"><a href="./'+notific.linkPage+'" rel="external" data-openItem="'+notific.idReferencia+'" >'+notific.tipoNotificacao+'</a></h5>';
+                }else{
+                    html +='            <h5 class="card-title mb-0">'+notific.tipoNotificacao+'</h5>';
+                }
+
                 html +='                <hr class="mt-2 mb-3">';
-                html +='                <p class="card-text">'+notific.descricao+'</p>';
+                if(notific.linkPage){
+                    html +='            <p class="card-text"><a href="./'+notific.linkPage+'" rel="external" data-openItem="'+notific.idReferencia+'" >'+notific.descricao+'</a></p>';
+                }else{
+                    html +='            <p class="card-text">'+notific.descricao+'</p>';
+                }
+
                 html +='            </div>';
                 html +='        </div>';
                 html +='    </div>';
