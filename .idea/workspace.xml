@@ -3,16 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="2daa2abc-aafd-4db8-8d1d-40163fe820bf" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/assets/js/firebaseGCM.js" afterPath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/assets/js/firebaseGCM.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/dashboard.html" afterPath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/dashboard.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/meusleads.html" afterPath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/meusleads.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/browser/www/assets/js/firebaseGCM.js" afterPath="$PROJECT_DIR$/platforms/browser/www/assets/js/firebaseGCM.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/browser/www/dashboard.html" afterPath="$PROJECT_DIR$/platforms/browser/www/dashboard.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/browser/www/meusleads.html" afterPath="$PROJECT_DIR$/platforms/browser/www/meusleads.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/assets/js/firebaseGCM.js" afterPath="$PROJECT_DIR$/www/assets/js/firebaseGCM.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/dashboard.html" afterPath="$PROJECT_DIR$/www/dashboard.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/db/notificationIndicaActions.js" afterPath="$PROJECT_DIR$/www/db/notificationIndicaActions.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/meusleads.html" afterPath="$PROJECT_DIR$/www/meusleads.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -26,8 +19,8 @@
       <file leaf-file-name="dashboard.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/www/dashboard.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="634">
-              <caret line="163" column="75" lean-forward="false" selection-start-line="163" selection-start-column="75" selection-end-line="163" selection-end-column="75" />
+            <state relative-caret-position="532">
+              <caret line="157" column="35" lean-forward="false" selection-start-line="157" selection-start-column="35" selection-end-line="157" selection-end-column="35" />
               <folding />
             </state>
           </provider>
@@ -36,8 +29,8 @@
       <file leaf-file-name="notificationIndicaActions.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/www/db/notificationIndicaActions.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="284">
-              <caret line="62" column="41" lean-forward="false" selection-start-line="62" selection-start-column="23" selection-end-line="62" selection-end-column="41" />
+            <state relative-caret-position="420">
+              <caret line="70" column="4" lean-forward="false" selection-start-line="70" selection-start-column="4" selection-end-line="70" selection-end-column="4" />
               <folding />
             </state>
           </provider>
@@ -227,24 +220,6 @@
               <item name="br.com.indicaleads" type="b2602c69:ProjectViewProjectNode" />
               <item name="br.com.indicaleads" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
-            <path>
-              <item name="br.com.indicaleads" type="b2602c69:ProjectViewProjectNode" />
-              <item name="br.com.indicaleads" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="www" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="br.com.indicaleads" type="b2602c69:ProjectViewProjectNode" />
-              <item name="br.com.indicaleads" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="www" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="assets" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="br.com.indicaleads" type="b2602c69:ProjectViewProjectNode" />
-              <item name="br.com.indicaleads" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="www" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="assets" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="js" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -344,14 +319,7 @@
       <workItem from="1550500179357" duration="93054000" />
       <workItem from="1551096643261" duration="54478000" />
       <workItem from="1551443224399" duration="12677000" />
-      <workItem from="1551963681453" duration="16312000" />
-    </task>
-    <task id="LOCAL-00211" summary="teste page loag push">
-      <created>1551198699021</created>
-      <option name="number" value="00211" />
-      <option name="presentableId" value="LOCAL-00211" />
-      <option name="project" value="LOCAL" />
-      <updated>1551198699021</updated>
+      <workItem from="1551963681453" duration="17588000" />
     </task>
     <task id="LOCAL-00212" summary="teste page loag push">
       <created>1551198727232</created>
@@ -689,11 +657,18 @@
       <option name="project" value="LOCAL" />
       <updated>1552055228109</updated>
     </task>
-    <option name="localTasksCounter" value="260" />
+    <task id="LOCAL-00260" summary="notificação ajax app">
+      <created>1552058929957</created>
+      <option name="number" value="00260" />
+      <option name="presentableId" value="LOCAL-00260" />
+      <option name="project" value="LOCAL" />
+      <updated>1552058929957</updated>
+    </task>
+    <option name="localTasksCounter" value="261" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="566359000" />
+    <option name="totallyTimeSpent" value="567635000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1096,16 +1071,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/www/db/notificationIndicaActions.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="284">
-          <caret line="62" column="41" lean-forward="false" selection-start-line="62" selection-start-column="23" selection-end-line="62" selection-end-column="41" />
+        <state relative-caret-position="420">
+          <caret line="70" column="4" lean-forward="false" selection-start-line="70" selection-start-column="4" selection-end-line="70" selection-end-column="4" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/www/dashboard.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="634">
-          <caret line="163" column="75" lean-forward="false" selection-start-line="163" selection-start-column="75" selection-end-line="163" selection-end-column="75" />
+        <state relative-caret-position="532">
+          <caret line="157" column="35" lean-forward="false" selection-start-line="157" selection-start-column="35" selection-end-line="157" selection-end-column="35" />
           <folding />
         </state>
       </provider>
