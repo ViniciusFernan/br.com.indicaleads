@@ -159,9 +159,10 @@
     });
 
 
-    $('body').on('tap', '[data-openItem]', function() {
+    $('body').on('tap', '[data-openItem]', function(avf){
         window.localStorage.setItem('openItem', $(this).attr('data-openItem'));
-        NOTIFICATIONS_INDICA.clearNotificationClick($($this).attr('data-openItem'));
+        var $this = $(this).closest('#cardAvisos');
+        NOTIFICATIONS_INDICA.clearNotificationClick($($this).attr('data-notification'));
     });
 
 
