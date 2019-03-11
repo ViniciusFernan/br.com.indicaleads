@@ -43,7 +43,7 @@ var MEUSLEADS_DB = {
                     if(resp.type=='success'){
                         $.each(resp.data ,function(x, lead){
                             var classFeedbak = ((lead.dataVisualizado != null && lead.idLeadStatus == null) ? 'noFeedback' : (lead.dataVisualizado != null && lead.idLeadStatus != null) ? 'yesStatus' : '' );
-                            table +='<div class="box-lead card mb-2 cardClose '+classFeedbak+'" data-idLead="'+lead.idLead+'">';
+                            table +='<div class="box-lead card mb-2 cardClosed '+classFeedbak+'" data-idLead="'+lead.idLead+'">';
                                 table +='<div class="row card-header" style="min-height: 46px;">';
                                     table +='<div class="col-6 col-md-6 p-0 "><h5 class="title ellipsis" ><i class="far fa-envelope icon-lead"></i>'+ lead.nome +'</h5></div>';
                                     table +='<div class="col-3 col-md-3 p-0 border-left border-right "><small class="small bold">DDD: '+ lead.dddTel +' </small></div>';
@@ -233,7 +233,7 @@ var MEUSLEADS_DB = {
                     $('.loader').fadeOut().remove();
 
                     $('[data-idLead="'+lead.idLead+'"]').find('.card-header .actionOpenLeadBox .fas').removeClass('fa-angle-double-down').addClass('fa-times fecharLead');
-                    $('[data-idLead="'+lead.idLead+'"]').addClass('flayCard').removeClass('cardClose');
+                    $('[data-idLead="'+lead.idLead+'"]').addClass('flayCard').removeClass('cardClosed');
 
                     //scroll para evitar recarregar a pagina com scrollto js
                     var top = $("#deviceready").scrollTop();

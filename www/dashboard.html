@@ -135,6 +135,8 @@
 
 <script type="text/javascript">
     this.DASHBOARD_DB.initialize();
+    document.addEventListener("backbutton", this.app.exitApp, false);
+
     window.setTimeout(this.NOTIFICATIONS_INDICA.notificationsDashboard, 1500);
 
     var usuario = JSON.parse( window.localStorage.getItem('usuario'));

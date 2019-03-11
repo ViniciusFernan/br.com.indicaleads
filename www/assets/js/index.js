@@ -64,7 +64,7 @@ var app = {
         }, 800);
 
 
-        document.addEventListener("backbutton", this.exitApp, false);
+        //document.addEventListener("backbutton", this.exitApp, false);
 
     },
 
