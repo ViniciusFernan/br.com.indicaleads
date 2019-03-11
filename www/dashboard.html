@@ -35,6 +35,9 @@
     <link rel="stylesheet" type="text/css" href="./assets/css/index.css" />
     <link rel="stylesheet" type="text/css" href="./assets/css/navbar.css" />
 
+    <!-- TOOGLE CHECKED -->
+    <link rel="stylesheet" type="text/css" href="./assets/plugins/check-toggle/css/check-toggle.css" />
+
     <title>Inaweb Digital - dashboard</title>
 
     <style>
@@ -59,6 +62,8 @@
         <section data-role="header" class="fixedTop header-avf">
             <h1><img class="logo" src="./img/logoWhite.png" style="max-height: 30px;max-width: 150px;"></h1>
             <i class="fas fa-align-justify toogle-menu open-menu"></i>
+
+            <i class="fas fa-cogs open-menu-config"></i>
         </section><!-- /header -->
 
         <section class="col-md-12 col-sm-12 col-xs-12 box-menu" display="overlay" >
@@ -76,6 +81,7 @@
             </div>
         </section>
 
+
         <section role="main" class="ui-content container conteudoBody" data-placeholder="Não há avisos no momento" data-role="home" ></section>
 
         <div class="container">
@@ -85,6 +91,10 @@
 
             </div>
         </div>
+
+        <section class="box-config" display="overlay" >
+            <div class="configAppBox" data-include="includes/configApp.html"></div>
+        </section>
 
         <section class="footer" data-role="footer" ><h6>Desenvolvido por Inaweb Digital</h6></section><!-- /footer -->
     </div>
@@ -132,6 +142,8 @@
 <script type="text/javascript" src="./assets/js/menu.js"></script>
 
 <script type="text/javascript" src="./assets/js/actionsApp.js"></script>
+
+
 
 <script type="text/javascript">
     this.DASHBOARD_DB.initialize();
@@ -218,6 +230,10 @@
             });
         }
     });
+
+
+
+
 
 
 

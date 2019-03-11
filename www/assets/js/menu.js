@@ -18,7 +18,7 @@ $('body').on('swiperight', function (avf){
 
 $('body').on('tap', function(avf){
     var classes = $(avf.target).hasClass('open-menu');
-    if(avf.pageX < 20 && classes==false) {
+    if(avf.pageX < 20 && classes==false){
         menu.alertMenu();
     }
  });
@@ -26,6 +26,7 @@ $('body').on('tap', function(avf){
 
 var menu = {
     openMenu: function() {
+        $('.box-config').stop().css('right', '-100%');
         $('.box-menu').stop().css('left', '0%');
     },
     hideMenu: function() {

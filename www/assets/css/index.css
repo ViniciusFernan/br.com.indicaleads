@@ -87,6 +87,7 @@ body *{text-shadow:none !important;}
 
 
 .conteudoBody:empty:not([data-placeholder=""]):before{ content:attr(data-placeholder);  font-weight: bold;  font-size: 1.8em;  text-align: center; color: #bbbbbb;    display: block;    }
+.placeholder:empty:not([data-placeholder=""]):before{ content:attr(data-placeholder);  font-weight: bold;  font-size: 1.8em;  text-align: center; color: #bbbbbb;    display: block;    }
 
 ::-webkit-input-placeholder { color:#dedede; }
 :-moz-placeholder { color:#dedede;  opacity:1; }
@@ -117,6 +118,32 @@ body *{text-shadow:none !important;}
 .btn-default-br{border: 1px solid #c0c0c0}
 
 
+/** CSS abaconfigurações app */
+.titie-config{       font-weight: bold;  padding: 14px 0;  border-bottom: 1px solid #f3f3f3;  }
+
+.open-menu-config{  position: absolute;  right: 5px;  top: 6px;  color: #ffffff;  padding: 6px 9px;  font-size: 27px;  }
+.close-menu-config {  position: absolute;  color: #1562a6;  font-size: 25px;  top: 14px;  cursor: pointer;  left: 11px;  }
+
+.box-config{
+    position: fixed;
+    height: 100%;
+    width: 60%;
+    z-index: 100;
+    background: #fff;
+    /* background: linear-gradient(#3498db, #2c71a9); */
+    top: 0;
+    box-shadow: 3px 0px 15px #151515;
+    right: -100%;
+    -webkit-transition: all 0.3s linear 0s;
+    -moz-transition: all 0.3s linear 0s;
+    -ms-transition: all 0.3s linear 0s;
+    -o-transition: all 0.3s linear 0s;
+    transition: all 0.3s linear 0s;
+    z-index: 52;
+}
+.configApp {  margin-top: 15px; }
+.configApp .line{    position: relative;  border-bottom: 1px solid #f3f3f3;  padding: 8px 55px 8px 0;  margin: 0;  }
+.configApp .line .switch{position: absolute; right: 0; top: 50%;  transform: translate(0, -50%)}
 
 @media screen and (min-width: 900px){
     body{display: none}
@@ -133,7 +160,7 @@ body *{text-shadow:none !important;}
         background: #fff;
         /*background: linear-gradient(#3498db, #2c71a9);*/
         top:0;
-        box-shadow: -1px 0px 15px #757575;
+        box-shadow: -3px 0px 15px #171717;
         left: -100%;
         -webkit-transition: all 0.3s linear 0s;
         -moz-transition: all 0.3s linear 0s;
