@@ -1,0 +1,12 @@
+#http://www.exemplo.com/index.php?url=controlador/ação/parametro1/parametro2/etc…
+#http://www.exemplo.com/controlador/ação/parametro1/parametro2/etc…
+RewriteEngine On
+
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-l
+
+RewriteRule ^(.+)$ index.php?path=$1 [QSA,L]
+
+Options -Indexes
+
