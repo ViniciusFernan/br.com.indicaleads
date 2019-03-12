@@ -104,14 +104,17 @@ body *{text-shadow:none !important;}
 
 /*AVISOS BOX*/
 #cardAvisos{position: relative}
-#cardAvisos .removeCard{position: absolute; top: 2px; right: 8px; font-size: 24px; color: #ccc; z-index: 15}
+
+#cardAvisos .removeCard{position: absolute;  top: -11px;  right: -5px;  font-size: 24px;  color: #ccc;  z-index: 15;  background: #fff;  padding: 2px 6px;  border-radius: 100%;  box-shadow: 0px 1px 13px -4px #000;}
 #cardAvisos .box-icon {background-color: #0b5a9e; position: relative}
-#cardAvisos .box-icon .icon-item{color: #fff; vertical-align: middle; font-size: 60px; position: absolute; top: 50%; transform: translate(-50%, -50%)}
-#cardAvisos .card-body{ padding: .5rem; }
+#cardAvisos .box-icon .icon-item{color: #fff; vertical-align: middle; font-size: 40px; position: absolute; top: 50%; transform: translate(-50%, -50%)}
+#cardAvisos .card-body{ padding: .5rem; font-size: 15px; }
+#cardAvisos .card-title{font-size: 16px; font-weight: bold}
 
 #cardAvisos.bloqueado .box-icon {background-color: #9e0519; }
 
 /*AVISOS BOX*/
+
 
 
 
@@ -145,6 +148,8 @@ body *{text-shadow:none !important;}
 .configApp .line{  background: #fff;  position: relative;  border-bottom: 1px solid #f3f3f3;  padding: 10px 65px 10px 15px;  margin: 0;    font-size: 14px; }
 .configApp .line .switch{position: absolute; right: 10px; top: 50%;  transform: translate(0, -50%)}
 
+
+
 @media screen and (min-width: 900px){
     body{display: none}
 }
@@ -176,6 +181,9 @@ body *{text-shadow:none !important;}
 
 
 }
+
+
+
 
 
 
