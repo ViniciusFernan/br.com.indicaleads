@@ -142,7 +142,7 @@ body *{text-shadow:none !important;}
     z-index: 52;
 }
 .configApp {  margin-top: 15px; }
-.configApp .line{  background: #fff;  position: relative;  border-bottom: 1px solid #f3f3f3;  padding: 10px 65px 10px 15px;  margin: 0;    font-size: 13px; }
+.configApp .line{  background: #fff;  position: relative;  border-bottom: 1px solid #f3f3f3;  padding: 10px 65px 10px 15px;  margin: 0;    font-size: 14px; }
 .configApp .line .switch{position: absolute; right: 10px; top: 50%;  transform: translate(0, -50%)}
 
 @media screen and (min-width: 900px){
