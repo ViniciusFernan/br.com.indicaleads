@@ -119,7 +119,7 @@ body *{text-shadow:none !important;}
 
 
 /** CSS abaconfigurações app */
-.titie-config{       font-weight: bold;  padding: 14px 0;  border-bottom: 1px solid #f3f3f3;  }
+.titie-config{  background:#fff;     font-weight: bold;  padding: 14px 0;  border-bottom: 1px solid #f3f3f3;  }
 
 .open-menu-config{  position: absolute;  right: 5px;  top: 6px;  color: #ffffff;  padding: 6px 9px;  font-size: 27px;  }
 .close-menu-config {  position: absolute;  color: #1562a6;  font-size: 25px;  top: 14px;  cursor: pointer;  left: 11px;  }
@@ -127,9 +127,9 @@ body *{text-shadow:none !important;}
 .box-config{
     position: fixed;
     height: 100%;
-    width: 60%;
+    width: 80%;
     z-index: 100;
-    background: #fff;
+    background: #f3f3f3;
     /* background: linear-gradient(#3498db, #2c71a9); */
     top: 0;
     box-shadow: 3px 0px 15px #151515;
@@ -142,8 +142,8 @@ body *{text-shadow:none !important;}
     z-index: 52;
 }
 .configApp {  margin-top: 15px; }
-.configApp .line{    position: relative;  border-bottom: 1px solid #f3f3f3;  padding: 8px 55px 8px 0;  margin: 0;  }
-.configApp .line .switch{position: absolute; right: 0; top: 50%;  transform: translate(0, -50%)}
+.configApp .line{  background: #fff;  position: relative;  border-bottom: 1px solid #f3f3f3;  padding: 10px 65px 10px 15px;  margin: 0;    font-size: 13px; }
+.configApp .line .switch{position: absolute; right: 10px; top: 50%;  transform: translate(0, -50%)}
 
 @media screen and (min-width: 900px){
     body{display: none}
@@ -176,9 +176,6 @@ body *{text-shadow:none !important;}
 
 
 }
-
-
-
 
 
 
