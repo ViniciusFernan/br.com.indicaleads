@@ -100,7 +100,7 @@ var NOTIFICATIONS_INDICA = {
                 beforeSend: function(){ },
                 complete: function(){ },
                 success: function(response){
-                    window.localStorage.setItem('configNotificacoesApp', JSON.stringify(response));
+                    window.localStorage.setItem('configNotificacoesApp', JSON.stringify(response.configuracoes));
                 }
             });
         }

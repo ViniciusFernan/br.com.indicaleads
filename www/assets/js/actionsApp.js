@@ -43,13 +43,22 @@ $('body').on('change', '.notificatioStatus', function(){
     var objSend=[];
     $.each($('.notificatioStatus'), function(x, objeto){
         var item={};
-        item[ $(objeto).attr('name')] = (  ($(objeto).is(':checked')) ? 1 : 0  );
+        item['key'] = $(objeto).attr('name');
+        item['val'] = (  ($(objeto).is(':checked')) ? 1 : 0  );
         objSend.push(item);
     });
 
     NOTIFICATIONS_INDICA.notificationsConfiguracoes(objSend);
 
-
-
-
 });
+
+
+$(window).on('tap', function (){
+    var configNotificacoesApp =  ( window.localStorage.getItem('configNotificacoesApp') ? window.localStorage.getItem('configNotificacoesApp') : null );
+
+    if(configNotificacoesApp != null){
+        $.each(JSON.parse(configNotificacoesApp) , function (i, item){
+            $('.notificatioStatus[name="'+item['key']+'"]').attr('checked',  (item['val']=='0')? false : true );
+        });
+    }
+})
