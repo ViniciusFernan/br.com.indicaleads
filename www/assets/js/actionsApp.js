@@ -42,9 +42,12 @@ var menuConfig = {
 $('body').on('change', '.notificatioStatus', function(){
     var objSend=[];
     $.each($('.notificatioStatus'), function(x, objeto){
-        objSend[$(objeto).attr('name')] = ( ($(objeto).is(':checked')) ? 1 : 0 );
-
+        var item={};
+        item[ $(objeto).attr('name')] = (  ($(objeto).is(':checked')) ? 1 : 0  );
+        objSend.push(item);
     });
+
+    NOTIFICATIONS_INDICA.notificationsConfiguracoes(objSend);
 
 
 

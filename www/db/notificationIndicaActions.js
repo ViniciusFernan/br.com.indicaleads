@@ -48,7 +48,7 @@ var NOTIFICATIONS_INDICA = {
                     html +='            <h5 class="card-title mb-0">'+notific.tipoNotificacao+'</h5>';
                 }
 
-                html +='                <hr class="mt-2 mb-3">';
+                html +='                <hr class="mt-1 mb-2">';
                 if(notific.linkPage){
                     html +='            <p class="card-text"><a href="./'+notific.linkPage+'" rel="external" data-openItem="'+notific.idReferencia+'" >'+notific.descricao+'</a></p>';
                 }else{
@@ -86,15 +86,17 @@ var NOTIFICATIONS_INDICA = {
         }
     },
 
+
     notificationsConfiguracoes: function(configuracoes){
         var serial = window.localStorage.getItem('serial');
         var usuario = JSON.parse( window.localStorage.getItem('usuario'));
+
         if(app.isOnline()==true){
             $.ajax({
                 type: 'POST',
                 dataType: 'json',
                 url: urlWebservices+'/Notificationservice/setNotificationsConfiguracoes',
-                data:{ 'idUsuario': usuario.idUsuario, 'configuracoes': configuracoes, 'registroDeDispositivo': serial },
+                data:{ 'idUsuario': usuario.idUsuario, 'configuracoes': JSON.stringify(configuracoes), 'registroDeDispositivo': serial },
                 beforeSend: function(){ },
                 complete: function(){ },
                 success: function(response){
