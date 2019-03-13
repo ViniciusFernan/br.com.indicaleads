@@ -34,6 +34,19 @@ var menuConfig = {
         $('.box-config').stop().css('right', '-75%').delay(800).queue(function(nxt) {
             $('.box-config').css('right', '-100%');
             nxt();
-        })
+        });
     }
 }
+
+
+$('body').on('change', '.notificatioStatus', function(){
+    var objSend=[];
+    $.each($('.notificatioStatus'), function(x, objeto){
+        objSend[$(objeto).attr('name')] = ( ($(objeto).is(':checked')) ? 1 : 0 );
+
+    });
+
+
+
+
+});

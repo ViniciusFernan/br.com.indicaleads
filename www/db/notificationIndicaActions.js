@@ -84,6 +84,24 @@ var NOTIFICATIONS_INDICA = {
                 }
             });
         }
+    },
+
+    notificationsConfiguracoes: function(configuracoes){
+        var serial = window.localStorage.getItem('serial');
+        var usuario = JSON.parse( window.localStorage.getItem('usuario'));
+        if(app.isOnline()==true){
+            $.ajax({
+                type: 'POST',
+                dataType: 'json',
+                url: urlWebservices+'/Notificationservice/setNotificationsConfiguracoes',
+                data:{ 'idUsuario': usuario.idUsuario, 'configuracoes': configuracoes, 'registroDeDispositivo': serial },
+                beforeSend: function(){ },
+                complete: function(){ },
+                success: function(response){
+                    window.localStorage.setItem('configNotificacoesApp', JSON.stringify(response));
+                }
+            });
+        }
     }
 
 };
