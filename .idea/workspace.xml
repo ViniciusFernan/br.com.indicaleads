@@ -3,8 +3,49 @@
   <component name="ChangeListManager">
     <list default="true" id="2daa2abc-aafd-4db8-8d1d-40163fe820bf" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/assets/js/actionsApp.js" afterPath="$PROJECT_DIR$/www/assets/js/actionsApp.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/db/notificationIndicaActions.js" afterPath="$PROJECT_DIR$/www/db/notificationIndicaActions.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WSAPP/CRON/CRON-NotificacaoLead.php" afterPath="$PROJECT_DIR$/WSAPP/CRON/CRON-NotificacaoLead.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WSAPP/controllers/Notificationservice.controller.php" afterPath="$PROJECT_DIR$/WSAPP/controllers/Notificationservice.controller.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WSAPP/lib/uploadVerot/class.upload.php" afterPath="$PROJECT_DIR$/WSAPP/lib/uploadVerot/class.upload.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WSAPP/lib/uploadVerot/lang/class.upload.ca_CA.php" afterPath="$PROJECT_DIR$/WSAPP/lib/uploadVerot/lang/class.upload.ca_CA.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WSAPP/lib/uploadVerot/lang/class.upload.cs_CS.php" afterPath="$PROJECT_DIR$/WSAPP/lib/uploadVerot/lang/class.upload.cs_CS.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WSAPP/lib/uploadVerot/lang/class.upload.da_DK.php" afterPath="$PROJECT_DIR$/WSAPP/lib/uploadVerot/lang/class.upload.da_DK.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WSAPP/lib/uploadVerot/lang/class.upload.de_DE.php" afterPath="$PROJECT_DIR$/WSAPP/lib/uploadVerot/lang/class.upload.de_DE.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WSAPP/lib/uploadVerot/lang/class.upload.el_GR.php" afterPath="$PROJECT_DIR$/WSAPP/lib/uploadVerot/lang/class.upload.el_GR.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WSAPP/lib/uploadVerot/lang/class.upload.es_ES.php" afterPath="$PROJECT_DIR$/WSAPP/lib/uploadVerot/lang/class.upload.es_ES.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WSAPP/lib/uploadVerot/lang/class.upload.et_EE.php" afterPath="$PROJECT_DIR$/WSAPP/lib/uploadVerot/lang/class.upload.et_EE.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WSAPP/lib/uploadVerot/lang/class.upload.fa_IR.php" afterPath="$PROJECT_DIR$/WSAPP/lib/uploadVerot/lang/class.upload.fa_IR.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WSAPP/lib/uploadVerot/lang/class.upload.fi_FI.php" afterPath="$PROJECT_DIR$/WSAPP/lib/uploadVerot/lang/class.upload.fi_FI.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WSAPP/lib/uploadVerot/lang/class.upload.fr_FR.php" afterPath="$PROJECT_DIR$/WSAPP/lib/uploadVerot/lang/class.upload.fr_FR.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WSAPP/lib/uploadVerot/lang/class.upload.he_IL.php" afterPath="$PROJECT_DIR$/WSAPP/lib/uploadVerot/lang/class.upload.he_IL.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WSAPP/lib/uploadVerot/lang/class.upload.hr_HR.php" afterPath="$PROJECT_DIR$/WSAPP/lib/uploadVerot/lang/class.upload.hr_HR.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WSAPP/lib/uploadVerot/lang/class.upload.hu_HU.php" afterPath="$PROJECT_DIR$/WSAPP/lib/uploadVerot/lang/class.upload.hu_HU.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WSAPP/lib/uploadVerot/lang/class.upload.id_ID.php" afterPath="$PROJECT_DIR$/WSAPP/lib/uploadVerot/lang/class.upload.id_ID.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WSAPP/lib/uploadVerot/lang/class.upload.it_IT.php" afterPath="$PROJECT_DIR$/WSAPP/lib/uploadVerot/lang/class.upload.it_IT.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WSAPP/lib/uploadVerot/lang/class.upload.ja_JP.php" afterPath="$PROJECT_DIR$/WSAPP/lib/uploadVerot/lang/class.upload.ja_JP.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WSAPP/lib/uploadVerot/lang/class.upload.lt_LT.php" afterPath="$PROJECT_DIR$/WSAPP/lib/uploadVerot/lang/class.upload.lt_LT.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WSAPP/lib/uploadVerot/lang/class.upload.mk_MK.php" afterPath="$PROJECT_DIR$/WSAPP/lib/uploadVerot/lang/class.upload.mk_MK.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WSAPP/lib/uploadVerot/lang/class.upload.nl_NL.php" afterPath="$PROJECT_DIR$/WSAPP/lib/uploadVerot/lang/class.upload.nl_NL.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WSAPP/lib/uploadVerot/lang/class.upload.no_NO.php" afterPath="$PROJECT_DIR$/WSAPP/lib/uploadVerot/lang/class.upload.no_NO.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WSAPP/lib/uploadVerot/lang/class.upload.pl_PL.php" afterPath="$PROJECT_DIR$/WSAPP/lib/uploadVerot/lang/class.upload.pl_PL.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WSAPP/lib/uploadVerot/lang/class.upload.pt_BR.php" afterPath="$PROJECT_DIR$/WSAPP/lib/uploadVerot/lang/class.upload.pt_BR.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WSAPP/lib/uploadVerot/lang/class.upload.ro_RO.php" afterPath="$PROJECT_DIR$/WSAPP/lib/uploadVerot/lang/class.upload.ro_RO.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WSAPP/lib/uploadVerot/lang/class.upload.ru_RU.php" afterPath="$PROJECT_DIR$/WSAPP/lib/uploadVerot/lang/class.upload.ru_RU.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WSAPP/lib/uploadVerot/lang/class.upload.ru_RU.windows-1251.php" afterPath="$PROJECT_DIR$/WSAPP/lib/uploadVerot/lang/class.upload.ru_RU.windows-1251.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WSAPP/lib/uploadVerot/lang/class.upload.sk_SK.php" afterPath="$PROJECT_DIR$/WSAPP/lib/uploadVerot/lang/class.upload.sk_SK.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WSAPP/lib/uploadVerot/lang/class.upload.sr_YU.php" afterPath="$PROJECT_DIR$/WSAPP/lib/uploadVerot/lang/class.upload.sr_YU.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WSAPP/lib/uploadVerot/lang/class.upload.sv_SE.php" afterPath="$PROJECT_DIR$/WSAPP/lib/uploadVerot/lang/class.upload.sv_SE.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WSAPP/lib/uploadVerot/lang/class.upload.ta_TA.php" afterPath="$PROJECT_DIR$/WSAPP/lib/uploadVerot/lang/class.upload.ta_TA.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WSAPP/lib/uploadVerot/lang/class.upload.tr_TR.php" afterPath="$PROJECT_DIR$/WSAPP/lib/uploadVerot/lang/class.upload.tr_TR.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WSAPP/lib/uploadVerot/lang/class.upload.uk_UA.php" afterPath="$PROJECT_DIR$/WSAPP/lib/uploadVerot/lang/class.upload.uk_UA.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WSAPP/lib/uploadVerot/lang/class.upload.uk_UA.windows-1251.php" afterPath="$PROJECT_DIR$/WSAPP/lib/uploadVerot/lang/class.upload.uk_UA.windows-1251.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WSAPP/lib/uploadVerot/lang/class.upload.vn_VN.php" afterPath="$PROJECT_DIR$/WSAPP/lib/uploadVerot/lang/class.upload.vn_VN.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WSAPP/lib/uploadVerot/lang/class.upload.xx_XX.php" afterPath="$PROJECT_DIR$/WSAPP/lib/uploadVerot/lang/class.upload.xx_XX.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WSAPP/lib/uploadVerot/lang/class.upload.zh_CN.gb-2312.php" afterPath="$PROJECT_DIR$/WSAPP/lib/uploadVerot/lang/class.upload.zh_CN.gb-2312.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WSAPP/lib/uploadVerot/lang/class.upload.zh_CN.php" afterPath="$PROJECT_DIR$/WSAPP/lib/uploadVerot/lang/class.upload.zh_CN.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WSAPP/lib/uploadVerot/lang/class.upload.zh_TW.php" afterPath="$PROJECT_DIR$/WSAPP/lib/uploadVerot/lang/class.upload.zh_TW.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WSAPP/models/notifications/Notifications.model.php" afterPath="$PROJECT_DIR$/WSAPP/models/notifications/Notifications.model.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WSAPP/models/notifications/NotificationsPush.model.php" afterPath="$PROJECT_DIR$/WSAPP/models/notifications/NotificationsPush.model.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WSAPP/models/usuarios/Usuarios.model.php" afterPath="$PROJECT_DIR$/WSAPP/models/usuarios/Usuarios.model.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -48,8 +89,8 @@
       <file leaf-file-name="notificationIndicaActions.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/www/db/notificationIndicaActions.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="658">
-              <caret line="109" column="0" lean-forward="true" selection-start-line="109" selection-start-column="0" selection-end-line="109" selection-end-column="0" />
+            <state relative-caret-position="1853">
+              <caret line="109" column="0" lean-forward="false" selection-start-line="109" selection-start-column="0" selection-end-line="109" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -71,8 +112,8 @@
       <file leaf-file-name="actionsApp.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/www/assets/js/actionsApp.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="631">
-              <caret line="63" column="2" lean-forward="false" selection-start-line="63" selection-start-column="2" selection-end-line="63" selection-end-column="2" />
+            <state relative-caret-position="87">
+              <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -213,12 +254,17 @@
               <item name="br.com.indicaleads" type="b2602c69:ProjectViewProjectNode" />
               <item name="br.com.indicaleads" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
+            <path>
+              <item name="br.com.indicaleads" type="b2602c69:ProjectViewProjectNode" />
+              <item name="br.com.indicaleads" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="WSAPP" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
       <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -323,14 +369,8 @@
       <workItem from="1552398375644" duration="31000" />
       <workItem from="1552418382125" duration="608000" />
       <workItem from="1552479841455" duration="841000" />
-      <workItem from="1552487782836" duration="32000" />
-    </task>
-    <task id="LOCAL-00221" summary="teste page loag push">
-      <created>1551206266480</created>
-      <option name="number" value="00221" />
-      <option name="presentableId" value="LOCAL-00221" />
-      <option name="project" value="LOCAL" />
-      <updated>1551206266480</updated>
+      <workItem from="1552487782836" duration="638000" />
+      <workItem from="1552499569689" duration="52000" />
     </task>
     <task id="LOCAL-00222" summary="teste page loag push">
       <created>1551206357450</created>
@@ -668,11 +708,18 @@
       <option name="project" value="LOCAL" />
       <updated>1552482495280</updated>
     </task>
-    <option name="localTasksCounter" value="270" />
+    <task id="LOCAL-00270" summary="notifications leads efects">
+      <created>1552487820356</created>
+      <option name="number" value="00270" />
+      <option name="presentableId" value="LOCAL-00270" />
+      <option name="project" value="LOCAL" />
+      <updated>1552487820356</updated>
+    </task>
+    <option name="localTasksCounter" value="271" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="571932000" />
+    <option name="totallyTimeSpent" value="572590000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -687,7 +734,7 @@
     <frame x="-1448" y="163" width="1456" height="876" extended-state="6" />
     <layout>
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.014326648" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22277936" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2256447" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934782" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -1047,16 +1094,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/www/db/notificationIndicaActions.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="658">
-          <caret line="109" column="0" lean-forward="true" selection-start-line="109" selection-start-column="0" selection-end-line="109" selection-end-column="0" />
+        <state relative-caret-position="1853">
+          <caret line="109" column="0" lean-forward="false" selection-start-line="109" selection-start-column="0" selection-end-line="109" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/www/assets/js/actionsApp.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="631">
-          <caret line="63" column="2" lean-forward="false" selection-start-line="63" selection-start-column="2" selection-end-line="63" selection-end-column="2" />
+        <state relative-caret-position="87">
+          <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
           <folding />
         </state>
       </provider>

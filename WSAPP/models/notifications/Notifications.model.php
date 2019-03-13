@@ -168,4 +168,39 @@ class NotificationsModel {
 
 
 
+    public function addConfiguracaoNotificationAplicativo($idAppIdUser, $configNotificationsApp){
+        $this->Result = false;
+        if(!empty($idAppIdUser) && !empty($configNotificationsApp)){
+            $up = new Update;
+            $up->ExeUpdate("app_id_user", ['configNotificationsApp'=>$configNotificationsApp], "WHERE idAppIdUser=:idAppIdUser", "idAppIdUser=$idAppIdUser");
+            if ($up->getResult()):
+                $this->Result = $up->getResult();
+            endif;
+        }
+    }
+
+
+    public function checkSeUsuarioBloqueouReceberEssaNotificacaoNesseAparelho($configNotificationsApp, $tipoNotification){
+        if(!empty($configNotificationsApp)){
+            $config = (!empty($configNotificationsApp) ? unserialize($configNotificationsApp) : true );
+
+            $respNotfic=true;
+            foreach ($config as $key => $value){
+                if($value['key']==$tipoNotification && $value['val']==0){
+                    $respNotfic = false;
+                }
+            }
+            return $respNotfic;
+        }else{
+            return true;
+        }
+
+
+    }
+
+
+
+
+
+
 }

@@ -166,7 +166,7 @@ class UsuariosModel {
     public function getDispositivosDoUsuario($idUsuario){
         $this->Result=[];
 
-        $sql = 'SELECT gcmId FROM  app_id_user
+        $sql = 'SELECT * FROM  app_id_user
                 WHERE app_id_user.idUsuario=:idUsuario';
 
         $Select = new Select;

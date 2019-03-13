@@ -10,6 +10,9 @@ require_once '../config.php';
 
 require ABSPATH . "/models/notifications/NotificationsPush.model.php";
 $Push = new NotificationsPushModel;
+
+
+
 $Push->SendNotificationsNovoLead();
 
 $Push->SendNotifications10MinutosParaPerder();

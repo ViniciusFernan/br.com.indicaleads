@@ -55,7 +55,12 @@ class NotificationsPushModel {
                 $usuario->getDispositivosDoUsuario($notificacao['idUsuario']);
                 if($usuario->getResult()){
                     foreach ($usuario->getResult() as $k => $dispositivo) {
-                        if (!empty($dispositivo['gcmId'])) {
+
+                        //Checa se usuario do app bloqueou receber esse tipo de notificação
+                        $config = $notifications->checkSeUsuarioBloqueouReceberEssaNotificacaoNesseAparelho($dispositivo['configNotificationsApp'], 'notificatioNovosLeads' );
+
+
+                        if (!empty($dispositivo['gcmId']) &&  $config==true ){
                             $chavesDosDispositivosUsuarioCorrente = $dispositivo['gcmId'];
 
                             $notifications->atualizaStatusNotificacao($notificacao['idNotificacao'], 3);
@@ -63,6 +68,8 @@ class NotificationsPushModel {
                             $templateFrom = 'meusleads.html';
                             $idLead = (!empty($notificacao['idReferencia']) ? $notificacao['idReferencia'] : NULL);
                             $GCMNotification->sendMesagemGCMAction([$chavesDosDispositivosUsuarioCorrente], $titulo, $mensagem, $templateFrom, $idLead);
+                        }else{
+                            echo "[USUARIO CONFIGUROU ESTE APP A NÃO RECEBER ESSE PUSH => NOVO LEAD ] <br/>";
                         }
                     }
 
@@ -96,7 +103,11 @@ class NotificationsPushModel {
                 $usuario->getDispositivosDoUsuario($notificacao['idUsuario']);
                 if($usuario->getResult()){
                     foreach ($usuario->getResult() as $k => $dispositivo) {
-                        if (!empty($dispositivo['gcmId'])) {
+
+                        //Checa se usuario do app bloqueou receber esse tipo de notificação
+                        $config = $notifications->checkSeUsuarioBloqueouReceberEssaNotificacaoNesseAparelho($dispositivo['configNotificationsApp'], '10MinutosLeads' );
+
+                        if (!empty($dispositivo['gcmId']) &&  $config==true ){
                             $chavesDosDispositivosUsuarioCorrente = $dispositivo['gcmId'];
 
                             $notifications->atualizaStatusNotificacao($notificacao['idNotificacao'], 3);
@@ -104,6 +115,8 @@ class NotificationsPushModel {
                             $templateFrom = 'meusleads.html';
                             $idLead = (!empty($notificacao['idReferencia']) ? $notificacao['idReferencia'] : NULL);
                             $GCMNotification->sendMesagemGCMAction([$chavesDosDispositivosUsuarioCorrente], $titulo, $mensagem, $templateFrom, $idLead);
+                        }else{
+                            echo "[USUARIO CONFIGUROU ESTE APP A NÃO RECEBER ESSE PUSH => 10 MINUTOS ] <br/>";
                         }
                     }
                 }else{
@@ -133,16 +146,63 @@ class NotificationsPushModel {
         $notifications->getALLCurrentNotificationsFromTipoFromAplicativo(10);
         if(!empty($notifications->getResult())) {
 
-            foreach ($notifications->getResult() as $key => $notificacao){
+            foreach($notifications->getResult() as $key => $notificacao){
                 $usuario->getDispositivosDoUsuario($notificacao['idUsuario']);
                 if($usuario->getResult()){
-                    foreach ($usuario->getResult() as $k => $dispositivo) {
-                        if (!empty($dispositivo['gcmId'])) {
+                    foreach($usuario->getResult() as $k => $dispositivo) {
+
+                        //Checa se usuario do app bloqueou receber esse tipo de notificação
+                        $config = $notifications->checkSeUsuarioBloqueouReceberEssaNotificacaoNesseAparelho($dispositivo['configNotificationsApp'], 'bloquadoPlantaoDiario' );
+                        if(!empty($dispositivo['gcmId']) &&  $config==true ){
                             $chavesDosDispositivosUsuarioCorrente = $dispositivo['gcmId'];
 
                             $notifications->atualizaStatusNotificacao($notificacao['idNotificacao'], 3);
 
                             $GCMNotification->sendMesagemGCMAction([$chavesDosDispositivosUsuarioCorrente], $titulo, $mensagem, NULL, NULL );
+                        }else{
+                            echo "[USUARIO CONFIGUROU ESTE APP A NÃO RECEBER ESSE PUSH => BLOQUEIO PLANTÃO DIARIO ] <br/>";
+                        }
+                    }
+                }else{
+                    echo "[SEM USUARIO A SER NOTIFICADO => BLOQUEIO ] <br/>";
+                }
+            }
+        }else{
+            echo "[SEM NOTIFICAÇÃO A SER ENVIADA => BLOQUEIO ] <br/>";
+        }
+    }
+
+
+    public function SendNotificationsPlantaodiario(){
+        require_once ABSPATH . "/models/usuarios/Usuarios.model.php";
+        require_once ABSPATH . "/models/notifications/Notifications.model.php";
+        require_once ABSPATH . "/models/notifications/NotificationsGCM.model.php";
+
+        $usuario = new UsuariosModel;
+        $notifications = new NotificationsModel;
+        $GCMNotification = new NotificationsGCMModel;
+
+        $titulo='Bloqueado no plantão';
+        $mensagem='voçê foi bloqueado  por perda excessiva de indicações, Favor procurar seu supervisor!';
+
+        $notifications->getALLCurrentNotificationsFromTipoFromAplicativo(10);
+        if(!empty($notifications->getResult())) {
+
+            foreach($notifications->getResult() as $key => $notificacao){
+                $usuario->getDispositivosDoUsuario($notificacao['idUsuario']);
+                if($usuario->getResult()){
+                    foreach($usuario->getResult() as $k => $dispositivo) {
+
+                        //Checa se usuario do app bloqueou receber esse tipo de notificação
+                        $config = $notifications->checkSeUsuarioBloqueouReceberEssaNotificacaoNesseAparelho($dispositivo['configNotificationsApp'], 'bloquadoPlantaoDiario' );
+                        if(!empty($dispositivo['gcmId']) &&  $config==true ){
+                            $chavesDosDispositivosUsuarioCorrente = $dispositivo['gcmId'];
+
+                            $notifications->atualizaStatusNotificacao($notificacao['idNotificacao'], 3);
+
+                            $GCMNotification->sendMesagemGCMAction([$chavesDosDispositivosUsuarioCorrente], $titulo, $mensagem, NULL, NULL );
+                        }else{
+                            echo "[USUARIO CONFIGUROU ESTE APP A NÃO RECEBER ESSE PUSH => BLOQUEIO PLANTÃO DIARIO ] <br/>";
                         }
                     }
                 }else{

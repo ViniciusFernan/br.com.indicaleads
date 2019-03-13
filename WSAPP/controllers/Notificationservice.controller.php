@@ -129,4 +129,34 @@ class NotificationserviceController extends MainController {
         exit;
     }
 
+
+    public function setNotificationsConfiguracoesAction(){
+        $resp=[];
+        $data=[];
+        $resp['type'] = 'error';
+        $resp['configuracoes'] = [];
+        $CheckRegistroApp=[];
+
+        require ABSPATH . "/models/notifications/Notifications.model.php";
+        $notifications = new NotificationsModel;
+
+        if(!empty($this->parametrosPost)):
+
+            $CheckRegistroApp = Check::checkRegistroDeDispositivoDoUsuario($this->parametrosPost['idUsuario'], $this->parametrosPost['registroDeDispositivo']) ;
+
+            if(!empty($this->parametrosPost['configuracoes']) && !empty($this->parametrosPost['idUsuario']) && !empty($this->parametrosPost['registroDeDispositivo']) && Check::checkRegistroDeDispositivoDoUsuario($this->parametrosPost['idUsuario'], $this->parametrosPost['registroDeDispositivo'] ) ):
+                $config = json_decode(stripslashes($this->parametrosPost['configuracoes']), true);
+                $notifications->addConfiguracaoNotificationAplicativo($CheckRegistroApp[0]['idAppIdUser'], serialize($config) );
+                if(!empty($notifications->getResult())):
+                    $resp['type'] = 'success';
+                    $resp['configuracoes'] = $config;
+                endif;
+            endif;
+        endif;
+        echo json_encode($resp);
+        exit;
+    }
+
+
+
 }
