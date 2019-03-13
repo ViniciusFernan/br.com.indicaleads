@@ -106,7 +106,7 @@ class NotificationsModel {
 
         $sql = 'SELECT central_de_notificacao.* FROM central_de_notificacao 
                 INNER JOIN app_id_user ON central_de_notificacao.idUsuario = app_id_user.idUsuario
-                WHERE central_de_notificacao.dataCadastro>=(NOW()-INTERVAL 2 HOUR)
+                WHERE central_de_notificacao.dataCadastro>=(NOW()-INTERVAL 3 HOUR)
                 AND (central_de_notificacao.statusNotificacaoAplicativo IS NULL OR central_de_notificacao.statusNotificacaoAplicativo=1 )
                 AND central_de_notificacao.idTipoNotificacao=:idTipoNotificacao
                 GROUP BY central_de_notificacao.idNotificacao

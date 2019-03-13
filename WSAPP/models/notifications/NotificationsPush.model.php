@@ -173,7 +173,7 @@ class NotificationsPushModel {
     }
 
 
-    public function SendNotificationsPlantaodiario(){
+    public function SendNotificationsPlantaoDiario(){
         require_once ABSPATH . "/models/usuarios/Usuarios.model.php";
         require_once ABSPATH . "/models/notifications/Notifications.model.php";
         require_once ABSPATH . "/models/notifications/NotificationsGCM.model.php";
@@ -182,10 +182,10 @@ class NotificationsPushModel {
         $notifications = new NotificationsModel;
         $GCMNotification = new NotificationsGCMModel;
 
-        $titulo='Bloqueado no plantão';
-        $mensagem='voçê foi bloqueado  por perda excessiva de indicações, Favor procurar seu supervisor!';
+        $titulo='Notificação de Plantão Hoje';
+        $mensagem='Você tem plantão hoje!';
 
-        $notifications->getALLCurrentNotificationsFromTipoFromAplicativo(10);
+        $notifications->getALLCurrentNotificationsFromTipoFromAplicativo(5);
         if(!empty($notifications->getResult())) {
 
             foreach($notifications->getResult() as $key => $notificacao){
