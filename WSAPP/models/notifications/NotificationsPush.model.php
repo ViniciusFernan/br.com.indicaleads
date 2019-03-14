@@ -200,17 +200,18 @@ class NotificationsPushModel {
 
                             $notifications->atualizaStatusNotificacao($notificacao['idNotificacao'], 3);
 
-                            $GCMNotification->sendMesagemGCMAction([$chavesDosDispositivosUsuarioCorrente], $titulo, $mensagem, NULL, NULL );
+                            $templateFrom = 'plantoes.html';
+                            $GCMNotification->sendMesagemGCMAction([$chavesDosDispositivosUsuarioCorrente], $titulo, $mensagem, $templateFrom, NULL );
                         }else{
-                            echo "[USUARIO CONFIGUROU ESTE APP A NÃO RECEBER ESSE PUSH => BLOQUEIO PLANTÃO DIARIO ] <br/>";
+                            echo "[USUARIO CONFIGUROU ESTE APP A NÃO RECEBER ESSE PUSH => PLANTÃO DIARIO ] <br/>";
                         }
                     }
                 }else{
-                    echo "[SEM USUARIO A SER NOTIFICADO => BLOQUEIO ] <br/>";
+                    echo "[SEM USUARIO A SER NOTIFICADO => PLANTÃO DIARIO  ] <br/>";
                 }
             }
         }else{
-            echo "[SEM NOTIFICAÇÃO A SER ENVIADA => BLOQUEIO ] <br/>";
+            echo "[SEM NOTIFICAÇÃO A SER ENVIADA => PLANTÃO DIARIO  ] <br/>";
         }
     }
 
