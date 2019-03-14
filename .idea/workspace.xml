@@ -3,8 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="2daa2abc-aafd-4db8-8d1d-40163fe820bf" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WSAPP/models/notifications/Notifications.model.php" afterPath="$PROJECT_DIR$/WSAPP/models/notifications/Notifications.model.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WSAPP/models/notifications/NotificationsPush.model.php" afterPath="$PROJECT_DIR$/WSAPP/models/notifications/NotificationsPush.model.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/meusdados.html" afterPath="$PROJECT_DIR$/www/meusdados.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/meusleads.html" afterPath="$PROJECT_DIR$/www/meusleads.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/plantoes.html" afterPath="$PROJECT_DIR$/www/plantoes.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -68,11 +69,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="actionsApp.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="actionsApp.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/www/assets/js/actionsApp.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="87">
               <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="meusdados.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/www/meusdados.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="289">
+              <caret line="96" column="18" lean-forward="true" selection-start-line="96" selection-start-column="18" selection-end-line="96" selection-end-column="18" />
               <folding />
             </state>
           </provider>
@@ -217,7 +228,7 @@
             <path>
               <item name="br.com.indicaleads" type="b2602c69:ProjectViewProjectNode" />
               <item name="br.com.indicaleads" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="WSAPP" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="www" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
           </expand>
           <select />
@@ -244,15 +255,15 @@
     <property name="list.type.of.created.stylesheet" value="CSS" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\wamp\www\Vinicius\br.com.indicaleads\www\includes" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\wamp\www\Vinicius\br.com.indicaleads\www" />
       <recent name="C:\wamp\www\Vinicius\br.com.indicaleads\www\assets\js" />
       <recent name="C:\wamp\www\Vinicius\br.com.indicaleads\www\assets\css" />
       <recent name="C:\wamp\www\Vinicius\br.com.indicaleads\www\includes" />
       <recent name="C:\wamp\www\Vinicius\br.com.indicaleads\www\assets\plugins" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\wamp\www\Vinicius\br.com.indicaleads\www\includes" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -330,14 +341,8 @@
       <workItem from="1552479841455" duration="841000" />
       <workItem from="1552487782836" duration="638000" />
       <workItem from="1552499569689" duration="208000" />
-      <workItem from="1552501079622" duration="45000" />
-    </task>
-    <task id="LOCAL-00223" summary="teste page loag push">
-      <created>1551206664792</created>
-      <option name="number" value="00223" />
-      <option name="presentableId" value="LOCAL-00223" />
-      <option name="project" value="LOCAL" />
-      <updated>1551206664792</updated>
+      <workItem from="1552501079622" duration="77000" />
+      <workItem from="1552575135166" duration="49000" />
     </task>
     <task id="LOCAL-00224" summary="teste page loag push">
       <created>1551207078770</created>
@@ -675,11 +680,18 @@
       <option name="project" value="LOCAL" />
       <updated>1552499642380</updated>
     </task>
-    <option name="localTasksCounter" value="272" />
+    <task id="LOCAL-00272" summary="WS ALTER">
+      <created>1552501128980</created>
+      <option name="number" value="00272" />
+      <option name="presentableId" value="LOCAL-00272" />
+      <option name="project" value="LOCAL" />
+      <updated>1552501128980</updated>
+    </task>
+    <option name="localTasksCounter" value="273" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="572791000" />
+    <option name="totallyTimeSpent" value="572872000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -694,16 +706,16 @@
     <frame x="-1448" y="163" width="1456" height="876" extended-state="6" />
     <layout>
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.014326648" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22851002" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2320917" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934782" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -953,13 +965,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/meusdados.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-34">
-          <caret line="80" column="12" lean-forward="false" selection-start-line="80" selection-start-column="12" selection-end-line="80" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/google-services.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
@@ -1065,6 +1070,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="87">
           <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/meusdados.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="96" column="18" lean-forward="true" selection-start-line="96" selection-start-column="18" selection-end-line="96" selection-end-column="18" />
           <folding />
         </state>
       </provider>
